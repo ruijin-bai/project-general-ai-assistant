@@ -1,0 +1,281 @@
+{
+  "evidence_class": "engineering_material_records_not_real_people_submission_receipts_or_authority",
+  "matter_id": "3385eede-73ee-4de3-824a-19c9e2003c48",
+  "source_id": "ac9360b8-e2bb-434d-8063-10893980e625",
+  "source_text": "工程记录样例：示例提交文字，不是实际提交。\n工程记录样例：示例签证回执引用，不是真实回执或签发。\n工程记录样例：示例国内证明材料文字，不是真实证明。\n工程假设航班信息发生变化，材料适用保持待核。\n工程记录样例：示例入境卡回执文字，未实际办理或签发。",
+  "original_artifact": {
+    "id": "36b0e7b5-3eea-4a20-810f-c817da65dd34",
+    "version": 1,
+    "matter_id": "3385eede-73ee-4de3-824a-19c9e2003c48",
+    "type": "manual_preparation",
+    "title": "签证休假返岗人工稿",
+    "content": "工程原人工稿：所有真实材料、提交、回执和通行均未知；保留本人原稿，未实际办理。",
+    "status": "human_saved",
+    "input_revision": 2,
+    "created_at": "2026-10-08T13:15:28.729+00:00",
+    "stale": false
+  },
+  "original_facts": {
+    "person": {
+      "status": "unknown",
+      "value": null
+    },
+    "leave_start": {
+      "status": "unknown",
+      "value": null
+    },
+    "leave_end": {
+      "status": "unknown",
+      "value": null
+    },
+    "departure_at": {
+      "status": "unknown",
+      "value": null
+    },
+    "return_at": {
+      "status": "unknown",
+      "value": null
+    },
+    "flight_info": {
+      "status": "unknown",
+      "value": null
+    },
+    "passport_info": {
+      "status": "unknown",
+      "value": null
+    },
+    "visa_info": {
+      "status": "unknown",
+      "value": null
+    },
+    "domestic_proof": {
+      "status": "unknown",
+      "value": null
+    },
+    "nis_entry_card": {
+      "status": "unknown",
+      "value": null
+    },
+    "nis_exit_card": {
+      "status": "unknown",
+      "value": null
+    },
+    "requirements_ref": {
+      "status": "unknown",
+      "value": null
+    },
+    "travel_ref": {
+      "status": "unknown",
+      "value": null
+    }
+  },
+  "original_tracks": {
+    "leave_decision": {
+      "status": "unknown",
+      "label": "真实休假决定待核"
+    },
+    "passport": {
+      "status": "unknown",
+      "label": "护照材料与回执待核"
+    },
+    "visa": {
+      "status": "unknown",
+      "label": "签证材料与回执待核"
+    },
+    "domestic_proof": {
+      "status": "unknown",
+      "label": "国内真实证明待核"
+    },
+    "nis_entry": {
+      "status": "unknown",
+      "label": "入境卡适用及回执待核"
+    },
+    "nis_exit": {
+      "status": "unknown",
+      "label": "离境卡适用及回执待核"
+    },
+    "movement": {
+      "status": "unknown",
+      "label": "真实离返未知"
+    },
+    "meal": {
+      "status": "unknown",
+      "label": "餐次核对待核"
+    }
+  },
+  "initial_receipt_id": "ed7afe5f-460e-479b-8188-bc03c8da0822",
+  "specialized_check": {
+    "tests": 1,
+    "seconds": 0.369,
+    "scope": "two_modes_same_current_receipt_sources_stale_history_reopen_idempotency_409_private_404_role_revoke_403_and_selected_source_control"
+  },
+  "ui_status": "passed",
+  "actual_model_calls_in_slice": 0,
+  "saved_records": {
+    "id": "3385eede-73ee-4de3-824a-19c9e2003c48",
+    "version": 10,
+    "revision_no": 2,
+    "items": [
+      {
+        "kind": "passport",
+        "label": "护照材料",
+        "submission": "unknown",
+        "receipt": "unknown",
+        "receipt_id": null,
+        "formal_validity": "unknown",
+        "review_note": null
+      },
+      {
+        "kind": "visa",
+        "label": "签证材料",
+        "submission": "needs_review",
+        "receipt": "needs_review",
+        "receipt_id": "ed7afe5f-460e-479b-8188-bc03c8da0822",
+        "formal_validity": "unknown",
+        "review_note": "工程假设航班变化后的待重核说明：保留旧来源和核对历史；没有更新外部申请，没有实际办理。"
+      },
+      {
+        "kind": "domestic_proof",
+        "label": "国内真实证明",
+        "submission": "unknown",
+        "receipt": "unknown",
+        "receipt_id": null,
+        "formal_validity": "unknown",
+        "review_note": null
+      },
+      {
+        "kind": "nis_entry",
+        "label": "入境卡材料",
+        "submission": "unknown",
+        "receipt": "unknown",
+        "receipt_id": null,
+        "formal_validity": "unknown",
+        "review_note": null
+      },
+      {
+        "kind": "nis_exit",
+        "label": "离境卡材料",
+        "submission": "unknown",
+        "receipt": "unknown",
+        "receipt_id": null,
+        "formal_validity": "unknown",
+        "review_note": null
+      }
+    ],
+    "records": [
+      {
+        "actor_id": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "actor_name": "工程夹具经办",
+        "input_revision": 2,
+        "material_kind": "visa",
+        "note": "工程回执来源引用路径示例，不是真实回执或签发。",
+        "occurred_at": null,
+        "record_type": "receipt_reference",
+        "ref": {
+          "end_line": 2,
+          "source_id": "ac9360b8-e2bb-434d-8063-10893980e625",
+          "start_line": 2
+        },
+        "id": "ed7afe5f-460e-479b-8188-bc03c8da0822",
+        "recorded_at": "2026-10-08T13:15:28.747+00:00",
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "excerpt": "工程记录样例：示例签证回执引用，不是真实回执或签发。",
+        "source_state": "usable",
+        "stale": false
+      },
+      {
+        "actor_id": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "actor_name": "工程夹具经办",
+        "input_revision": 2,
+        "material_kind": "visa",
+        "note": "工程提交声明记录字段验证；这里只引用假设文字，未实际提交，不证明已办理。",
+        "occurred_at": null,
+        "record_type": "submission_statement",
+        "ref": {
+          "end_line": 1,
+          "source_id": "ac9360b8-e2bb-434d-8063-10893980e625",
+          "start_line": 1
+        },
+        "id": "a3911b04-def8-460a-bd83-6e296744c5cd",
+        "recorded_at": "2026-10-08T13:18:16.269+00:00",
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "excerpt": "工程记录样例：示例提交文字，不是实际提交。",
+        "source_state": "usable",
+        "stale": false
+      },
+      {
+        "actor_id": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "actor_name": "工程夹具经办",
+        "input_revision": 2,
+        "material_kind": "visa",
+        "note": "本人已读工程回执字段样例；只核给定原文，不是真实回执，不核签发或效力。",
+        "occurred_at": null,
+        "receipt_id": "ed7afe5f-460e-479b-8188-bc03c8da0822",
+        "record_type": "receipt_source_checked",
+        "ref": {
+          "end_line": 2,
+          "source_id": "ac9360b8-e2bb-434d-8063-10893980e625",
+          "start_line": 2
+        },
+        "id": "b1b49c30-c1dd-41e4-a9a6-495f953592ca",
+        "recorded_at": "2026-10-08T13:18:32.039+00:00",
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "excerpt": "工程记录样例：示例签证回执引用，不是真实回执或签发。",
+        "source_state": "usable",
+        "stale": false
+      },
+      {
+        "actor_id": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "actor_name": "工程夹具经办",
+        "input_revision": 2,
+        "material_kind": "visa",
+        "note": "工程假设航班变化后的待重核说明：保留旧来源和核对历史；没有更新外部申请，没有实际办理。",
+        "occurred_at": null,
+        "record_type": "needs_review",
+        "ref": {
+          "end_line": 4,
+          "source_id": "ac9360b8-e2bb-434d-8063-10893980e625",
+          "start_line": 4
+        },
+        "id": "5fdbc6f4-c96e-46f5-b8fc-f8dc0277223c",
+        "recorded_at": "2026-10-08T13:19:07.829+00:00",
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "excerpt": "工程假设航班信息发生变化，材料适用保持待核。",
+        "source_state": "usable",
+        "stale": false
+      }
+    ],
+    "scope": "各材料的提交声明、回执来源与本人核对分别保留；仅私有记录，不提交外部申请，不核真签发或判断获准、可通行。"
+  },
+  "artifact": {
+    "id": "a16c6e64-91b8-4d73-9a48-8bb0611b742d",
+    "version": 1,
+    "content": "# 材料办理声明与回执核对稿\n\n各材料的提交声明、回执来源与本人核对分别保留；仅私有记录，不提交外部申请，不核真签发或判断获准、可通行。\n事实修订：2\n\n## 各材料独立情况\n- 护照材料：未登记，实际提交未知；未提供，真实回执未知；正式适用及效力未知。\n- 签证材料：原提交声明保留，当前依据待重核；原回执保留，当前依据待重核；正式适用及效力未知。\n- 国内真实证明：未登记，实际提交未知；未提供，真实回执未知；正式适用及效力未知。\n- 入境卡材料：未登记，实际提交未知；未提供，真实回执未知；正式适用及效力未知。\n- 离境卡材料：未登记，实际提交未知；未提供，真实回执未知；正式适用及效力未知。\n\n## 来源与历史记录（不代表外部已更新）\n\n### 签证材料 · 已提供回执来源\n工程回执来源引用路径示例，不是真实回执或签发。\n实际日期：未提供，待核\n来源 ac9360b8-e2bb-434d-8063-10893980e625 第2–2行\n工程记录样例：示例签证回执引用，不是真实回执或签发。\n本人所给来源，不核真签发。\n\n### 签证材料 · 本人记录提交声明\n工程提交声明记录字段验证；这里只引用假设文字，未实际提交，不证明已办理。\n实际日期：未提供，待核\n来源 ac9360b8-e2bb-434d-8063-10893980e625 第1–1行\n工程记录样例：示例提交文字，不是实际提交。\n本人所给来源，不核真签发。\n\n### 签证材料 · 本人已核回执原文\n本人已读工程回执字段样例；只核给定原文，不是真实回执，不核签发或效力。\n实际日期：未提供，待核\n来源 ac9360b8-e2bb-434d-8063-10893980e625 第2–2行\n工程记录样例：示例签证回执引用，不是真实回执或签发。\n本人所给来源，不核真签发。\n\n### 签证材料 · 本人标记材料或手续待重核\n工程假设航班变化后的待重核说明：保留旧来源和核对历史；没有更新外部申请，没有实际办理。\n实际日期：未提供，待核\n来源 ac9360b8-e2bb-434d-8063-10893980e625 第4–4行\n工程假设航班信息发生变化，材料适用保持待核。\n本人所给来源，不核真签发。"
+  },
+  "fixed_md": {
+    "bytes": 2318,
+    "sha256": "a29736d393947e2ded6dadda09758e2d02bdf80b7e52bbb9d9e947aac1b7ce5b",
+    "equals_saved_content": true
+  },
+  "facts_tracks_original_preserved": true,
+  "ui_steps": [
+    "read_independent_material_states",
+    "save_submission_statement_engineering_not_real_submission",
+    "select_same_receipt_and_source_review",
+    "other_materials_stay_unknown",
+    "prepare_unsaved_review_note",
+    "pause_and_read_preserves_note",
+    "save_needs_review_while_paused",
+    "reload_preserves_pause_and_four_history_records",
+    "resume_and_render_separate_artifact",
+    "select_new_artifact",
+    "latest_runtime_restart_readback_and_three_columns_visible",
+    "fixed_http_md"
+  ],
+  "remaining": [
+    "formal_material_names_and_actual_issuance_validity_and_business_sample_unverified",
+    "automatic_official_submission_not_authorized_or_implemented",
+    "visa_full_prd_goal_incomplete",
+    "real_timed_node_automation_and_requirements_model_followup_pending"
+  ]
+}

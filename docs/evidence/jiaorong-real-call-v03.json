@@ -1,0 +1,53 @@
+{
+  "evidence_class": "engineering_real_model_call_not_business_validation",
+  "matter_id": "0c4a7425-a7f2-42e6-a8a0-96fc13505194",
+  "goal_text": "工程验证，非真实业务：请准备空调漏水报修联系单。工程假设地点为演练房间A，问题为室内机滴水。实际报修、分派、维修及关闭均未发生，未知联系人与可进入时段保留待核。",
+  "model_status": {
+    "enabled": true,
+    "configured": true,
+    "provider": "jiaorong",
+    "model": "jiaorong-instruct",
+    "reason": "ready",
+    "calls_used": 1,
+    "calls_limit": 30
+  },
+  "assistant_status": "waiting",
+  "usage_events": [
+    {
+      "id": "8b5973be-64be-477f-9233-5553a5bf982e",
+      "matter_id": "0c4a7425-a7f2-42e6-a8a0-96fc13505194",
+      "event_type": "model_usage",
+      "message": "交融模型实际调用用量：{\"completion_tokens\":366,\"prompt_tokens\":761,\"total_tokens\":1127}（无返回项保持未知；不代表业务结果）",
+      "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+      "recorded_at": "2026-10-08T10:38:30.620+00:00"
+    }
+  ],
+  "model_artifacts": [
+    {
+      "id": "3887042e-4e15-41f8-8d1d-454d4f1ac74f",
+      "version": 1,
+      "matter_id": "0c4a7425-a7f2-42e6-a8a0-96fc13505194",
+      "type": "preparation",
+      "title": "交融模型准备稿",
+      "content": "模型准备草稿；未批准、派遣、报备、扣餐或执行。\n\n【空调漏水报修联系单·准备草稿】（综合部信息准备助理仅整理，不批准/派车/扣餐/签发/执行）\n\n一、来源陈述（来源：user_text，记录时间2026-10-08T10:38:17.828Z）\n- 性质：工程验证，非真实业务；实际报修、分派、维修及关闭均未发生。\n- 目标：准备空调漏水报修联系单。\n- 地点（来源陈述）：演练房间A。\n- 问题（来源陈述）：室内机滴水。\n- 未知项：联系人、可进入时段保留待核。\n\n二、候选（来源陈述，尚未确认，非正式审批/执行状态）\n- location（候选）：演练房间A\n- problem（候选）：室内机滴水\n\n三、已确认事实\n- 暂无已确认事实字段。\n\n四、未核渠道/规则与状态说明\n- reporter、access_window、contact、existing_record 均未知，未核实渠道/规则。\n- 本草稿仅为信息准备，未外发、未送达、未批准、未实际执行。\n\n待核问题：\n- 请确认报修地点是否为“演练房间A”？\n- 请确认问题描述是否为“室内机滴水”？\n- 请提供报修人/联系人信息（如适用）？\n- 请提供可进入维修的时段？\n- 是否存在既有维修记录或工单号需要关联？",
+      "status": "model_draft",
+      "input_revision": 2,
+      "created_at": "2026-10-08T10:38:30.620+00:00",
+      "stale": false
+    }
+  ],
+  "failures": [],
+  "browser_closed_loop": {
+    "human_version": 2,
+    "original_model_version_preserved": true,
+    "pause_reload_retained_human_edit": true,
+    "resume_retained_human_edit": true,
+    "usage_event_count_after_controls": 1,
+    "matter_after_controls": {
+      "version": 6,
+      "revision_no": 2,
+      "assistant_status": "waiting"
+    },
+    "screenshot": "jiaorong-real-model-v03.jpg"
+  }
+}

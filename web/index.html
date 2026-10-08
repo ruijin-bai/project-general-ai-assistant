@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>项目综合 AI 助理</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="事项导航">
+      <a class="brand" href="#" aria-label="新建事项"><span class="brand-mark" aria-hidden="true">✦</span><span>综合 AI 助理<small>项目工作空间</small></span></a>
+      <button id="new-matter" class="button primary new-button"><span aria-hidden="true">＋</span> 新的事项</button>
+      <div class="workspace-nav"><button id="menus-nav" class="button quiet" hidden>已发布菜单</button><button id="services-nav" class="button quiet" hidden>待办服务</button><button id="shares-nav" class="button quiet" hidden>收到的准备材料</button><button id="context-nav" class="button quiet" hidden>本人偏好</button><button id="accounts-nav" class="button quiet" hidden>工作区账号</button></div>
+      <div id="reminders-control" hidden></div>
+      <div class="list-heading">持续事项 <span id="list-count"></span></div>
+      <label class="sr-only" for="domain-filter">筛选事项类型</label>
+      <select id="domain-filter" class="domain-filter"><option value="">全部事项</option></select>
+      <nav id="worklist" aria-label="持续事项列表"><p class="small muted">正在读取事项…</p></nav>
+      <div class="sidebar-footer"><span class="local-dot" aria-hidden="true"></span><span id="workspace-mode">本地经办工作区</span><small id="workspace-principal">只整理准备，不执行正式业务</small></div>
+    </aside>
+    <div class="main-shell">
+      <header class="topbar">
+        <label class="search-box"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="事项／本人原文关键词" aria-label="查找已有事项或输入本人原文关键词"></label><button id="search-sources" class="button quiet" hidden>检索本人原文</button>
+        <div class="topbar-info"><span id="preview-mode" class="preview-badge">本地预览</span><span id="model-status" class="muted">模型未配置</span><span id="principal-name" class="muted"></span><button id="logout" class="button quiet" hidden>退出账号</button></div>
+      </header>
+      <section id="source-search-results" class="source-search-results" aria-label="本人已保存来源检索结果" hidden></section>
+      <main id="workspace" aria-label="事项工作区" tabindex="-1"></main>
+      <div id="toast" role="status" aria-live="polite" hidden></div>
+    </div>
+  </div>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

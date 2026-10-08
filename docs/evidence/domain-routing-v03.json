@@ -1,0 +1,1424 @@
+{
+  "task": "T059",
+  "goal_text": "工程T059，非真实业务：工程B房的空调在滴水。帮我整理一份给综合经办核对的报修需求，必要的联系人和可进入时段还没确定；别替我分派、进房或说已经修好。",
+  "scope": "isolated engineering only; no repair, entry or dispatch",
+  "prior_matters": [
+    {
+      "id": "dacf99ed-5ee8-4ddb-a3a9-5bdbec29be96",
+      "goal_text": "工程T056，非真实业务：11月12日去工程工区核对设备，下午13点离营，18点返营。我之前已有一个专门核对外出当天午餐是否留饭的用餐事项，这次请先看看能否沿那个事项继续核对；如果只是相似标题就告诉我待核，别重复新建，也别替我安排供餐。人员、车辆和午餐需求均未确认。",
+      "domain": "general",
+      "version": 11,
+      "revision_no": 3,
+      "control_epoch": 4,
+      "assistant_status": "waiting",
+      "preparation_status": "needs_review",
+      "updated_at": "2026-10-08T18:18:26.474+00:00",
+      "business_status": "unknown",
+      "facts": {
+        "subject": {
+          "status": "unknown",
+          "value": null
+        },
+        "facts_text": {
+          "status": "unknown",
+          "value": null
+        },
+        "requirements_ref": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      "legacy_facts": {},
+      "field_labels": {
+        "subject": "事项主题",
+        "facts_text": "已知事实",
+        "requirements_ref": "要求来源"
+      },
+      "tracks": {},
+      "waiting": [],
+      "next_steps": [
+        "查看并修改综合事项准备稿",
+        "按实际要求沿原渠道办理，保留真实凭据"
+      ],
+      "sources": [
+        {
+          "id": "7db445bf-8825-4e23-999e-a36b63c740c0",
+          "matter_id": "dacf99ed-5ee8-4ddb-a3a9-5bdbec29be96",
+          "kind": "user_text",
+          "text": "工程T056，非真实业务：11月12日去工程工区核对设备，下午13点离营，18点返营。我之前已有一个专门核对外出当天午餐是否留饭的用餐事项，这次请先看看能否沿那个事项继续核对；如果只是相似标题就告诉我待核，别重复新建，也别替我安排供餐。人员、车辆和午餐需求均未确认。",
+          "reported_by": null,
+          "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+          "recorded_at": "2026-10-08T18:11:35.944+00:00",
+          "source_state": "usable",
+          "replacement_source_id": null,
+          "state_note": "",
+          "preparation_usable": true
+        }
+      ],
+      "artifacts": [
+        {
+          "id": "643bf8c3-66f5-4ae7-ad62-9eced1a89a56",
+          "version": 2,
+          "matter_id": "dacf99ed-5ee8-4ddb-a3a9-5bdbec29be96",
+          "type": "preparation",
+          "title": "交融模型准备稿",
+          "content": "模型准备草稿；未批准、派遣、报备、扣餐或执行。\n\n【来源陈述】工程T056（非真实业务）：11月12日去工程工区核对设备，计划13:00离营、18:00返营。用户表示之前已有一个专门核对外出当天午餐是否留饭的用餐事项，希望先看能否沿该事项继续核对，不重复新建，也不替其安排供餐。人员、车辆和午餐需求均未确认。\n\n【已确认事实】当前事项所有字段（subject、facts_text、requirements_ref）状态均为unknown，无已确认事实可复用。\n\n【候选】无可用候选字段。\n\n【待核/未确认】人员、车辆、午餐需求均未确认；与既有用餐事项是否为同一事件待核。\n\n【关联候选】\n- other_tasks #2（dining，工程T055独立用餐安排）：用户明确提到之前有专门核对外出当天午餐是否留饭的用餐事项，标题语义高度吻合，可能为同一事项，但工程编号不同（T056 vs T055），且无日期/饭点对应依据，是否同一事件待用户确认。\n- other_tasks #1（travel，工程T058）：同为11月12日去工程工区核对设备，但离返时间不同（09:00/14:00 vs 13:00/18:00）、工程编号不同（T058 vs T056），仅标题相似，是否同一事件待核。\n- other_tasks #3（general，工程T055）：同为11月12日去工程工区核对设备，但离返时间不同（09:00/14:00 vs 13:00/18:00）、工程编号不同（T055 vs T056），仅标题相似，是否同一事件待核。\n\n以上关联仅为候选，用户可忽略或修正，经本人明确选择后才保存为独立事项。本草稿未外发、未送达、未批准、未实际执行。\n\n待核问题：\n- 您提到之前已有专门核对外出当天午餐是否留饭的用餐事项，请确认是否为other_tasks #2（工程T055独立用餐安排），以便沿该事项继续核对而非新建？\n- 工程T056与other_tasks #1（工程T058）及#3（工程T055）均为11月12日去工程工区核对设备但离返时间和工程编号不同，请确认是否为同一事件或需分别办理？\n- 本次出行人员尚未确认，请提供需核对设备的具体人员或角色信息以便继续准备？\n- 本次出行车辆尚未确认，是否需要关联车辆准备事项，还是仅整理核对设备准备？\n- 午餐需求尚未确认，是否需要在您确认既有用餐事项后沿其继续核对留饭，还是本次出行不涉及午餐？\n\n工程T056本人核对备注：只关联已有午餐需求；两份事项分别核对，不认定已经留饭。",
+          "status": "human_saved",
+          "input_revision": 2,
+          "created_at": "2026-10-08T18:16:58.845+00:00",
+          "stale": true
+        },
+        {
+          "id": "bab0727e-a549-4b68-b097-e3b6d8a386a5",
+          "version": 1,
+          "matter_id": "dacf99ed-5ee8-4ddb-a3a9-5bdbec29be96",
+          "type": "manual_preparation",
+          "title": "综合事项人工稿",
+          "content": "工程T056原人工稿，保持原文：先核关联，不安排车辆或供餐。",
+          "status": "human_saved",
+          "input_revision": 1,
+          "created_at": "2026-10-08T18:11:35.988+00:00",
+          "stale": true
+        }
+      ],
+      "activities": [
+        {
+          "id": "3c6cece5-bbe3-4bb1-b50b-2ef9e0bf4de0",
+          "matter_id": "dacf99ed-5ee8-4ddb-a3a9-5bdbec29be96",
+          "event_type": "created",
+          "message": "已保存目标。规则模板可用；模型须配置并显式选择，外部业务渠道未接入。",
+          "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+          "recorded_at": "2026-10-08T18:11:35.945+00:00"
+        },
+        {
+          "id": "af5b3e1c-9559-4452-8bcb-4c6269252b57",
+          "matter_id": "dacf99ed-5ee8-4ddb-a3a9-5bdbec29be96",
+          "event_type": "manual_artifact_created",
+          "message": "本人主动保存人工准备稿；未运行模型或自动整理，暂停/接手及真实业务状态保持。",
+          "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+          "recorded_at": "2026-10-08T18:11:35.990+00:00"
+        },
+        {
+          "id": "04d2f3ed-a4d6-48d9-a262-cb8bb954e2d3",
+          "matter_id": "dacf99ed-5ee8-4ddb-a3a9-5bdbec29be96",
+          "event_type": "private_context_scope",
+          "message": "本人允许后续明确交融整理参考最多10份本人其他事项目标标题；不发送其他事项事实、资料正文或其他人内容。已发送内容无法召回。",
+          "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+          "recorded_at": "2026-10-08T18:12:12.599+00:00"
+        },
+        {
+          "id": "e9922ac4-6e8c-4fe8-a43c-114f8482a094",
+          "matter_id": "dacf99ed-5ee8-4ddb-a3a9-5bdbec29be96",
+          "event_type": "prepare_queued",
+          "message": "已登记交融模型准备；只向许可路线发送本事项必要文字，不执行业务。",
+          "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+          "recorded_at": "2026-10-08T18:13:02.847+00:00"
+        },
+        {
+          "id": "61053dac-2616-4f5e-b1e9-9856cc07f806",
+          "matter_id": "dacf99ed-5ee8-4ddb-a3a9-5bdbec29be96",
+          "event_type": "model_usage",
+          "message": "交融模型实际调用用量：{\"completion_tokens\":2004,\"prompt_tokens\":1841,\"total_tokens\":3845}（无返回项保持未知；不代表业务结果）",
+          "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+          "recorded_at": "2026-10-08T18:13:30.639+00:00"
+        },
+        {
+          "id": "a95f49ad-ce8e-4cdb-a7e4-421c511ba0a0",
+          "matter_id": "dacf99ed-5ee8-4ddb-a3a9-5bdbec29be96",
+          "event_type": "prepare_completed",
+          "message": "交融模型候选与准备稿已保存；待人工核对，真实业务状态未改变。",
+          "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+          "recorded_at": "2026-10-08T18:13:30.641+00:00"
+        },
+        {
+          "id": "f6d4d58b-b123-453e-a4ad-a772adc38c7f",
+          "matter_id": "dacf99ed-5ee8-4ddb-a3a9-5bdbec29be96",
+          "event_type": "pause",
+          "message": "未来代办已暂停，已保存事实与成果保留。",
+          "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+          "recorded_at": "2026-10-08T18:15:49.404+00:00"
+        },
+        {
+          "id": "7be36892-d145-4e7e-be53-325c7f4fc8c3",
+          "matter_id": "dacf99ed-5ee8-4ddb-a3a9-5bdbec29be96",
+          "event_type": "existing_match_saved",
+          "message": "本人核对并保存已有事项关联；没有新建事项、复制事实或改变对方状态，关联理由与备注留作历史。",
+          "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+          "recorded_at": "2026-10-08T18:15:54.636+00:00"
+        },
+        {
+          "id": "89389874-c5d4-42cb-8f3d-0c0ecee63a64",
+          "matter_id": "dacf99ed-5ee8-4ddb-a3a9-5bdbec29be96",
+          "event_type": "artifact_saved",
+          "message": "人工修改已保存为成果新版本；不代表外部提交或接受。",
+          "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+          "recorded_at": "2026-10-08T18:16:58.848+00:00"
+        },
+        {
+          "id": "3f34b029-05b9-465b-a416-e67b3638ca21",
+          "matter_id": "dacf99ed-5ee8-4ddb-a3a9-5bdbec29be96",
+          "event_type": "existing_match_withdrawn",
+          "message": "本人解除当前已有事项关联；原核对备注、来源、两份事项与人工稿历史保留。",
+          "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+          "recorded_at": "2026-10-08T18:17:55.621+00:00"
+        },
+        {
+          "id": "cd1c1736-34e9-4183-a64f-88f1773899d8",
+          "matter_id": "dacf99ed-5ee8-4ddb-a3a9-5bdbec29be96",
+          "event_type": "private_context_scope",
+          "message": "本人停止后续明确交融整理参考最多10份本人其他事项目标标题；不发送其他事项事实、资料正文或其他人内容。已发送内容无法召回。",
+          "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+          "recorded_at": "2026-10-08T18:18:14.207+00:00"
+        },
+        {
+          "id": "9b061743-be30-4a8b-aed4-f42613b207c0",
+          "matter_id": "dacf99ed-5ee8-4ddb-a3a9-5bdbec29be96",
+          "event_type": "resume",
+          "message": "已恢复；请按需重新登记准备，不重放外部动作。",
+          "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+          "recorded_at": "2026-10-08T18:18:26.476+00:00"
+        }
+      ],
+      "actions": [
+        {
+          "id": "2db2cd52-a7b0-46e5-bd90-2aea9bfde744",
+          "status": "completed",
+          "kind": "prepare_model",
+          "error": null
+        }
+      ],
+      "evidence": [],
+      "private_title_context_enabled": false,
+      "domain_routing": {},
+      "model_disclosure_blocked": false,
+      "conversation_questions": [],
+      "waiting_points": [],
+      "workflow": {
+        "enabled": false,
+        "mode": "template"
+      },
+      "rows": [],
+      "calculation": null
+    },
+    {
+      "id": "ad22ef5f-517d-4fda-b8d5-3e6ac9594401",
+      "goal_text": "工程T058，非真实出行：请帮我整理2026-11-12去工程工区核对设备的准备事项，原计划09:00离营、14:00返营，人员和车辆未知。",
+      "domain": "travel",
+      "version": 12,
+      "revision_no": 4,
+      "control_epoch": 5,
+      "assistant_status": "waiting",
+      "preparation_status": "needs_review",
+      "updated_at": "2026-10-08T17:59:36.807+00:00",
+      "business_status": "unknown",
+      "facts": {
+        "destination": {
+          "status": "unknown",
+          "value": null
+        },
+        "departure_at": {
+          "status": "unknown",
+          "value": null
+        },
+        "return_at": {
+          "status": "unknown",
+          "value": null
+        },
+        "participants": {
+          "status": "unknown",
+          "value": null
+        },
+        "purpose": {
+          "status": "unknown",
+          "value": null
+        },
+        "meal_request": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      "legacy_facts": {},
+      "field_labels": {
+        "destination": "目的地",
+        "departure_at": "计划离营时间",
+        "return_at": "计划返营时间",
+        "participants": "参与人员",
+        "purpose": "用途",
+        "meal_request": "餐次需求"
+      },
+      "tracks": {
+        "safety": {
+          "status": "unknown",
+          "label": "真实安全批准待核"
+        },
+        "vehicle": {
+          "status": "unknown",
+          "label": "真实车辆安排待核"
+        },
+        "movement": {
+          "status": "unknown",
+          "label": "实际出返未知"
+        },
+        "meal": {
+          "status": "unknown",
+          "label": "餐次口径与实际供餐待核"
+        }
+      },
+      "waiting": [
+        {
+          "reason": "补充或核对：目的地、计划离营时间、计划返营时间、参与人员、用途",
+          "who": "事项发起人"
+        },
+        {
+          "reason": "真实安全批准待核、真实车辆安排待核、实际出返未知、餐次口径与实际供餐待核",
+          "who": "实际责任人或原渠道待核"
+        }
+      ],
+      "next_steps": [
+        "核对缺少的必要事实",
+        "查看并修改出行安排准备稿",
+        "按实际要求沿原渠道办理，保留真实凭据"
+      ],
+      "sources": [
+        {
+          "id": "564a14a0-86d7-49aa-9977-3aabe9e54baa",
+          "matter_id": "ad22ef5f-517d-4fda-b8d5-3e6ac9594401",
+          "kind": "user_text",
+          "text": "工程T058，非真实出行：请帮我整理2026-11-12去工程工区核对设备的准备事项，原计划09:00离营、14:00返营，人员和车辆未知。",
+          "reported_by": null,
+          "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+          "recorded_at": "2026-10-08T17:55:32.399+00:00",
+          "source_state": "usable",
+          "replacement_source_id": null,
+          "state_note": "",
+          "preparation_usable": true
+        },
+        {
+          "id": "44057d51-4919-47fa-9dde-2b8d52c53fc8",
+          "matter_id": "ad22ef5f-517d-4fda-b8d5-3e6ac9594401",
+          "kind": "user_text",
+          "text": "工程对话补充，非真实安排：出发改为2026-11-12T13:00:00+01:00，返营计划为2026-11-12T18:00:00+01:00。先整理需要核对的人、车辆和联系工作；午餐是否留饭要另行核对，不取消用餐、不派车。",
+          "reported_by": null,
+          "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+          "recorded_at": "2026-10-08T17:56:15.909+00:00",
+          "source_state": "usable",
+          "replacement_source_id": null,
+          "state_note": "",
+          "preparation_usable": true
+        },
+        {
+          "id": "6cae0d56-9bfb-4e92-b490-5294d46beca2",
+          "matter_id": "ad22ef5f-517d-4fda-b8d5-3e6ac9594401",
+          "kind": "user_text",
+          "text": "工程未发送文字保留：我还在补充联系人的信息。",
+          "reported_by": null,
+          "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+          "recorded_at": "2026-10-08T17:58:44.030+00:00",
+          "source_state": "usable",
+          "replacement_source_id": null,
+          "state_note": "",
+          "preparation_usable": true
+        },
+        {
+          "id": "446671af-1476-4c3d-a827-28cb3908bcaf",
+          "matter_id": "ad22ef5f-517d-4fda-b8d5-3e6ac9594401",
+          "kind": "user_text",
+          "text": "工程T058恢复后补充：先用本地模板核对需要实际责任人处理的环节，不安排车辆或供餐。",
+          "reported_by": null,
+          "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+          "recorded_at": "2026-10-08T17:59:36.655+00:00",
+          "source_state": "usable",
+          "replacement_source_id": null,
+          "state_note": "",
+          "preparation_usable": true
+        }
+      ],
+      "artifacts": [
+        {
+          "id": "0a4d0b0a-b99c-452b-bd9c-610a63100d22",
+          "version": 1,
+          "matter_id": "ad22ef5f-517d-4fda-b8d5-3e6ac9594401",
+          "type": "preparation",
+          "title": "出行安排准备稿",
+          "content": "# 出行安排准备稿\n\n生成方式：规则模板（本次未调用模型）。\n此稿仅用于人工准备；未批准、派遣、发布、扣餐、签发或执行。\n\n## 目标\n工程T058，非真实出行：请帮我整理2026-11-12去工程工区核对设备的准备事项，原计划09:00离营、14:00返营，人员和车辆未知。\n\n## 已记录事实\n- 目的地：未知（待核）\n- 计划离营时间：未知（待核）\n- 计划返营时间：未知（待核）\n- 参与人员：未知（待核）\n- 用途：未知（待核）\n- 餐次需求：未知（待核）\n\n## 场景准备清单\n- 沿原渠道核安全审批及其适用人员、地点、时段和修订。\n- 车辆安排、实际出返和餐次各自保留凭据；准备不保证有车、不扣餐。\n\n## 待补\n- 目的地、计划离营时间、计划返营时间、参与人员、用途\n\n## 来源范围\n- 来源 564a14a0-86d7-49aa-9977-3aabe9e54baa / user_text / 2026-10-08T17:55:32.399+00:00 / 陈述人：未注明\n- 来源 44057d51-4919-47fa-9dde-2b8d52c53fc8 / user_text / 2026-10-08T17:56:15.909+00:00 / 陈述人：未注明\n- 来源 6cae0d56-9bfb-4e92-b490-5294d46beca2 / user_text / 2026-10-08T17:58:44.030+00:00 / 陈述人：未注明\n- 来源 446671af-1476-4c3d-a827-28cb3908bcaf / user_text / 2026-10-08T17:59:36.655+00:00 / 陈述人：未注明\n\n## 下一步\n编辑并保存可用成果；复制或下载只代表取出准备材料，不代表发送或业务办结。",
+          "status": "template_draft",
+          "input_revision": 4,
+          "created_at": "2026-10-08T17:59:36.806+00:00",
+          "stale": false
+        },
+        {
+          "id": "d3dba34e-7296-48ab-9057-18c66c705328",
+          "version": 2,
+          "matter_id": "ad22ef5f-517d-4fda-b8d5-3e6ac9594401",
+          "type": "preparation",
+          "title": "交融模型准备稿",
+          "content": "模型准备草稿；未批准、派遣、报备、扣餐或执行。\n\n出行准备草稿：工程T058，2026-11-12赴工程工区核对设备。来源陈述：离营13:00+01:00、返营18:00+01:00；人员车辆未知；午餐留饭另行核对。候选见journey_candidates，未批准未派车。\n\n待核问题：\n- 出行人员名单及联系方式待确认，请提供具体参与人员？\n- 车辆安排待确认，请提供派车需求或车牌信息？\n- 午餐是否留饭需另行核对，请确认是否需要在营区留餐？\n\n工程T058本人核对备注：先找实际参与人确认车辆需求；模型候选没有替我安排车辆。",
+          "status": "human_saved",
+          "input_revision": 2,
+          "created_at": "2026-10-08T17:58:28.412+00:00",
+          "stale": true
+        },
+        {
+          "id": "cd06037c-945b-48d7-8d0e-7807a7dbb715",
+          "version": 1,
+          "matter_id": "ad22ef5f-517d-4fda-b8d5-3e6ac9594401",
+          "type": "manual_preparation",
+          "title": "出行安排人工稿",
+          "content": "工程T058原人工稿，原文保留：只准备，不批准或派车。",
+          "status": "human_saved",
+          "input_revision": 1,
+          "created_at": "2026-10-08T17:55:50.693+00:00",
+          "stale": true
+        }
+      ],
+      "activities": [
+        {
+          "id": "020aa7ff-4722-4601-998a-c3fbe20a87bc",
+          "matter_id": "ad22ef5f-517d-4fda-b8d5-3e6ac9594401",
+          "event_type": "created",
+          "message": "已保存目标。规则模板可用；模型须配置并显式选择，外部业务渠道未接入。",
+          "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+          "recorded_at": "2026-10-08T17:55:32.401+00:00"
+        },
+        {
+          "id": "b66fff97-ba1d-4751-8eda-8308d2aee8a5",
+          "matter_id": "ad22ef5f-517d-4fda-b8d5-3e6ac9594401",
+          "event_type": "manual_artifact_created",
+          "message": "本人主动保存人工准备稿；未运行模型或自动整理，暂停/接手及真实业务状态保持。",
+          "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+          "recorded_at": "2026-10-08T17:55:50.695+00:00"
+        },
+        {
+          "id": "dbe6c7ed-8f27-4c16-aec4-656a2502580d",
+          "matter_id": "ad22ef5f-517d-4fda-b8d5-3e6ac9594401",
+          "event_type": "conversation_message",
+          "message": "{\"input_revision\":2,\"mode\":\"model\",\"scope\":\"本人补充原话；不自动确认事实、替换目标或登记实际执行\",\"source_id\":\"44057d51-4919-47fa-9dde-2b8d52c53fc8\"}",
+          "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+          "recorded_at": "2026-10-08T17:56:15.912+00:00"
+        },
+        {
+          "id": "bc37c84a-c057-417b-acee-73d2e1591b08",
+          "matter_id": "ad22ef5f-517d-4fda-b8d5-3e6ac9594401",
+          "event_type": "prepare_queued",
+          "message": "本人在对话中明确发送并交融整理；使用当前获许可事项上下文，原人工稿保留。",
+          "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+          "recorded_at": "2026-10-08T17:56:15.915+00:00"
+        },
+        {
+          "id": "2195aaac-8b8d-4a87-8165-3373bf3f9ab4",
+          "matter_id": "ad22ef5f-517d-4fda-b8d5-3e6ac9594401",
+          "event_type": "model_usage",
+          "message": "交融模型实际调用用量：{\"completion_tokens\":695,\"prompt_tokens\":1719,\"total_tokens\":2414}（无返回项保持未知；不代表业务结果）",
+          "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+          "recorded_at": "2026-10-08T17:56:27.011+00:00"
+        },
+        {
+          "id": "96c9fced-7cde-4e32-a06d-4ed406cf2129",
+          "matter_id": "ad22ef5f-517d-4fda-b8d5-3e6ac9594401",
+          "event_type": "prepare_completed",
+          "message": "交融模型候选与准备稿已保存；待人工核对，真实业务状态未改变。",
+          "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+          "recorded_at": "2026-10-08T17:56:27.014+00:00"
+        },
+        {
+          "id": "ea9c4f27-d3e9-47c0-acc6-acfca182af3e",
+          "matter_id": "ad22ef5f-517d-4fda-b8d5-3e6ac9594401",
+          "event_type": "pause",
+          "message": "未来代办已暂停，已保存事实与成果保留。",
+          "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+          "recorded_at": "2026-10-08T17:57:58.884+00:00"
+        },
+        {
+          "id": "6318915b-ab66-4570-a806-5b254e1b02b6",
+          "matter_id": "ad22ef5f-517d-4fda-b8d5-3e6ac9594401",
+          "event_type": "artifact_saved",
+          "message": "人工修改已保存为成果新版本；不代表外部提交或接受。",
+          "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+          "recorded_at": "2026-10-08T17:58:28.414+00:00"
+        },
+        {
+          "id": "a977f836-4dc3-496d-a554-8b510ea00962",
+          "matter_id": "ad22ef5f-517d-4fda-b8d5-3e6ac9594401",
+          "event_type": "conversation_message",
+          "message": "{\"input_revision\":3,\"mode\":\"save\",\"scope\":\"本人补充原话；不自动确认事实、替换目标或登记实际执行\",\"source_id\":\"6cae0d56-9bfb-4e92-b490-5294d46beca2\"}",
+          "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+          "recorded_at": "2026-10-08T17:58:44.035+00:00"
+        },
+        {
+          "id": "1e61c713-dfa0-4aa4-81db-e1019dc0f784",
+          "matter_id": "ad22ef5f-517d-4fda-b8d5-3e6ac9594401",
+          "event_type": "resume",
+          "message": "已恢复；请按需重新登记准备，不重放外部动作。",
+          "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+          "recorded_at": "2026-10-08T17:59:21.849+00:00"
+        },
+        {
+          "id": "a8a946db-8d2a-4dc0-9aa7-3d7f151ea193",
+          "matter_id": "ad22ef5f-517d-4fda-b8d5-3e6ac9594401",
+          "event_type": "conversation_message",
+          "message": "{\"input_revision\":4,\"mode\":\"template\",\"scope\":\"本人补充原话；不自动确认事实、替换目标或登记实际执行\",\"source_id\":\"446671af-1476-4c3d-a827-28cb3908bcaf\"}",
+          "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+          "recorded_at": "2026-10-08T17:59:36.659+00:00"
+        },
+        {
+          "id": "4f3c7d44-5174-4fc1-9038-e71fae81cb68",
+          "matter_id": "ad22ef5f-517d-4fda-b8d5-3e6ac9594401",
+          "event_type": "prepare_queued",
+          "message": "本人在对话中明确发送并本地整理；原人工稿保留，不调用模型。",
+          "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+          "recorded_at": "2026-10-08T17:59:36.661+00:00"
+        },
+        {
+          "id": "47463b40-aee1-41f3-af19-326dade16abc",
+          "matter_id": "ad22ef5f-517d-4fda-b8d5-3e6ac9594401",
+          "event_type": "prepare_completed",
+          "message": "规则模板准备稿已保存；真实业务状态未改变。",
+          "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+          "recorded_at": "2026-10-08T17:59:36.808+00:00"
+        }
+      ],
+      "actions": [
+        {
+          "id": "df3eec6b-5a7f-4761-9a1c-30a732a5225f",
+          "status": "completed",
+          "kind": "prepare_model",
+          "error": null
+        },
+        {
+          "id": "ee50c76b-7f34-4406-bf7f-b8735ed59abb",
+          "status": "completed",
+          "kind": "prepare",
+          "error": null
+        }
+      ],
+      "evidence": [],
+      "private_title_context_enabled": false,
+      "domain_routing": {},
+      "model_disclosure_blocked": false,
+      "conversation_questions": [],
+      "waiting_points": [],
+      "workflow": {
+        "enabled": false,
+        "mode": "template"
+      },
+      "rows": [],
+      "calculation": null
+    },
+    {
+      "id": "b78e94c2-acd3-435f-a8fd-a9aa0344a732",
+      "goal_text": "工程T055独立用餐安排：先核对外出当天午餐是否留饭，未知日期与饭点不猜，不自动取消用餐。",
+      "domain": "dining",
+      "version": 4,
+      "revision_no": 1,
+      "control_epoch": 2,
+      "assistant_status": "waiting",
+      "preparation_status": "needs_review",
+      "updated_at": "2026-10-08T17:20:19.157+00:00",
+      "business_status": "unknown",
+      "facts": {
+        "meal_date": {
+          "status": "unknown",
+          "value": null
+        },
+        "meal_slot": {
+          "status": "unknown",
+          "value": null
+        },
+        "request_text": {
+          "status": "unknown",
+          "value": null
+        },
+        "person_ref": {
+          "status": "unknown",
+          "value": null
+        },
+        "requirements_ref": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      "legacy_facts": {},
+      "field_labels": {
+        "meal_date": "用餐日期",
+        "meal_slot": "餐别原述",
+        "request_text": "用餐需求",
+        "person_ref": "必要人员引用",
+        "requirements_ref": "已知安排口径"
+      },
+      "tracks": {
+        "arrangement": {
+          "status": "unknown",
+          "label": "实际用餐安排待核"
+        },
+        "serving": {
+          "status": "unknown",
+          "label": "实际供餐未知"
+        }
+      },
+      "waiting": [
+        {
+          "reason": "补充或核对：用餐需求",
+          "who": "事项发起人"
+        },
+        {
+          "reason": "实际用餐安排待核、实际供餐未知",
+          "who": "实际责任人或原渠道待核"
+        }
+      ],
+      "next_steps": [
+        "核对缺少的必要事实",
+        "查看并修改用餐安排准备稿",
+        "按实际要求沿原渠道办理，保留真实凭据"
+      ],
+      "sources": [
+        {
+          "id": "9b8d4038-4845-4cf5-b9e4-98281ec6aff1",
+          "matter_id": "b78e94c2-acd3-435f-a8fd-a9aa0344a732",
+          "kind": "user_text",
+          "text": "工程T055独立用餐安排：先核对外出当天午餐是否留饭，未知日期与饭点不猜，不自动取消用餐。",
+          "reported_by": null,
+          "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+          "recorded_at": "2026-10-08T17:18:28.739+00:00",
+          "source_state": "usable",
+          "replacement_source_id": null,
+          "state_note": "",
+          "preparation_usable": true
+        },
+        {
+          "id": "ad0918b4-ce52-4408-bad5-4cad7cdbbcb0",
+          "matter_id": "b78e94c2-acd3-435f-a8fd-a9aa0344a732",
+          "kind": "user_text",
+          "text": "工程补充，非实际用餐安排：这次外出可能赶不上食堂的午餐，是否还留饭我没想好。请帮我指出需要核对的事情。",
+          "reported_by": null,
+          "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+          "recorded_at": "2026-10-08T17:18:28.740+00:00",
+          "source_state": "usable",
+          "replacement_source_id": null,
+          "state_note": "",
+          "preparation_usable": true
+        }
+      ],
+      "artifacts": [
+        {
+          "id": "a5440093-994a-4d22-8198-6593021a6bc7",
+          "version": 2,
+          "matter_id": "b78e94c2-acd3-435f-a8fd-a9aa0344a732",
+          "type": "preparation",
+          "title": "用餐安排准备稿",
+          "content": "# 用餐安排准备稿\n\n生成方式：规则模板（本次未调用模型）。\n此稿仅用于人工准备；未批准、派遣、发布、扣餐、签发或执行。\n\n## 目标\n工程T055独立用餐安排：先核对外出当天午餐是否留饭，未知日期与饭点不猜，不自动取消用餐。\n\n## 已记录事实\n- 用餐日期：未知（待核）\n- 餐别原述：未知（待核）\n- 用餐需求：未知（待核）\n- 必要人员引用：未知（待核）\n- 已知安排口径：未知（待核）\n\n## 场景准备清单\n- 独立保存用餐需求；出行可能有关，但不能根据计划自动扣餐。\n- 日期、餐别、人员及饭点口径不明列待核；自愿需求不当批准、备餐或实供。\n\n## 待补\n- 用餐需求\n\n## 来源范围\n- 来源 9b8d4038-4845-4cf5-b9e4-98281ec6aff1 / user_text / 2026-10-08T17:18:28.739+00:00 / 陈述人：未注明\n- 来源 ad0918b4-ce52-4408-bad5-4cad7cdbbcb0 / user_text / 2026-10-08T17:18:28.740+00:00 / 陈述人：未注明\n\n## 下一步\n编辑并保存可用成果；复制或下载只代表取出准备材料，不代表发送或业务办结。\n\n工程T055本人用餐核对备注：先确认当天午餐需求，不自动取消或扣餐。",
+          "status": "human_saved",
+          "input_revision": 1,
+          "created_at": "2026-10-08T17:20:08.699+00:00",
+          "stale": false
+        }
+      ],
+      "activities": [
+        {
+          "id": "b1bdc170-0c80-4060-91fe-55dba14b97fc",
+          "matter_id": "b78e94c2-acd3-435f-a8fd-a9aa0344a732",
+          "event_type": "related_created",
+          "message": "本人核对并另存独立事项；事实仍待核，未调用模型或改真实安排。",
+          "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+          "recorded_at": "2026-10-08T17:18:28.743+00:00"
+        },
+        {
+          "id": "df596a37-8958-4635-92e0-caf290bc3608",
+          "matter_id": "b78e94c2-acd3-435f-a8fd-a9aa0344a732",
+          "event_type": "pause",
+          "message": "未来代办已暂停，已保存事实与成果保留。",
+          "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+          "recorded_at": "2026-10-08T17:20:07.699+00:00"
+        },
+        {
+          "id": "902db8d4-f22e-4cd8-9c38-7d5b47759962",
+          "matter_id": "b78e94c2-acd3-435f-a8fd-a9aa0344a732",
+          "event_type": "artifact_saved",
+          "message": "人工修改已保存为成果新版本；不代表外部提交或接受。",
+          "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+          "recorded_at": "2026-10-08T17:20:08.701+00:00"
+        },
+        {
+          "id": "90da3546-0f82-4722-8a2a-5c5b3bd1fb74",
+          "matter_id": "b78e94c2-acd3-435f-a8fd-a9aa0344a732",
+          "event_type": "resume",
+          "message": "已恢复；请按需重新登记准备，不重放外部动作。",
+          "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+          "recorded_at": "2026-10-08T17:20:19.159+00:00"
+        }
+      ],
+      "actions": [],
+      "evidence": [],
+      "private_title_context_enabled": false,
+      "domain_routing": {},
+      "related_origin": {
+        "action_id": "71a33ceb-a2cf-49b6-81da-3055a5308de4",
+        "candidate_id": "rc-71a33ceba2cf49b681da3055a5308de4-1",
+        "input_revision": 2,
+        "matter_id": "348a98fb-ba96-4f89-90be-74144cce5c62",
+        "reason": "用户原话提到外出可能赶不上食堂午餐，是否留饭未想好，需独立确认用餐安排。",
+        "refs": [
+          {
+            "end_line": 1,
+            "source_id": "967de0be-f525-4519-b4c7-aa1079288f17",
+            "start_line": 1
+          }
+        ],
+        "saved_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "stale": false
+      },
+      "model_disclosure_blocked": false,
+      "conversation_questions": [],
+      "waiting_points": [],
+      "workflow": {
+        "enabled": false,
+        "mode": "template"
+      },
+      "rows": [],
+      "calculation": null
+    }
+  ],
+  "runtime_session": 37386,
+  "matter_id": "8ad6ea67-ad9d-4638-a536-b9e69c6a5bf6",
+  "automatically_classified": {
+    "id": "8ad6ea67-ad9d-4638-a536-b9e69c6a5bf6",
+    "goal_text": "工程T059，非真实业务：工程B房的空调在滴水。帮我整理一份给综合经办核对的报修需求，必要的联系人和可进入时段还没确定；别替我分派、进房或说已经修好。",
+    "domain": "repair",
+    "version": 3,
+    "revision_no": 2,
+    "control_epoch": 0,
+    "assistant_status": "waiting",
+    "preparation_status": "needs_review",
+    "updated_at": "2026-10-08T18:38:12.290+00:00",
+    "business_status": "unknown",
+    "facts": {
+      "location": {
+        "status": "unknown",
+        "value": null
+      },
+      "problem": {
+        "status": "unknown",
+        "value": null
+      },
+      "reporter": {
+        "status": "unknown",
+        "value": null
+      },
+      "access_window": {
+        "status": "unknown",
+        "value": null
+      },
+      "contact": {
+        "status": "unknown",
+        "value": null
+      },
+      "existing_record": {
+        "status": "unknown",
+        "value": null
+      }
+    },
+    "legacy_facts": {
+      "facts_text": {
+        "status": "unknown",
+        "value": null
+      },
+      "requirements_ref": {
+        "status": "unknown",
+        "value": null
+      },
+      "subject": {
+        "status": "unknown",
+        "value": null
+      }
+    },
+    "field_labels": {
+      "location": "地点",
+      "problem": "问题原述",
+      "reporter": "实际报修人",
+      "access_window": "可进入时段",
+      "contact": "必要联系方式",
+      "existing_record": "已有工单引用"
+    },
+    "tracks": {
+      "assignment": {
+        "status": "unknown",
+        "label": "分派待核"
+      },
+      "acceptance": {
+        "status": "unknown",
+        "label": "承接未知"
+      },
+      "execution": {
+        "status": "unknown",
+        "label": "实际处理声明待核"
+      },
+      "requester_result": {
+        "status": "unknown",
+        "label": "报修人结果未知"
+      },
+      "inspection": {
+        "status": "unknown",
+        "label": "专业验收适用与结果待核"
+      },
+      "closure": {
+        "status": "unknown",
+        "label": "关闭口径待核"
+      }
+    },
+    "waiting": [
+      {
+        "reason": "补充或核对：地点、问题原述",
+        "who": "事项发起人"
+      },
+      {
+        "reason": "分派待核、承接未知、实际处理声明待核、报修人结果未知、专业验收适用与结果待核、关闭口径待核",
+        "who": "实际责任人或原渠道待核"
+      }
+    ],
+    "next_steps": [
+      "核对缺少的必要事实",
+      "查看并修改报修准备稿",
+      "按实际要求沿原渠道办理，保留真实凭据"
+    ],
+    "sources": [
+      {
+        "id": "e5588329-a3c6-4b73-ab16-efd5fb167850",
+        "matter_id": "8ad6ea67-ad9d-4638-a536-b9e69c6a5bf6",
+        "kind": "user_text",
+        "text": "工程T059，非真实业务：工程B房的空调在滴水。帮我整理一份给综合经办核对的报修需求，必要的联系人和可进入时段还没确定；别替我分派、进房或说已经修好。",
+        "reported_by": null,
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T18:38:05.569+00:00",
+        "source_state": "usable",
+        "replacement_source_id": null,
+        "state_note": "",
+        "preparation_usable": true
+      }
+    ],
+    "artifacts": [
+      {
+        "id": "42f43908-3598-49d3-8eb1-768a12b8ff4a",
+        "version": 1,
+        "matter_id": "8ad6ea67-ad9d-4638-a536-b9e69c6a5bf6",
+        "type": "preparation",
+        "title": "交融模型准备稿",
+        "content": "模型准备草稿；未批准、派遣、报备、扣餐或执行。\n\n【报修准备草稿】\n来源陈述：工程T059，工程B房的空调在滴水。\n待核/缺项：联系人、可进入检修时段尚未确定。\n说明：本草稿仅供综合经办核对，未派单、未进入房间、未实际维修。\n\n待确认事项：\n1. 报修联系人姓名及电话；\n2. 工程B房可进入检修的具体时段；\n3. 滴水空调的设备编号或位置（如有）。\n\n待核问题：\n- 工程B房的报修联系人是谁？电话是多少？\n- 工程B房哪个时段可以进入检修空调？\n- 滴水的空调是否有设备编号或具体位置说明？",
+        "status": "model_draft",
+        "input_revision": 2,
+        "created_at": "2026-10-08T18:38:12.290+00:00",
+        "stale": false
+      }
+    ],
+    "activities": [
+      {
+        "id": "21aa3306-92ba-442d-be3c-5fde7de2bcc8",
+        "matter_id": "8ad6ea67-ad9d-4638-a536-b9e69c6a5bf6",
+        "event_type": "created",
+        "message": "已保存目标。规则模板可用；模型须配置并显式选择，外部业务渠道未接入。",
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T18:38:05.571+00:00"
+      },
+      {
+        "id": "5af842fa-19e3-40fe-8f3a-200fcb008832",
+        "matter_id": "8ad6ea67-ad9d-4638-a536-b9e69c6a5bf6",
+        "event_type": "prepare_queued",
+        "message": "本人在目标入口明确选择交融首次整理；仅发送本事项文字，后续不自动调用模型。",
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T18:38:05.576+00:00"
+      },
+      {
+        "id": "f5f1fbfb-17ec-4b5b-8b05-8b07e2045965",
+        "matter_id": "8ad6ea67-ad9d-4638-a536-b9e69c6a5bf6",
+        "event_type": "domain_routed",
+        "message": "助理按目标原话进入报修准备范围；可调整，原话与人工稿保留，未批准或执行。",
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T18:38:12.287+00:00"
+      },
+      {
+        "id": "2ba38e22-d4c4-4062-9ed1-a19cebb8b717",
+        "matter_id": "8ad6ea67-ad9d-4638-a536-b9e69c6a5bf6",
+        "event_type": "model_usage",
+        "message": "交融模型实际调用用量：{\"completion_tokens\":331,\"prompt_tokens\":1483,\"total_tokens\":1814}（无返回项保持未知；不代表业务结果）",
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T18:38:12.290+00:00"
+      },
+      {
+        "id": "1c5f8f7a-6b74-4ece-a4aa-ad11be41001b",
+        "matter_id": "8ad6ea67-ad9d-4638-a536-b9e69c6a5bf6",
+        "event_type": "prepare_completed",
+        "message": "交融模型候选与准备稿已保存；待人工核对，真实业务状态未改变。",
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T18:38:12.292+00:00"
+      }
+    ],
+    "actions": [
+      {
+        "id": "1e8057b6-99ec-44a5-a4e5-731dfa910003",
+        "status": "completed",
+        "kind": "prepare_model",
+        "error": null
+      }
+    ],
+    "evidence": [],
+    "private_title_context_enabled": false,
+    "domain_routing": {
+      "action_id": "1e8057b6-99ec-44a5-a4e5-731dfa910003",
+      "domain": "repair",
+      "mode": "auto",
+      "reason": "用户主要目标是空调滴水的报修需求整理，属于报修办理范围；联系人、可进入时段待确认，未实际派单或维修。",
+      "refs": [
+        {
+          "end_line": 1,
+          "source_id": "e5588329-a3c6-4b73-ab16-efd5fb167850",
+          "start_line": 1
+        }
+      ],
+      "state": "classified"
+    },
+    "category_change_allowed": true,
+    "model_disclosure_blocked": false,
+    "conversation_questions": [
+      "工程B房的报修联系人是谁？电话是多少？",
+      "工程B房哪个时段可以进入检修空调？",
+      "滴水的空调是否有设备编号或具体位置说明？"
+    ],
+    "waiting_points": [],
+    "workflow": {
+      "enabled": false,
+      "mode": "template"
+    },
+    "rows": [],
+    "calculation": null
+  },
+  "model_v1_md": "模型准备草稿；未批准、派遣、报备、扣餐或执行。\n\n【报修准备草稿】\n来源陈述：工程T059，工程B房的空调在滴水。\n待核/缺项：联系人、可进入检修时段尚未确定。\n说明：本草稿仅供综合经办核对，未派单、未进入房间、未实际维修。\n\n待确认事项：\n1. 报修联系人姓名及电话；\n2. 工程B房可进入检修的具体时段；\n3. 滴水空调的设备编号或位置（如有）。\n\n待核问题：\n- 工程B房的报修联系人是谁？电话是多少？\n- 工程B房哪个时段可以进入检修空调？\n- 滴水的空调是否有设备编号或具体位置说明？",
+  "paused_category_correction": {
+    "id": "8ad6ea67-ad9d-4638-a536-b9e69c6a5bf6",
+    "goal_text": "工程T059，非真实业务：工程B房的空调在滴水。帮我整理一份给综合经办核对的报修需求，必要的联系人和可进入时段还没确定；别替我分派、进房或说已经修好。",
+    "domain": "cleaning",
+    "version": 6,
+    "revision_no": 3,
+    "control_epoch": 2,
+    "assistant_status": "paused",
+    "preparation_status": "needs_review",
+    "updated_at": "2026-10-08T18:41:28.125+00:00",
+    "business_status": "unknown",
+    "facts": {
+      "location": {
+        "status": "unknown",
+        "value": null
+      },
+      "scope": {
+        "status": "unknown",
+        "value": null
+      },
+      "requester": {
+        "status": "unknown",
+        "value": null
+      },
+      "access_window": {
+        "status": "unknown",
+        "value": null
+      },
+      "access_permission": {
+        "status": "unknown",
+        "value": null
+      },
+      "request_kind": {
+        "status": "unknown",
+        "value": null
+      },
+      "existing_record": {
+        "status": "unknown",
+        "value": null
+      }
+    },
+    "legacy_facts": {
+      "contact": {
+        "status": "unknown",
+        "value": null
+      },
+      "facts_text": {
+        "status": "unknown",
+        "value": null
+      },
+      "problem": {
+        "status": "unknown",
+        "value": null
+      },
+      "reporter": {
+        "status": "unknown",
+        "value": null
+      },
+      "requirements_ref": {
+        "status": "unknown",
+        "value": null
+      },
+      "subject": {
+        "status": "unknown",
+        "value": null
+      }
+    },
+    "field_labels": {
+      "location": "地点",
+      "scope": "清洁范围",
+      "requester": "需求人",
+      "access_window": "可进入时段",
+      "access_permission": "进入许可依据",
+      "request_kind": "临时需求或例行引用",
+      "existing_record": "现有安排引用"
+    },
+    "tracks": {
+      "assignment": {
+        "status": "unknown",
+        "label": "安排待核"
+      },
+      "acceptance": {
+        "status": "unknown",
+        "label": "承接未知"
+      },
+      "execution": {
+        "status": "unknown",
+        "label": "处理声明待核"
+      },
+      "requester_result": {
+        "status": "unknown",
+        "label": "发起人反馈未知"
+      },
+      "closure": {
+        "status": "unknown",
+        "label": "服务结束口径待核"
+      }
+    },
+    "waiting": [
+      {
+        "reason": "补充或核对：地点、清洁范围",
+        "who": "事项发起人"
+      },
+      {
+        "reason": "安排待核、承接未知、处理声明待核、发起人反馈未知、服务结束口径待核",
+        "who": "实际责任人或原渠道待核"
+      }
+    ],
+    "next_steps": [
+      "核对缺少的必要事实",
+      "查看并修改清洁服务准备稿",
+      "按实际要求沿原渠道办理，保留真实凭据"
+    ],
+    "sources": [
+      {
+        "id": "e5588329-a3c6-4b73-ab16-efd5fb167850",
+        "matter_id": "8ad6ea67-ad9d-4638-a536-b9e69c6a5bf6",
+        "kind": "user_text",
+        "text": "工程T059，非真实业务：工程B房的空调在滴水。帮我整理一份给综合经办核对的报修需求，必要的联系人和可进入时段还没确定；别替我分派、进房或说已经修好。",
+        "reported_by": null,
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T18:38:05.569+00:00",
+        "source_state": "usable",
+        "replacement_source_id": null,
+        "state_note": "",
+        "preparation_usable": true
+      }
+    ],
+    "artifacts": [
+      {
+        "id": "42f43908-3598-49d3-8eb1-768a12b8ff4a",
+        "version": 2,
+        "matter_id": "8ad6ea67-ad9d-4638-a536-b9e69c6a5bf6",
+        "type": "preparation",
+        "title": "交融模型准备稿",
+        "content": "模型准备草稿；未批准、派遣、报备、扣餐或执行。\n\n【报修准备草稿】\n来源陈述：工程T059，工程B房的空调在滴水。\n待核/缺项：联系人、可进入检修时段尚未确定。\n说明：本草稿仅供综合经办核对，未派单、未进入房间、未实际维修。\n\n待确认事项：\n1. 报修联系人姓名及电话；\n2. 工程B房可进入检修的具体时段；\n3. 滴水空调的设备编号或位置（如有）。\n\n待核问题：\n- 工程B房的报修联系人是谁？电话是多少？\n- 工程B房哪个时段可以进入检修空调？\n- 滴水的空调是否有设备编号或具体位置说明？\n\n工程T059本人核对备注：联系人与进入时段还需核对，准备稿不代表分派或处理。",
+        "status": "human_saved",
+        "input_revision": 2,
+        "created_at": "2026-10-08T18:41:17.679+00:00",
+        "stale": true
+      }
+    ],
+    "activities": [
+      {
+        "id": "21aa3306-92ba-442d-be3c-5fde7de2bcc8",
+        "matter_id": "8ad6ea67-ad9d-4638-a536-b9e69c6a5bf6",
+        "event_type": "created",
+        "message": "已保存目标。规则模板可用；模型须配置并显式选择，外部业务渠道未接入。",
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T18:38:05.571+00:00"
+      },
+      {
+        "id": "5af842fa-19e3-40fe-8f3a-200fcb008832",
+        "matter_id": "8ad6ea67-ad9d-4638-a536-b9e69c6a5bf6",
+        "event_type": "prepare_queued",
+        "message": "本人在目标入口明确选择交融首次整理；仅发送本事项文字，后续不自动调用模型。",
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T18:38:05.576+00:00"
+      },
+      {
+        "id": "f5f1fbfb-17ec-4b5b-8b05-8b07e2045965",
+        "matter_id": "8ad6ea67-ad9d-4638-a536-b9e69c6a5bf6",
+        "event_type": "domain_routed",
+        "message": "助理按目标原话进入报修准备范围；可调整，原话与人工稿保留，未批准或执行。",
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T18:38:12.287+00:00"
+      },
+      {
+        "id": "2ba38e22-d4c4-4062-9ed1-a19cebb8b717",
+        "matter_id": "8ad6ea67-ad9d-4638-a536-b9e69c6a5bf6",
+        "event_type": "model_usage",
+        "message": "交融模型实际调用用量：{\"completion_tokens\":331,\"prompt_tokens\":1483,\"total_tokens\":1814}（无返回项保持未知；不代表业务结果）",
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T18:38:12.290+00:00"
+      },
+      {
+        "id": "1c5f8f7a-6b74-4ece-a4aa-ad11be41001b",
+        "matter_id": "8ad6ea67-ad9d-4638-a536-b9e69c6a5bf6",
+        "event_type": "prepare_completed",
+        "message": "交融模型候选与准备稿已保存；待人工核对，真实业务状态未改变。",
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T18:38:12.292+00:00"
+      },
+      {
+        "id": "b6318cf1-cb27-4c33-9af8-34eec59950bf",
+        "matter_id": "8ad6ea67-ad9d-4638-a536-b9e69c6a5bf6",
+        "event_type": "pause",
+        "message": "未来代办已暂停，已保存事实与成果保留。",
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T18:41:15.648+00:00"
+      },
+      {
+        "id": "7ffa142b-fc02-4a43-a6d4-1b581fe87f4d",
+        "matter_id": "8ad6ea67-ad9d-4638-a536-b9e69c6a5bf6",
+        "event_type": "artifact_saved",
+        "message": "人工修改已保存为成果新版本；不代表外部提交或接受。",
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T18:41:17.684+00:00"
+      },
+      {
+        "id": "7ba4689b-5232-467f-ad8f-0ae432cc88bf",
+        "matter_id": "8ad6ea67-ad9d-4638-a536-b9e69c6a5bf6",
+        "event_type": "domain_corrected",
+        "message": "本人调整为清洁服务准备范围；旧字段、原话和人工稿留存，不调用模型、不改变实际业务状态。",
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T18:41:28.126+00:00"
+      }
+    ],
+    "actions": [
+      {
+        "id": "1e8057b6-99ec-44a5-a4e5-731dfa910003",
+        "status": "completed",
+        "kind": "prepare_model",
+        "error": null
+      }
+    ],
+    "evidence": [],
+    "private_title_context_enabled": false,
+    "domain_routing": {
+      "action_id": "1e8057b6-99ec-44a5-a4e5-731dfa910003",
+      "domain": "cleaning",
+      "mode": "manual",
+      "previous_domain": "repair",
+      "reason": "用户主要目标是空调滴水的报修需求整理，属于报修办理范围；联系人、可进入时段待确认，未实际派单或维修。",
+      "refs": [
+        {
+          "end_line": 1,
+          "source_id": "e5588329-a3c6-4b73-ab16-efd5fb167850",
+          "start_line": 1
+        }
+      ],
+      "selected_at": "2026-10-08T18:41:28.123+00:00",
+      "state": "selected"
+    },
+    "category_change_allowed": true,
+    "model_disclosure_blocked": false,
+    "conversation_questions": [],
+    "waiting_points": [],
+    "workflow": {
+      "enabled": false,
+      "mode": "template"
+    },
+    "rows": [],
+    "calculation": null
+  },
+  "after": {
+    "id": "8ad6ea67-ad9d-4638-a536-b9e69c6a5bf6",
+    "goal_text": "工程T059，非真实业务：工程B房的空调在滴水。帮我整理一份给综合经办核对的报修需求，必要的联系人和可进入时段还没确定；别替我分派、进房或说已经修好。",
+    "domain": "repair",
+    "version": 8,
+    "revision_no": 4,
+    "control_epoch": 4,
+    "assistant_status": "waiting",
+    "preparation_status": "needs_review",
+    "updated_at": "2026-10-08T18:43:24.242+00:00",
+    "business_status": "unknown",
+    "facts": {
+      "location": {
+        "status": "unknown",
+        "value": null
+      },
+      "problem": {
+        "status": "unknown",
+        "value": null
+      },
+      "reporter": {
+        "status": "unknown",
+        "value": null
+      },
+      "access_window": {
+        "status": "unknown",
+        "value": null
+      },
+      "contact": {
+        "status": "unknown",
+        "value": null
+      },
+      "existing_record": {
+        "status": "unknown",
+        "value": null
+      }
+    },
+    "legacy_facts": {
+      "access_permission": {
+        "status": "unknown",
+        "value": null
+      },
+      "facts_text": {
+        "status": "unknown",
+        "value": null
+      },
+      "request_kind": {
+        "status": "unknown",
+        "value": null
+      },
+      "requester": {
+        "status": "unknown",
+        "value": null
+      },
+      "requirements_ref": {
+        "status": "unknown",
+        "value": null
+      },
+      "scope": {
+        "status": "unknown",
+        "value": null
+      },
+      "subject": {
+        "status": "unknown",
+        "value": null
+      }
+    },
+    "field_labels": {
+      "location": "地点",
+      "problem": "问题原述",
+      "reporter": "实际报修人",
+      "access_window": "可进入时段",
+      "contact": "必要联系方式",
+      "existing_record": "已有工单引用"
+    },
+    "tracks": {
+      "assignment": {
+        "status": "unknown",
+        "label": "分派待核"
+      },
+      "acceptance": {
+        "status": "unknown",
+        "label": "承接未知"
+      },
+      "execution": {
+        "status": "unknown",
+        "label": "实际处理声明待核"
+      },
+      "requester_result": {
+        "status": "unknown",
+        "label": "报修人结果未知"
+      },
+      "inspection": {
+        "status": "unknown",
+        "label": "专业验收适用与结果待核"
+      },
+      "closure": {
+        "status": "unknown",
+        "label": "关闭口径待核"
+      }
+    },
+    "waiting": [
+      {
+        "reason": "补充或核对：地点、问题原述",
+        "who": "事项发起人"
+      },
+      {
+        "reason": "分派待核、承接未知、实际处理声明待核、报修人结果未知、专业验收适用与结果待核、关闭口径待核",
+        "who": "实际责任人或原渠道待核"
+      }
+    ],
+    "next_steps": [
+      "核对缺少的必要事实",
+      "查看并修改报修准备稿",
+      "按实际要求沿原渠道办理，保留真实凭据"
+    ],
+    "sources": [
+      {
+        "id": "e5588329-a3c6-4b73-ab16-efd5fb167850",
+        "matter_id": "8ad6ea67-ad9d-4638-a536-b9e69c6a5bf6",
+        "kind": "user_text",
+        "text": "工程T059，非真实业务：工程B房的空调在滴水。帮我整理一份给综合经办核对的报修需求，必要的联系人和可进入时段还没确定；别替我分派、进房或说已经修好。",
+        "reported_by": null,
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T18:38:05.569+00:00",
+        "source_state": "usable",
+        "replacement_source_id": null,
+        "state_note": "",
+        "preparation_usable": true
+      }
+    ],
+    "artifacts": [
+      {
+        "id": "42f43908-3598-49d3-8eb1-768a12b8ff4a",
+        "version": 2,
+        "matter_id": "8ad6ea67-ad9d-4638-a536-b9e69c6a5bf6",
+        "type": "preparation",
+        "title": "交融模型准备稿",
+        "content": "模型准备草稿；未批准、派遣、报备、扣餐或执行。\n\n【报修准备草稿】\n来源陈述：工程T059，工程B房的空调在滴水。\n待核/缺项：联系人、可进入检修时段尚未确定。\n说明：本草稿仅供综合经办核对，未派单、未进入房间、未实际维修。\n\n待确认事项：\n1. 报修联系人姓名及电话；\n2. 工程B房可进入检修的具体时段；\n3. 滴水空调的设备编号或位置（如有）。\n\n待核问题：\n- 工程B房的报修联系人是谁？电话是多少？\n- 工程B房哪个时段可以进入检修空调？\n- 滴水的空调是否有设备编号或具体位置说明？\n\n工程T059本人核对备注：联系人与进入时段还需核对，准备稿不代表分派或处理。",
+        "status": "human_saved",
+        "input_revision": 2,
+        "created_at": "2026-10-08T18:41:17.679+00:00",
+        "stale": true
+      }
+    ],
+    "activities": [
+      {
+        "id": "21aa3306-92ba-442d-be3c-5fde7de2bcc8",
+        "matter_id": "8ad6ea67-ad9d-4638-a536-b9e69c6a5bf6",
+        "event_type": "created",
+        "message": "已保存目标。规则模板可用；模型须配置并显式选择，外部业务渠道未接入。",
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T18:38:05.571+00:00"
+      },
+      {
+        "id": "5af842fa-19e3-40fe-8f3a-200fcb008832",
+        "matter_id": "8ad6ea67-ad9d-4638-a536-b9e69c6a5bf6",
+        "event_type": "prepare_queued",
+        "message": "本人在目标入口明确选择交融首次整理；仅发送本事项文字，后续不自动调用模型。",
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T18:38:05.576+00:00"
+      },
+      {
+        "id": "f5f1fbfb-17ec-4b5b-8b05-8b07e2045965",
+        "matter_id": "8ad6ea67-ad9d-4638-a536-b9e69c6a5bf6",
+        "event_type": "domain_routed",
+        "message": "助理按目标原话进入报修准备范围；可调整，原话与人工稿保留，未批准或执行。",
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T18:38:12.287+00:00"
+      },
+      {
+        "id": "2ba38e22-d4c4-4062-9ed1-a19cebb8b717",
+        "matter_id": "8ad6ea67-ad9d-4638-a536-b9e69c6a5bf6",
+        "event_type": "model_usage",
+        "message": "交融模型实际调用用量：{\"completion_tokens\":331,\"prompt_tokens\":1483,\"total_tokens\":1814}（无返回项保持未知；不代表业务结果）",
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T18:38:12.290+00:00"
+      },
+      {
+        "id": "1c5f8f7a-6b74-4ece-a4aa-ad11be41001b",
+        "matter_id": "8ad6ea67-ad9d-4638-a536-b9e69c6a5bf6",
+        "event_type": "prepare_completed",
+        "message": "交融模型候选与准备稿已保存；待人工核对，真实业务状态未改变。",
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T18:38:12.292+00:00"
+      },
+      {
+        "id": "b6318cf1-cb27-4c33-9af8-34eec59950bf",
+        "matter_id": "8ad6ea67-ad9d-4638-a536-b9e69c6a5bf6",
+        "event_type": "pause",
+        "message": "未来代办已暂停，已保存事实与成果保留。",
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T18:41:15.648+00:00"
+      },
+      {
+        "id": "7ffa142b-fc02-4a43-a6d4-1b581fe87f4d",
+        "matter_id": "8ad6ea67-ad9d-4638-a536-b9e69c6a5bf6",
+        "event_type": "artifact_saved",
+        "message": "人工修改已保存为成果新版本；不代表外部提交或接受。",
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T18:41:17.684+00:00"
+      },
+      {
+        "id": "7ba4689b-5232-467f-ad8f-0ae432cc88bf",
+        "matter_id": "8ad6ea67-ad9d-4638-a536-b9e69c6a5bf6",
+        "event_type": "domain_corrected",
+        "message": "本人调整为清洁服务准备范围；旧字段、原话和人工稿留存，不调用模型、不改变实际业务状态。",
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T18:41:28.126+00:00"
+      },
+      {
+        "id": "6ed900a4-1083-42ae-af1a-c99a39956bed",
+        "matter_id": "8ad6ea67-ad9d-4638-a536-b9e69c6a5bf6",
+        "event_type": "domain_corrected",
+        "message": "本人调整为报修准备范围；旧字段、原话和人工稿留存，不调用模型、不改变实际业务状态。",
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T18:43:23.058+00:00"
+      },
+      {
+        "id": "c0432f99-e9a8-4083-992d-8eccf2f3165c",
+        "matter_id": "8ad6ea67-ad9d-4638-a536-b9e69c6a5bf6",
+        "event_type": "resume",
+        "message": "已恢复；请按需重新登记准备，不重放外部动作。",
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T18:43:24.244+00:00"
+      }
+    ],
+    "actions": [
+      {
+        "id": "1e8057b6-99ec-44a5-a4e5-731dfa910003",
+        "status": "completed",
+        "kind": "prepare_model",
+        "error": null
+      }
+    ],
+    "evidence": [],
+    "private_title_context_enabled": false,
+    "domain_routing": {
+      "action_id": "1e8057b6-99ec-44a5-a4e5-731dfa910003",
+      "domain": "repair",
+      "mode": "manual",
+      "previous_domain": "cleaning",
+      "reason": "用户主要目标是空调滴水的报修需求整理，属于报修办理范围；联系人、可进入时段待确认，未实际派单或维修。",
+      "refs": [
+        {
+          "end_line": 1,
+          "source_id": "e5588329-a3c6-4b73-ab16-efd5fb167850",
+          "start_line": 1
+        }
+      ],
+      "selected_at": "2026-10-08T18:43:23.055+00:00",
+      "state": "selected"
+    },
+    "category_change_allowed": true,
+    "model_disclosure_blocked": false,
+    "conversation_questions": [],
+    "waiting_points": [],
+    "workflow": {
+      "enabled": false,
+      "mode": "template"
+    },
+    "rows": [],
+    "calculation": null
+  },
+  "model_artifact_id": "42f43908-3598-49d3-8eb1-768a12b8ff4a",
+  "model_v2_md": "模型准备草稿；未批准、派遣、报备、扣餐或执行。\n\n【报修准备草稿】\n来源陈述：工程T059，工程B房的空调在滴水。\n待核/缺项：联系人、可进入检修时段尚未确定。\n说明：本草稿仅供综合经办核对，未派单、未进入房间、未实际维修。\n\n待确认事项：\n1. 报修联系人姓名及电话；\n2. 工程B房可进入检修的具体时段；\n3. 滴水空调的设备编号或位置（如有）。\n\n待核问题：\n- 工程B房的报修联系人是谁？电话是多少？\n- 工程B房哪个时段可以进入检修空调？\n- 滴水的空调是否有设备编号或具体位置说明？\n\n工程T059本人核对备注：联系人与进入时段还需核对，准备稿不代表分派或处理。",
+  "actual_model_usage": [
+    {
+      "action_id": "1e8057b6-99ec-44a5-a4e5-731dfa910003",
+      "model": "jiaorong-instruct",
+      "replayed": false,
+      "usage": {
+        "completion_tokens": 331,
+        "prompt_tokens": 1483,
+        "total_tokens": 1814
+      }
+    }
+  ],
+  "category_events": [
+    "domain_routed",
+    "domain_corrected",
+    "domain_corrected"
+  ],
+  "other_owner_read": 404,
+  "prior_matters_unchanged": true,
+  "verification": "combined local/identity routing critical smoke 0.430s; affected Python/JS syntax; actual Jiaorong natural goal, classification, manual v2, pause, category correction, reopen, restore and resume"
+}

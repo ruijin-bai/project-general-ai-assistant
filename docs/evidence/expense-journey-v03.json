@@ -1,0 +1,1443 @@
+{
+  "task": "T053",
+  "scope": "local engineering only; no actual reimbursement, payment, journey or model call",
+  "matter_id": "260635f4-30c1-4b53-9d2b-d4c6e1bc6342",
+  "travel_id": "f10aa58e-ed13-4fe2-9d13-e2e5b70cb9b8",
+  "before": {
+    "id": "260635f4-30c1-4b53-9d2b-d4c6e1bc6342",
+    "goal_text": "工程T053复用本人行程准备费用；11月纸张两笔USD及EUR一笔，非实际报销付款",
+    "domain": "expense",
+    "version": 3,
+    "revision_no": 2,
+    "control_epoch": 0,
+    "assistant_status": "waiting",
+    "preparation_status": "needs_review",
+    "updated_at": "2026-10-08T16:40:01.138+00:00",
+    "business_status": "unknown",
+    "facts": {
+      "claimant": {
+        "status": "unknown",
+        "value": null
+      },
+      "purpose": {
+        "status": "unknown",
+        "value": null
+      },
+      "period": {
+        "status": "unknown",
+        "value": null
+      },
+      "expense_lines": {
+        "status": "unknown",
+        "value": null
+      },
+      "currency": {
+        "status": "unknown",
+        "value": null
+      },
+      "evidence_refs": {
+        "status": "unknown",
+        "value": null
+      },
+      "requirements_ref": {
+        "status": "unknown",
+        "value": null
+      },
+      "external_record": {
+        "status": "unknown",
+        "value": null
+      }
+    },
+    "legacy_facts": {},
+    "field_labels": {
+      "claimant": "申请人引用",
+      "purpose": "事由",
+      "period": "明确期间",
+      "expense_lines": "明细原文",
+      "currency": "币种",
+      "evidence_refs": "真实票据引用",
+      "requirements_ref": "财务要求来源",
+      "external_record": "原财务记录"
+    },
+    "tracks": {
+      "submission": {
+        "status": "unknown",
+        "label": "财务提交未知"
+      },
+      "review": {
+        "status": "unknown",
+        "label": "原渠道审核未知"
+      },
+      "payment": {
+        "status": "unknown",
+        "label": "实际支付未知"
+      }
+    },
+    "waiting": [
+      {
+        "reason": "补充或核对：事由、明细原文",
+        "who": "事项发起人"
+      },
+      {
+        "reason": "财务提交未知、原渠道审核未知、实际支付未知",
+        "who": "实际责任人或原渠道待核"
+      }
+    ],
+    "next_steps": [
+      "核对缺少的必要事实",
+      "查看并修改报销与费用核对准备稿",
+      "按实际要求沿原渠道办理，保留真实凭据"
+    ],
+    "sources": [
+      {
+        "id": "141fd6a3-4968-4890-a78e-16c3df0c3e4c",
+        "matter_id": "260635f4-30c1-4b53-9d2b-d4c6e1bc6342",
+        "kind": "user_text",
+        "text": "工程T053复用本人行程准备费用；11月纸张两笔USD及EUR一笔，非实际报销付款",
+        "reported_by": null,
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T16:40:01.040+00:00",
+        "source_state": "usable",
+        "replacement_source_id": null,
+        "state_note": "",
+        "preparation_usable": true
+      },
+      {
+        "id": "b8c4ff2f-ba70-44a9-a7d4-9e409077ac2b",
+        "matter_id": "260635f4-30c1-4b53-9d2b-d4c6e1bc6342",
+        "kind": "user_text",
+        "text": "工程纸张 USD0.1 2026-11\n工程纸张 USD0.2 2026-11\n工程材料 EUR0.5 2026-11",
+        "reported_by": null,
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T16:40:01.089+00:00",
+        "source_state": "usable",
+        "replacement_source_id": null,
+        "state_note": "",
+        "preparation_usable": true
+      }
+    ],
+    "artifacts": [
+      {
+        "id": "fe363302-96b7-4f35-83dc-e62a66c1b761",
+        "version": 1,
+        "matter_id": "260635f4-30c1-4b53-9d2b-d4c6e1bc6342",
+        "type": "manual_preparation",
+        "title": "报销与费用核对人工稿",
+        "content": "工程T053费用原人工v1保留；尚无费用事由，计划不等同实际出行。",
+        "status": "human_saved",
+        "input_revision": 2,
+        "created_at": "2026-10-08T16:40:01.137+00:00",
+        "stale": false
+      }
+    ],
+    "activities": [
+      {
+        "id": "1b20ce79-7b4c-4bb7-bcaf-32862c960b73",
+        "matter_id": "260635f4-30c1-4b53-9d2b-d4c6e1bc6342",
+        "event_type": "created",
+        "message": "已保存目标。规则模板可用；模型须配置并显式选择，外部业务渠道未接入。",
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T16:40:01.042+00:00"
+      },
+      {
+        "id": "f6c2b54e-3f35-4a25-94ac-2ac47c0cc63d",
+        "matter_id": "260635f4-30c1-4b53-9d2b-d4c6e1bc6342",
+        "event_type": "source_added",
+        "message": "新增人工来源引用，未读取群聊或同步在线表。",
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T16:40:01.092+00:00"
+      },
+      {
+        "id": "99089866-ce9b-4733-92ec-2ca5a4fef65b",
+        "matter_id": "260635f4-30c1-4b53-9d2b-d4c6e1bc6342",
+        "event_type": "manual_artifact_created",
+        "message": "本人主动保存人工准备稿；未运行模型或自动整理，暂停/接手及真实业务状态保持。",
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T16:40:01.141+00:00"
+      }
+    ],
+    "actions": [],
+    "evidence": [],
+    "model_disclosure_blocked": false,
+    "waiting_points": [],
+    "workflow": {
+      "enabled": false,
+      "mode": "template"
+    },
+    "rows": [],
+    "calculation": null
+  },
+  "before_travel": {
+    "id": "f10aa58e-ed13-4fe2-9d13-e2e5b70cb9b8",
+    "goal_text": "工程T053已核计划引用测试，非实际出行；私人同行与备注不进入费用稿",
+    "domain": "travel",
+    "version": 2,
+    "revision_no": 2,
+    "control_epoch": 0,
+    "assistant_status": "waiting",
+    "preparation_status": "needs_review",
+    "updated_at": "2026-10-08T16:40:01.011+00:00",
+    "business_status": "unknown",
+    "facts": {
+      "destination": {
+        "status": "confirmed",
+        "value": "工程工区A"
+      },
+      "departure_at": {
+        "status": "confirmed",
+        "value": "2026-10-12T09:30:00+01:00"
+      },
+      "return_at": {
+        "status": "confirmed",
+        "value": "2026-10-12T16:00:00+01:00"
+      },
+      "participants": {
+        "status": "confirmed",
+        "value": "工程私有同行引用不进入费用稿"
+      },
+      "purpose": {
+        "status": "confirmed",
+        "value": "工程T053设备现场核对"
+      },
+      "meal_request": {
+        "status": "unknown",
+        "value": null
+      }
+    },
+    "legacy_facts": {},
+    "field_labels": {
+      "destination": "目的地",
+      "departure_at": "计划离营时间",
+      "return_at": "计划返营时间",
+      "participants": "参与人员",
+      "purpose": "用途",
+      "meal_request": "餐次需求"
+    },
+    "tracks": {
+      "safety": {
+        "status": "unknown",
+        "label": "真实安全批准待核"
+      },
+      "vehicle": {
+        "status": "unknown",
+        "label": "真实车辆安排待核"
+      },
+      "movement": {
+        "status": "unknown",
+        "label": "实际出返未知"
+      },
+      "meal": {
+        "status": "unknown",
+        "label": "餐次口径与实际供餐待核"
+      }
+    },
+    "waiting": [
+      {
+        "reason": "真实安全批准待核、真实车辆安排待核、实际出返未知、餐次口径与实际供餐待核",
+        "who": "实际责任人或原渠道待核"
+      }
+    ],
+    "next_steps": [
+      "查看并修改出行与餐次准备稿",
+      "按实际要求沿原渠道办理，保留真实凭据"
+    ],
+    "sources": [
+      {
+        "id": "0e0526e9-2e46-476d-bf4b-4747cf518cdd",
+        "matter_id": "f10aa58e-ed13-4fe2-9d13-e2e5b70cb9b8",
+        "kind": "user_text",
+        "text": "工程T053已核计划引用测试，非实际出行；私人同行与备注不进入费用稿",
+        "reported_by": null,
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T16:40:00.965+00:00",
+        "source_state": "usable",
+        "replacement_source_id": null,
+        "state_note": "",
+        "preparation_usable": true
+      }
+    ],
+    "artifacts": [],
+    "activities": [
+      {
+        "id": "ef04fcfe-36da-459e-b610-9b2a964b823e",
+        "matter_id": "f10aa58e-ed13-4fe2-9d13-e2e5b70cb9b8",
+        "event_type": "created",
+        "message": "已保存目标。规则模板可用；模型须配置并显式选择，外部业务渠道未接入。",
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T16:40:00.969+00:00"
+      },
+      {
+        "id": "5405df65-b520-42fe-8ab7-f88f47b34ed5",
+        "matter_id": "f10aa58e-ed13-4fe2-9d13-e2e5b70cb9b8",
+        "event_type": "journey_plan_saved",
+        "message": "{\"actor_id\":\"55f14813-4467-49e9-97ac-1aea7f3bad0f\",\"input_revision\":2,\"meal_recheck_required\":true}",
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T16:40:01.014+00:00"
+      }
+    ],
+    "actions": [],
+    "evidence": [],
+    "model_disclosure_blocked": false,
+    "waiting_points": [],
+    "workflow": {
+      "enabled": false,
+      "mode": "template"
+    },
+    "rows": [],
+    "calculation": null
+  },
+  "source_id": "b8c4ff2f-ba70-44a9-a7d4-9e409077ac2b",
+  "original_artifact_id": "fe363302-96b7-4f35-83dc-e62a66c1b761",
+  "prior_t052": {
+    "meal_share": {
+      "id": "10120e16-f2f3-485d-b7fd-5ce354c1dd3d",
+      "version": 1,
+      "title": "2026-10-09所选餐次需求准备汇总",
+      "content": "# 2026-10-09所选餐次需求准备汇总\n仅明确选择的2份已保存行程／休假原述需求，不代表完整食堂人数、有效扣餐、备餐或实供。\n同一人员原述引用＋日期＋原述餐别只计一次；引用是否对应唯一真实人员由经办核对，不同标签不自动当不同人。\n保餐与调整／待核冲突单列，不自动覆盖手工保餐。饭点、触发、截止、冻结、应报基线仍待核。\n\n| 原述餐别 | 希望保餐引用 | 调整申请引用 | 待核引用 | 冲突引用 | 不同引用数 | 重复原记录数 |\n| --- | ---: | ---: | ---: | ---: | ---: | ---: |\n| 工程午餐 | 1 | 1 | 1 | 1 | 4 | 2 |",
+      "owner_display_name": "工程夹具经办",
+      "created_at": "2026-10-08T16:21:01.561+00:00",
+      "input_revision": 2,
+      "stale": false,
+      "scope": "read_preparation",
+      "projection_kind": "meal_summary"
+    },
+    "meal_private_v2": "# 2026-10-09所选餐次需求准备汇总\n仅明确选择的2份已保存行程／休假原述需求，不代表完整食堂人数、有效扣餐、备餐或实供。\n同一人员原述引用＋日期＋原述餐别只计一次；引用是否对应唯一真实人员由经办核对，不同标签不自动当不同人。\n保餐与调整／待核冲突单列，不自动覆盖手工保餐。饭点、触发、截止、冻结、应报基线仍待核。\n\n| 原述餐别 | 希望保餐引用 | 调整申请引用 | 待核引用 | 冲突引用 | 不同引用数 | 重复原记录数 |\n| --- | ---: | ---: | ---: | ---: | ---: | ---: |\n| 工程午餐 | 1 | 1 | 1 | 1 | 4 | 2 |\n工程T052本人暂停时的私有核对备注，不进入厨师固定副本。",
+    "menus": [
+      {
+        "id": "6b72eda1-6186-4e29-bbc1-cd03ce8dc16b",
+        "version": 2,
+        "status": "published"
+      },
+      {
+        "id": "2b3d5015-0dd4-4566-99a9-fe0453012c89",
+        "version": 1,
+        "status": "withdrawn"
+      },
+      {
+        "id": "4aa9d408-ccf5-4a68-99dd-9b748668c977",
+        "version": 2,
+        "status": "withdrawn"
+      },
+      {
+        "id": "21920b25-dfb2-43fd-9451-337828cb801f",
+        "version": 2,
+        "status": "published"
+      },
+      {
+        "id": "dee911ab-6795-4bc0-8150-8650fbb2833a",
+        "version": 1,
+        "status": "withdrawn"
+      }
+    ]
+  },
+  "travel_changed_while_preview": {
+    "id": "f10aa58e-ed13-4fe2-9d13-e2e5b70cb9b8",
+    "version": 3,
+    "revision_no": 3,
+    "journey": {
+      "input_revision": 3,
+      "meal_requests": [],
+      "plan_semantics": {
+        "comparison_offset": null,
+        "departure_kind": "camp_departure",
+        "return_kind": "camp_return"
+      },
+      "schema_version": 1,
+      "travel_link": null,
+      "plan_fields": {
+        "destination": {
+          "status": "confirmed",
+          "value": "工程工区A"
+        },
+        "departure_at": {
+          "status": "confirmed",
+          "value": "2026-10-12T09:30:00+01:00"
+        },
+        "return_at": {
+          "value": "2026-10-12T17:00:00+01:00",
+          "status": "confirmed"
+        },
+        "participants": {
+          "status": "confirmed",
+          "value": "工程私有同行引用不进入费用稿"
+        },
+        "purpose": {
+          "status": "confirmed",
+          "value": "工程T053设备现场核对"
+        },
+        "meal_request": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      "effective_plan_semantics": {
+        "comparison_offset": null,
+        "departure_kind": "camp_departure",
+        "return_kind": "camp_return"
+      },
+      "time_assessment": "explicit_instants",
+      "meal_rule_status": "unconfirmed",
+      "meal_needs_review": false,
+      "link_stale": false,
+      "stale": false,
+      "current_travel_revision": null
+    },
+    "materials": {
+      "schema_version": 1,
+      "input_revision": null,
+      "items": [
+        {
+          "id": null,
+          "kind": "passport",
+          "availability": "missing",
+          "check": "pending",
+          "valid_until": null,
+          "applicability": "unknown",
+          "official_receipt": "unknown"
+        },
+        {
+          "id": null,
+          "kind": "visa",
+          "availability": "missing",
+          "check": "pending",
+          "valid_until": null,
+          "applicability": "unknown",
+          "official_receipt": "unknown"
+        },
+        {
+          "id": null,
+          "kind": "domestic_proof",
+          "availability": "missing",
+          "check": "pending",
+          "valid_until": null,
+          "applicability": "unknown",
+          "official_receipt": "unknown"
+        },
+        {
+          "id": null,
+          "kind": "nis_entry",
+          "availability": "missing",
+          "check": "pending",
+          "valid_until": null,
+          "applicability": "unknown",
+          "official_receipt": "unknown"
+        },
+        {
+          "id": null,
+          "kind": "nis_exit",
+          "availability": "missing",
+          "check": "pending",
+          "valid_until": null,
+          "applicability": "unknown",
+          "official_receipt": "unknown"
+        }
+      ],
+      "missing": [
+        "passport",
+        "visa",
+        "domestic_proof",
+        "nis_entry",
+        "nis_exit"
+      ],
+      "stale": false
+    },
+    "stale": false,
+    "movements": [],
+    "tracks": {
+      "safety": {
+        "status": "unknown",
+        "label": "真实安全批准待核"
+      },
+      "vehicle": {
+        "status": "unknown",
+        "label": "真实车辆安排待核"
+      },
+      "movement": {
+        "status": "unknown",
+        "label": "实际出返未知"
+      },
+      "meal": {
+        "status": "unknown",
+        "label": "餐次口径与实际供餐待核"
+      }
+    },
+    "waiting": [
+      {
+        "who": "本事项操作者",
+        "reason": "计划缺项/口径待核："
+      },
+      {
+        "who": "实际责任人或原渠道",
+        "reason": "安全批准、车辆、现场出返与餐次正式状态分别待核；无人数基线，不算扣餐人数。"
+      }
+    ],
+    "scope": "本人私有行程与材料准备；声明不代表现场核验、安全批准、派车、扣餐、证明签发或通行许可"
+  },
+  "after_link_and_manual_period": {
+    "id": "260635f4-30c1-4b53-9d2b-d4c6e1bc6342",
+    "goal_text": "工程T053复用本人行程准备费用；11月纸张两笔USD及EUR一笔，非实际报销付款",
+    "domain": "expense",
+    "version": 6,
+    "revision_no": 4,
+    "control_epoch": 2,
+    "assistant_status": "paused",
+    "preparation_status": "needs_review",
+    "updated_at": "2026-10-08T16:44:05.788+00:00",
+    "business_status": "unknown",
+    "facts": {
+      "claimant": {
+        "status": "unknown",
+        "value": null
+      },
+      "purpose": {
+        "status": "confirmed",
+        "value": "工程T053设备现场核对"
+      },
+      "period": {
+        "status": "confirmed",
+        "value": "2026-11"
+      },
+      "expense_lines": {
+        "status": "confirmed",
+        "value": "工程纸张 USD0.1 2026-11\n工程纸张 USD0.2 2026-11\n工程材料 EUR0.5 2026-11"
+      },
+      "currency": {
+        "status": "unknown",
+        "value": null
+      },
+      "evidence_refs": {
+        "status": "unknown",
+        "value": null
+      },
+      "requirements_ref": {
+        "status": "unknown",
+        "value": null
+      },
+      "external_record": {
+        "status": "unknown",
+        "value": null
+      }
+    },
+    "legacy_facts": {},
+    "field_labels": {
+      "claimant": "申请人引用",
+      "purpose": "事由",
+      "period": "明确期间",
+      "expense_lines": "明细原文",
+      "currency": "币种",
+      "evidence_refs": "真实票据引用",
+      "requirements_ref": "财务要求来源",
+      "external_record": "原财务记录"
+    },
+    "tracks": {
+      "submission": {
+        "status": "unknown",
+        "label": "财务提交未知"
+      },
+      "review": {
+        "status": "unknown",
+        "label": "原渠道审核未知"
+      },
+      "payment": {
+        "status": "unknown",
+        "label": "实际支付未知"
+      }
+    },
+    "waiting": [
+      {
+        "reason": "财务提交未知、原渠道审核未知、实际支付未知",
+        "who": "实际责任人或原渠道待核"
+      }
+    ],
+    "next_steps": [
+      "查看并修改报销与费用核对准备稿",
+      "按实际要求沿原渠道办理，保留真实凭据"
+    ],
+    "sources": [
+      {
+        "id": "141fd6a3-4968-4890-a78e-16c3df0c3e4c",
+        "matter_id": "260635f4-30c1-4b53-9d2b-d4c6e1bc6342",
+        "kind": "user_text",
+        "text": "工程T053复用本人行程准备费用；11月纸张两笔USD及EUR一笔，非实际报销付款",
+        "reported_by": null,
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T16:40:01.040+00:00",
+        "source_state": "usable",
+        "replacement_source_id": null,
+        "state_note": "",
+        "preparation_usable": true
+      },
+      {
+        "id": "b8c4ff2f-ba70-44a9-a7d4-9e409077ac2b",
+        "matter_id": "260635f4-30c1-4b53-9d2b-d4c6e1bc6342",
+        "kind": "user_text",
+        "text": "工程纸张 USD0.1 2026-11\n工程纸张 USD0.2 2026-11\n工程材料 EUR0.5 2026-11",
+        "reported_by": null,
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T16:40:01.089+00:00",
+        "source_state": "usable",
+        "replacement_source_id": null,
+        "state_note": "",
+        "preparation_usable": true
+      }
+    ],
+    "artifacts": [
+      {
+        "id": "fe363302-96b7-4f35-83dc-e62a66c1b761",
+        "version": 1,
+        "matter_id": "260635f4-30c1-4b53-9d2b-d4c6e1bc6342",
+        "type": "manual_preparation",
+        "title": "报销与费用核对人工稿",
+        "content": "工程T053费用原人工v1保留；尚无费用事由，计划不等同实际出行。",
+        "status": "human_saved",
+        "input_revision": 2,
+        "created_at": "2026-10-08T16:40:01.137+00:00",
+        "stale": true
+      }
+    ],
+    "activities": [
+      {
+        "id": "1b20ce79-7b4c-4bb7-bcaf-32862c960b73",
+        "matter_id": "260635f4-30c1-4b53-9d2b-d4c6e1bc6342",
+        "event_type": "created",
+        "message": "已保存目标。规则模板可用；模型须配置并显式选择，外部业务渠道未接入。",
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T16:40:01.042+00:00"
+      },
+      {
+        "id": "f6c2b54e-3f35-4a25-94ac-2ac47c0cc63d",
+        "matter_id": "260635f4-30c1-4b53-9d2b-d4c6e1bc6342",
+        "event_type": "source_added",
+        "message": "新增人工来源引用，未读取群聊或同步在线表。",
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T16:40:01.092+00:00"
+      },
+      {
+        "id": "99089866-ce9b-4733-92ec-2ca5a4fef65b",
+        "matter_id": "260635f4-30c1-4b53-9d2b-d4c6e1bc6342",
+        "event_type": "manual_artifact_created",
+        "message": "本人主动保存人工准备稿；未运行模型或自动整理，暂停/接手及真实业务状态保持。",
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T16:40:01.141+00:00"
+      },
+      {
+        "id": "371586d5-951a-47af-9c30-9457dee9f2d8",
+        "matter_id": "260635f4-30c1-4b53-9d2b-d4c6e1bc6342",
+        "event_type": "pause",
+        "message": "未来代办已暂停，已保存事实与成果保留。",
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T16:43:22.575+00:00"
+      },
+      {
+        "id": "9a3d41f7-800b-4e95-882e-c59b105b83f5",
+        "matter_id": "260635f4-30c1-4b53-9d2b-d4c6e1bc6342",
+        "event_type": "expense_journey_saved",
+        "message": "本人明确复用所选计划引用；已有费用事由和金额保留，财务期间／实绩／批准付款未推定。",
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T16:43:22.924+00:00"
+      },
+      {
+        "id": "acd48917-1d2f-435e-af76-3df5caaad742",
+        "matter_id": "260635f4-30c1-4b53-9d2b-d4c6e1bc6342",
+        "event_type": "facts_confirmed",
+        "message": "已保存当前操作者确认的事实修订；旧成果保留并标记需重核。",
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T16:44:05.791+00:00"
+      }
+    ],
+    "actions": [],
+    "evidence": [],
+    "model_disclosure_blocked": false,
+    "waiting_points": [],
+    "workflow": {
+      "enabled": false,
+      "mode": "template"
+    },
+    "rows": [],
+    "calculation": null
+  },
+  "linked_context": {
+    "fields": {
+      "departure_at": {
+        "label": "计划离营原值",
+        "source_status": "confirmed",
+        "value": "2026-10-12T09:30:00+01:00"
+      },
+      "destination": {
+        "label": "计划目的地",
+        "source_status": "confirmed",
+        "value": "工程工区A"
+      },
+      "purpose": {
+        "label": "原行程用途",
+        "source_status": "confirmed",
+        "value": "工程T053设备现场核对"
+      },
+      "return_at": {
+        "label": "计划返营原值",
+        "source_status": "confirmed",
+        "value": "2026-10-12T17:00:00+01:00"
+      }
+    },
+    "purpose_filled": true,
+    "saved_at": "2026-10-08T16:43:22.921+00:00",
+    "saved_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+    "travel_id": "f10aa58e-ed13-4fe2-9d13-e2e5b70cb9b8",
+    "travel_revision": 3,
+    "stale": false,
+    "scope": "仅复用本人明确选择、已人工确认的计划字段；不把计划当实际出返，不推申请人、财务期间、费用、票据、批准或付款。"
+  },
+  "after_rows": {
+    "id": "260635f4-30c1-4b53-9d2b-d4c6e1bc6342",
+    "goal_text": "工程T053复用本人行程准备费用；11月纸张两笔USD及EUR一笔，非实际报销付款",
+    "domain": "expense",
+    "version": 7,
+    "revision_no": 5,
+    "control_epoch": 2,
+    "assistant_status": "paused",
+    "preparation_status": "needs_review",
+    "updated_at": "2026-10-08T16:44:40.815+00:00",
+    "business_status": "unknown",
+    "facts": {
+      "claimant": {
+        "status": "unknown",
+        "value": null
+      },
+      "purpose": {
+        "status": "confirmed",
+        "value": "工程T053设备现场核对"
+      },
+      "period": {
+        "status": "confirmed",
+        "value": "2026-11"
+      },
+      "expense_lines": {
+        "status": "confirmed",
+        "value": "工程纸张 USD0.1 2026-11\n工程纸张 USD0.2 2026-11\n工程材料 EUR0.5 2026-11"
+      },
+      "currency": {
+        "status": "unknown",
+        "value": null
+      },
+      "evidence_refs": {
+        "status": "unknown",
+        "value": null
+      },
+      "requirements_ref": {
+        "status": "unknown",
+        "value": null
+      },
+      "external_record": {
+        "status": "unknown",
+        "value": null
+      }
+    },
+    "legacy_facts": {},
+    "field_labels": {
+      "claimant": "申请人引用",
+      "purpose": "事由",
+      "period": "明确期间",
+      "expense_lines": "明细原文",
+      "currency": "币种",
+      "evidence_refs": "真实票据引用",
+      "requirements_ref": "财务要求来源",
+      "external_record": "原财务记录"
+    },
+    "tracks": {
+      "submission": {
+        "status": "unknown",
+        "label": "财务提交未知"
+      },
+      "review": {
+        "status": "unknown",
+        "label": "原渠道审核未知"
+      },
+      "payment": {
+        "status": "unknown",
+        "label": "实际支付未知"
+      }
+    },
+    "waiting": [
+      {
+        "reason": "财务提交未知、原渠道审核未知、实际支付未知",
+        "who": "实际责任人或原渠道待核"
+      }
+    ],
+    "next_steps": [
+      "查看并修改报销与费用核对准备稿",
+      "按实际要求沿原渠道办理，保留真实凭据"
+    ],
+    "sources": [
+      {
+        "id": "141fd6a3-4968-4890-a78e-16c3df0c3e4c",
+        "matter_id": "260635f4-30c1-4b53-9d2b-d4c6e1bc6342",
+        "kind": "user_text",
+        "text": "工程T053复用本人行程准备费用；11月纸张两笔USD及EUR一笔，非实际报销付款",
+        "reported_by": null,
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T16:40:01.040+00:00",
+        "source_state": "usable",
+        "replacement_source_id": null,
+        "state_note": "",
+        "preparation_usable": true
+      },
+      {
+        "id": "b8c4ff2f-ba70-44a9-a7d4-9e409077ac2b",
+        "matter_id": "260635f4-30c1-4b53-9d2b-d4c6e1bc6342",
+        "kind": "user_text",
+        "text": "工程纸张 USD0.1 2026-11\n工程纸张 USD0.2 2026-11\n工程材料 EUR0.5 2026-11",
+        "reported_by": null,
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T16:40:01.089+00:00",
+        "source_state": "usable",
+        "replacement_source_id": null,
+        "state_note": "",
+        "preparation_usable": true
+      }
+    ],
+    "artifacts": [
+      {
+        "id": "fe363302-96b7-4f35-83dc-e62a66c1b761",
+        "version": 1,
+        "matter_id": "260635f4-30c1-4b53-9d2b-d4c6e1bc6342",
+        "type": "manual_preparation",
+        "title": "报销与费用核对人工稿",
+        "content": "工程T053费用原人工v1保留；尚无费用事由，计划不等同实际出行。",
+        "status": "human_saved",
+        "input_revision": 2,
+        "created_at": "2026-10-08T16:40:01.137+00:00",
+        "stale": true
+      }
+    ],
+    "activities": [
+      {
+        "id": "1b20ce79-7b4c-4bb7-bcaf-32862c960b73",
+        "matter_id": "260635f4-30c1-4b53-9d2b-d4c6e1bc6342",
+        "event_type": "created",
+        "message": "已保存目标。规则模板可用；模型须配置并显式选择，外部业务渠道未接入。",
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T16:40:01.042+00:00"
+      },
+      {
+        "id": "f6c2b54e-3f35-4a25-94ac-2ac47c0cc63d",
+        "matter_id": "260635f4-30c1-4b53-9d2b-d4c6e1bc6342",
+        "event_type": "source_added",
+        "message": "新增人工来源引用，未读取群聊或同步在线表。",
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T16:40:01.092+00:00"
+      },
+      {
+        "id": "99089866-ce9b-4733-92ec-2ca5a4fef65b",
+        "matter_id": "260635f4-30c1-4b53-9d2b-d4c6e1bc6342",
+        "event_type": "manual_artifact_created",
+        "message": "本人主动保存人工准备稿；未运行模型或自动整理，暂停/接手及真实业务状态保持。",
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T16:40:01.141+00:00"
+      },
+      {
+        "id": "371586d5-951a-47af-9c30-9457dee9f2d8",
+        "matter_id": "260635f4-30c1-4b53-9d2b-d4c6e1bc6342",
+        "event_type": "pause",
+        "message": "未来代办已暂停，已保存事实与成果保留。",
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T16:43:22.575+00:00"
+      },
+      {
+        "id": "9a3d41f7-800b-4e95-882e-c59b105b83f5",
+        "matter_id": "260635f4-30c1-4b53-9d2b-d4c6e1bc6342",
+        "event_type": "expense_journey_saved",
+        "message": "本人明确复用所选计划引用；已有费用事由和金额保留，财务期间／实绩／批准付款未推定。",
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T16:43:22.924+00:00"
+      },
+      {
+        "id": "acd48917-1d2f-435e-af76-3df5caaad742",
+        "matter_id": "260635f4-30c1-4b53-9d2b-d4c6e1bc6342",
+        "event_type": "facts_confirmed",
+        "message": "已保存当前操作者确认的事实修订；旧成果保留并标记需重核。",
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T16:44:05.791+00:00"
+      },
+      {
+        "id": "7c244db0-faec-47c8-89a4-22c40b0aacc8",
+        "matter_id": "260635f4-30c1-4b53-9d2b-d4c6e1bc6342",
+        "event_type": "rows_confirmed",
+        "message": "已保存本地人工核对明细并由程序分别合计；不代表报销批准、支付、收发或权威库更新。",
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T16:44:40.817+00:00"
+      }
+    ],
+    "actions": [],
+    "evidence": [],
+    "model_disclosure_blocked": false,
+    "waiting_points": [],
+    "workflow": {
+      "enabled": false,
+      "mode": "template"
+    },
+    "rows": [
+      {
+        "currency": "USD",
+        "id": "t053r1",
+        "label": "工程纸张",
+        "period": "2026-11",
+        "source_id": "b8c4ff2f-ba70-44a9-a7d4-9e409077ac2b",
+        "source_position": "第1–1行",
+        "value": "0.1"
+      },
+      {
+        "currency": "USD",
+        "id": "t053r2",
+        "label": "工程纸张",
+        "period": "2026-11",
+        "source_id": "b8c4ff2f-ba70-44a9-a7d4-9e409077ac2b",
+        "source_position": "第2–2行",
+        "value": "0.2"
+      },
+      {
+        "currency": "EUR",
+        "id": "t053r3",
+        "label": "工程材料",
+        "period": "2026-11",
+        "source_id": "b8c4ff2f-ba70-44a9-a7d4-9e409077ac2b",
+        "source_position": "第3–3行",
+        "value": "0.5"
+      }
+    ],
+    "calculation": {
+      "groups": [
+        {
+          "currency": "USD",
+          "period": "2026-11",
+          "total": "0.3",
+          "row_ids": [
+            "t053r1",
+            "t053r2"
+          ]
+        },
+        {
+          "currency": "EUR",
+          "period": "2026-11",
+          "total": "0.5",
+          "row_ids": [
+            "t053r3"
+          ]
+        }
+      ],
+      "row_count": 3,
+      "scope": "本地人工核对明细；不代表报销批准/付款或真实收发",
+      "input_revision": 5,
+      "stale": false
+    }
+  },
+  "rows": [
+    {
+      "id": "t053r1",
+      "label": "工程纸张",
+      "value": "0.1",
+      "currency": "USD",
+      "period": "2026-11",
+      "source_id": "b8c4ff2f-ba70-44a9-a7d4-9e409077ac2b",
+      "source_position": "第1–1行"
+    },
+    {
+      "id": "t053r2",
+      "label": "工程纸张",
+      "value": "0.2",
+      "currency": "USD",
+      "period": "2026-11",
+      "source_id": "b8c4ff2f-ba70-44a9-a7d4-9e409077ac2b",
+      "source_position": "第2–2行"
+    },
+    {
+      "id": "t053r3",
+      "label": "工程材料",
+      "value": "0.5",
+      "currency": "EUR",
+      "period": "2026-11",
+      "source_id": "b8c4ff2f-ba70-44a9-a7d4-9e409077ac2b",
+      "source_position": "第3–3行"
+    }
+  ],
+  "after": {
+    "id": "260635f4-30c1-4b53-9d2b-d4c6e1bc6342",
+    "goal_text": "工程T053复用本人行程准备费用；11月纸张两笔USD及EUR一笔，非实际报销付款",
+    "domain": "expense",
+    "version": 12,
+    "revision_no": 5,
+    "control_epoch": 5,
+    "assistant_status": "waiting",
+    "preparation_status": "needs_review",
+    "updated_at": "2026-10-08T16:46:11.919+00:00",
+    "business_status": "unknown",
+    "facts": {
+      "claimant": {
+        "status": "unknown",
+        "value": null
+      },
+      "purpose": {
+        "status": "confirmed",
+        "value": "工程T053设备现场核对"
+      },
+      "period": {
+        "status": "confirmed",
+        "value": "2026-11"
+      },
+      "expense_lines": {
+        "status": "confirmed",
+        "value": "工程纸张 USD0.1 2026-11\n工程纸张 USD0.2 2026-11\n工程材料 EUR0.5 2026-11"
+      },
+      "currency": {
+        "status": "unknown",
+        "value": null
+      },
+      "evidence_refs": {
+        "status": "unknown",
+        "value": null
+      },
+      "requirements_ref": {
+        "status": "unknown",
+        "value": null
+      },
+      "external_record": {
+        "status": "unknown",
+        "value": null
+      }
+    },
+    "legacy_facts": {},
+    "field_labels": {
+      "claimant": "申请人引用",
+      "purpose": "事由",
+      "period": "明确期间",
+      "expense_lines": "明细原文",
+      "currency": "币种",
+      "evidence_refs": "真实票据引用",
+      "requirements_ref": "财务要求来源",
+      "external_record": "原财务记录"
+    },
+    "tracks": {
+      "submission": {
+        "status": "unknown",
+        "label": "财务提交未知"
+      },
+      "review": {
+        "status": "unknown",
+        "label": "原渠道审核未知"
+      },
+      "payment": {
+        "status": "unknown",
+        "label": "实际支付未知"
+      }
+    },
+    "waiting": [
+      {
+        "reason": "财务提交未知、原渠道审核未知、实际支付未知",
+        "who": "实际责任人或原渠道待核"
+      }
+    ],
+    "next_steps": [
+      "查看并修改费用报销准备稿",
+      "按实际要求沿原渠道办理，保留真实凭据"
+    ],
+    "sources": [
+      {
+        "id": "141fd6a3-4968-4890-a78e-16c3df0c3e4c",
+        "matter_id": "260635f4-30c1-4b53-9d2b-d4c6e1bc6342",
+        "kind": "user_text",
+        "text": "工程T053复用本人行程准备费用；11月纸张两笔USD及EUR一笔，非实际报销付款",
+        "reported_by": null,
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T16:40:01.040+00:00",
+        "source_state": "usable",
+        "replacement_source_id": null,
+        "state_note": "",
+        "preparation_usable": true
+      },
+      {
+        "id": "b8c4ff2f-ba70-44a9-a7d4-9e409077ac2b",
+        "matter_id": "260635f4-30c1-4b53-9d2b-d4c6e1bc6342",
+        "kind": "user_text",
+        "text": "工程纸张 USD0.1 2026-11\n工程纸张 USD0.2 2026-11\n工程材料 EUR0.5 2026-11",
+        "reported_by": null,
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T16:40:01.089+00:00",
+        "source_state": "usable",
+        "replacement_source_id": null,
+        "state_note": "",
+        "preparation_usable": true
+      }
+    ],
+    "artifacts": [
+      {
+        "id": "26ec9eb5-4f3c-4f9a-b450-494f29bde64e",
+        "version": 2,
+        "matter_id": "260635f4-30c1-4b53-9d2b-d4c6e1bc6342",
+        "type": "selected_rows_report",
+        "title": "所选期间费用汇总准备稿",
+        "content": "# 所选期间费用汇总准备稿\n\n仅按本次明确选中的已保存明细累计；币种／物品／单位／期间分别计算，项目组织范围及应报清单待核，不判缺报、报销获批、支付、实际收发或库存余额。\n事项原目标：工程T053复用本人行程准备费用；11月纸张两笔USD及EUR一笔，非实际报销付款\n基础明细修订：5\n本次选中 3 行／当前已保存 3 行；范围只含下列选择。\n所选期间（原述，不转换月季口径）：2026-11\n项目／组织及范围补充：工程T053范围：费用归入2026-11；所选10月计划仅作原述参考，未实际报销或支付。\n重复口径：未发现选中行同原处的完全相同明细；未作跨来源或语义去重。\n\n## 程序精确分组汇总\n- USD／2026-11：0.3；2 行\n- EUR／2026-11：0.5；1 行\n\n## 本次选中明细与原处\n- 行 t053r1：工程纸张／0.1 USD／2026-11\n  来源：b8c4ff2f-ba70-44a9-a7d4-9e409077ac2b；原位置：第1–1行\n  原文节选：工程纸张 USD0.1 2026-11\n- 行 t053r2：工程纸张／0.2 USD／2026-11\n  来源：b8c4ff2f-ba70-44a9-a7d4-9e409077ac2b；原位置：第2–2行\n  原文节选：工程纸张 USD0.2 2026-11\n- 行 t053r3：工程材料／0.5 EUR／2026-11\n  来源：b8c4ff2f-ba70-44a9-a7d4-9e409077ac2b；原位置：第3–3行\n  原文节选：工程材料 EUR0.5 2026-11\n\n## 本人所选行程计划引用\n仅复用本人明确选择、已人工确认的计划字段；不把计划当实际出返，不推申请人、财务期间、费用、票据、批准或付款。\n行程来源：f10aa58e-ed13-4fe2-9d13-e2e5b70cb9b8；所核修订 3\n- 计划离营原值：2026-10-12T09:30:00+01:00（本人所选已核计划引用，非实际业务结果）\n- 计划目的地：工程工区A（本人所选已核计划引用，非实际业务结果）\n- 原行程用途：工程T053设备现场核对（本人所选已核计划引用，非实际业务结果）\n- 计划返营原值：2026-10-12T17:00:00+01:00（本人所选已核计划引用，非实际业务结果）\n工程T053本人暂停续办备注：金额与计划出处分别核对，本稿未提交财务。",
+        "status": "human_saved",
+        "input_revision": 5,
+        "created_at": "2026-10-08T16:46:02.400+00:00",
+        "stale": false
+      },
+      {
+        "id": "fe363302-96b7-4f35-83dc-e62a66c1b761",
+        "version": 1,
+        "matter_id": "260635f4-30c1-4b53-9d2b-d4c6e1bc6342",
+        "type": "manual_preparation",
+        "title": "报销与费用核对人工稿",
+        "content": "工程T053费用原人工v1保留；尚无费用事由，计划不等同实际出行。",
+        "status": "human_saved",
+        "input_revision": 2,
+        "created_at": "2026-10-08T16:40:01.137+00:00",
+        "stale": true
+      }
+    ],
+    "activities": [
+      {
+        "id": "1b20ce79-7b4c-4bb7-bcaf-32862c960b73",
+        "matter_id": "260635f4-30c1-4b53-9d2b-d4c6e1bc6342",
+        "event_type": "created",
+        "message": "已保存目标。规则模板可用；模型须配置并显式选择，外部业务渠道未接入。",
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T16:40:01.042+00:00"
+      },
+      {
+        "id": "f6c2b54e-3f35-4a25-94ac-2ac47c0cc63d",
+        "matter_id": "260635f4-30c1-4b53-9d2b-d4c6e1bc6342",
+        "event_type": "source_added",
+        "message": "新增人工来源引用，未读取群聊或同步在线表。",
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T16:40:01.092+00:00"
+      },
+      {
+        "id": "99089866-ce9b-4733-92ec-2ca5a4fef65b",
+        "matter_id": "260635f4-30c1-4b53-9d2b-d4c6e1bc6342",
+        "event_type": "manual_artifact_created",
+        "message": "本人主动保存人工准备稿；未运行模型或自动整理，暂停/接手及真实业务状态保持。",
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T16:40:01.141+00:00"
+      },
+      {
+        "id": "371586d5-951a-47af-9c30-9457dee9f2d8",
+        "matter_id": "260635f4-30c1-4b53-9d2b-d4c6e1bc6342",
+        "event_type": "pause",
+        "message": "未来代办已暂停，已保存事实与成果保留。",
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T16:43:22.575+00:00"
+      },
+      {
+        "id": "9a3d41f7-800b-4e95-882e-c59b105b83f5",
+        "matter_id": "260635f4-30c1-4b53-9d2b-d4c6e1bc6342",
+        "event_type": "expense_journey_saved",
+        "message": "本人明确复用所选计划引用；已有费用事由和金额保留，财务期间／实绩／批准付款未推定。",
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T16:43:22.924+00:00"
+      },
+      {
+        "id": "acd48917-1d2f-435e-af76-3df5caaad742",
+        "matter_id": "260635f4-30c1-4b53-9d2b-d4c6e1bc6342",
+        "event_type": "facts_confirmed",
+        "message": "已保存当前操作者确认的事实修订；旧成果保留并标记需重核。",
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T16:44:05.791+00:00"
+      },
+      {
+        "id": "7c244db0-faec-47c8-89a4-22c40b0aacc8",
+        "matter_id": "260635f4-30c1-4b53-9d2b-d4c6e1bc6342",
+        "event_type": "rows_confirmed",
+        "message": "已保存本地人工核对明细并由程序分别合计；不代表报销批准、支付、收发或权威库更新。",
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T16:44:40.817+00:00"
+      },
+      {
+        "id": "22f5978a-8632-49c9-aed9-53238eedabb0",
+        "matter_id": "260635f4-30c1-4b53-9d2b-d4c6e1bc6342",
+        "event_type": "resume",
+        "message": "已恢复；请按需重新登记准备，不重放外部动作。",
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T16:44:54.663+00:00"
+      },
+      {
+        "id": "57fc6aa2-b2c4-4cf4-bcc1-1fe36c32e2d9",
+        "matter_id": "260635f4-30c1-4b53-9d2b-d4c6e1bc6342",
+        "event_type": "rows_report_saved",
+        "message": "本人已按明确选择另存期间明细汇总；原明细、人工稿和真实状态保留，未付款或登记收发。",
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T16:45:22.249+00:00"
+      },
+      {
+        "id": "164c278f-22aa-4e0e-85f4-200410cd7bce",
+        "matter_id": "260635f4-30c1-4b53-9d2b-d4c6e1bc6342",
+        "event_type": "pause",
+        "message": "未来代办已暂停，已保存事实与成果保留。",
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T16:46:02.043+00:00"
+      },
+      {
+        "id": "e8448b7f-90f5-43d3-a97f-243dee983b20",
+        "matter_id": "260635f4-30c1-4b53-9d2b-d4c6e1bc6342",
+        "event_type": "artifact_saved",
+        "message": "人工修改已保存为成果新版本；不代表外部提交或接受。",
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T16:46:02.407+00:00"
+      },
+      {
+        "id": "400fd62f-932b-494a-a2b0-c06a72956ccd",
+        "matter_id": "260635f4-30c1-4b53-9d2b-d4c6e1bc6342",
+        "event_type": "resume",
+        "message": "已恢复；请按需重新登记准备，不重放外部动作。",
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T16:46:11.921+00:00"
+      }
+    ],
+    "actions": [],
+    "evidence": [],
+    "model_disclosure_blocked": false,
+    "waiting_points": [],
+    "workflow": {
+      "enabled": false,
+      "mode": "template"
+    },
+    "rows": [
+      {
+        "currency": "USD",
+        "id": "t053r1",
+        "label": "工程纸张",
+        "period": "2026-11",
+        "source_id": "b8c4ff2f-ba70-44a9-a7d4-9e409077ac2b",
+        "source_position": "第1–1行",
+        "value": "0.1"
+      },
+      {
+        "currency": "USD",
+        "id": "t053r2",
+        "label": "工程纸张",
+        "period": "2026-11",
+        "source_id": "b8c4ff2f-ba70-44a9-a7d4-9e409077ac2b",
+        "source_position": "第2–2行",
+        "value": "0.2"
+      },
+      {
+        "currency": "EUR",
+        "id": "t053r3",
+        "label": "工程材料",
+        "period": "2026-11",
+        "source_id": "b8c4ff2f-ba70-44a9-a7d4-9e409077ac2b",
+        "source_position": "第3–3行",
+        "value": "0.5"
+      }
+    ],
+    "calculation": {
+      "groups": [
+        {
+          "currency": "USD",
+          "period": "2026-11",
+          "total": "0.3",
+          "row_ids": [
+            "t053r1",
+            "t053r2"
+          ]
+        },
+        {
+          "currency": "EUR",
+          "period": "2026-11",
+          "total": "0.5",
+          "row_ids": [
+            "t053r3"
+          ]
+        }
+      ],
+      "row_count": 3,
+      "scope": "本地人工核对明细；不代表报销批准/付款或真实收发",
+      "input_revision": 5,
+      "stale": false
+    }
+  },
+  "after_travel": {
+    "id": "f10aa58e-ed13-4fe2-9d13-e2e5b70cb9b8",
+    "goal_text": "工程T053已核计划引用测试，非实际出行；私人同行与备注不进入费用稿",
+    "domain": "travel",
+    "version": 3,
+    "revision_no": 3,
+    "control_epoch": 0,
+    "assistant_status": "waiting",
+    "preparation_status": "needs_review",
+    "updated_at": "2026-10-08T16:43:01.788+00:00",
+    "business_status": "unknown",
+    "facts": {
+      "destination": {
+        "status": "confirmed",
+        "value": "工程工区A"
+      },
+      "departure_at": {
+        "status": "confirmed",
+        "value": "2026-10-12T09:30:00+01:00"
+      },
+      "return_at": {
+        "status": "confirmed",
+        "value": "2026-10-12T17:00:00+01:00"
+      },
+      "participants": {
+        "status": "confirmed",
+        "value": "工程私有同行引用不进入费用稿"
+      },
+      "purpose": {
+        "status": "confirmed",
+        "value": "工程T053设备现场核对"
+      },
+      "meal_request": {
+        "status": "unknown",
+        "value": null
+      }
+    },
+    "legacy_facts": {},
+    "field_labels": {
+      "destination": "目的地",
+      "departure_at": "计划离营时间",
+      "return_at": "计划返营时间",
+      "participants": "参与人员",
+      "purpose": "用途",
+      "meal_request": "餐次需求"
+    },
+    "tracks": {
+      "safety": {
+        "status": "unknown",
+        "label": "真实安全批准待核"
+      },
+      "vehicle": {
+        "status": "unknown",
+        "label": "真实车辆安排待核"
+      },
+      "movement": {
+        "status": "unknown",
+        "label": "实际出返未知"
+      },
+      "meal": {
+        "status": "unknown",
+        "label": "餐次口径与实际供餐待核"
+      }
+    },
+    "waiting": [
+      {
+        "reason": "真实安全批准待核、真实车辆安排待核、实际出返未知、餐次口径与实际供餐待核",
+        "who": "实际责任人或原渠道待核"
+      }
+    ],
+    "next_steps": [
+      "查看并修改出行安排准备稿",
+      "按实际要求沿原渠道办理，保留真实凭据"
+    ],
+    "sources": [
+      {
+        "id": "0e0526e9-2e46-476d-bf4b-4747cf518cdd",
+        "matter_id": "f10aa58e-ed13-4fe2-9d13-e2e5b70cb9b8",
+        "kind": "user_text",
+        "text": "工程T053已核计划引用测试，非实际出行；私人同行与备注不进入费用稿",
+        "reported_by": null,
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T16:40:00.965+00:00",
+        "source_state": "usable",
+        "replacement_source_id": null,
+        "state_note": "",
+        "preparation_usable": true
+      }
+    ],
+    "artifacts": [],
+    "activities": [
+      {
+        "id": "ef04fcfe-36da-459e-b610-9b2a964b823e",
+        "matter_id": "f10aa58e-ed13-4fe2-9d13-e2e5b70cb9b8",
+        "event_type": "created",
+        "message": "已保存目标。规则模板可用；模型须配置并显式选择，外部业务渠道未接入。",
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T16:40:00.969+00:00"
+      },
+      {
+        "id": "5405df65-b520-42fe-8ab7-f88f47b34ed5",
+        "matter_id": "f10aa58e-ed13-4fe2-9d13-e2e5b70cb9b8",
+        "event_type": "journey_plan_saved",
+        "message": "{\"actor_id\":\"55f14813-4467-49e9-97ac-1aea7f3bad0f\",\"input_revision\":2,\"meal_recheck_required\":true}",
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T16:40:01.014+00:00"
+      },
+      {
+        "id": "643961b4-b072-4bc9-93a8-1319a763acda",
+        "matter_id": "f10aa58e-ed13-4fe2-9d13-e2e5b70cb9b8",
+        "event_type": "journey_plan_saved",
+        "message": "{\"actor_id\":\"55f14813-4467-49e9-97ac-1aea7f3bad0f\",\"input_revision\":3,\"meal_recheck_required\":true}",
+        "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+        "recorded_at": "2026-10-08T16:43:01.789+00:00"
+      }
+    ],
+    "actions": [],
+    "evidence": [],
+    "model_disclosure_blocked": false,
+    "waiting_points": [],
+    "workflow": {
+      "enabled": false,
+      "mode": "template"
+    },
+    "rows": [],
+    "calculation": null
+  },
+  "current_context": {
+    "fields": {
+      "departure_at": {
+        "label": "计划离营原值",
+        "source_status": "confirmed",
+        "value": "2026-10-12T09:30:00+01:00"
+      },
+      "destination": {
+        "label": "计划目的地",
+        "source_status": "confirmed",
+        "value": "工程工区A"
+      },
+      "purpose": {
+        "label": "原行程用途",
+        "source_status": "confirmed",
+        "value": "工程T053设备现场核对"
+      },
+      "return_at": {
+        "label": "计划返营原值",
+        "source_status": "confirmed",
+        "value": "2026-10-12T17:00:00+01:00"
+      }
+    },
+    "purpose_filled": true,
+    "saved_at": "2026-10-08T16:43:22.921+00:00",
+    "saved_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+    "travel_id": "f10aa58e-ed13-4fe2-9d13-e2e5b70cb9b8",
+    "travel_revision": 3,
+    "stale": false,
+    "scope": "仅复用本人明确选择、已人工确认的计划字段；不把计划当实际出返，不推申请人、财务期间、费用、票据、批准或付款。"
+  },
+  "report": {
+    "artifact_id": "26ec9eb5-4f3c-4f9a-b450-494f29bde64e",
+    "rows_revision": 5,
+    "selected_count": 3,
+    "periods": [
+      "2026-11"
+    ],
+    "note": "工程T053范围：费用归入2026-11；所选10月计划仅作原述参考，未实际报销或支付。"
+  },
+  "fixed_v1_md": "# 所选期间费用汇总准备稿\n\n仅按本次明确选中的已保存明细累计；币种／物品／单位／期间分别计算，项目组织范围及应报清单待核，不判缺报、报销获批、支付、实际收发或库存余额。\n事项原目标：工程T053复用本人行程准备费用；11月纸张两笔USD及EUR一笔，非实际报销付款\n基础明细修订：5\n本次选中 3 行／当前已保存 3 行；范围只含下列选择。\n所选期间（原述，不转换月季口径）：2026-11\n项目／组织及范围补充：工程T053范围：费用归入2026-11；所选10月计划仅作原述参考，未实际报销或支付。\n重复口径：未发现选中行同原处的完全相同明细；未作跨来源或语义去重。\n\n## 程序精确分组汇总\n- USD／2026-11：0.3；2 行\n- EUR／2026-11：0.5；1 行\n\n## 本次选中明细与原处\n- 行 t053r1：工程纸张／0.1 USD／2026-11\n  来源：b8c4ff2f-ba70-44a9-a7d4-9e409077ac2b；原位置：第1–1行\n  原文节选：工程纸张 USD0.1 2026-11\n- 行 t053r2：工程纸张／0.2 USD／2026-11\n  来源：b8c4ff2f-ba70-44a9-a7d4-9e409077ac2b；原位置：第2–2行\n  原文节选：工程纸张 USD0.2 2026-11\n- 行 t053r3：工程材料／0.5 EUR／2026-11\n  来源：b8c4ff2f-ba70-44a9-a7d4-9e409077ac2b；原位置：第3–3行\n  原文节选：工程材料 EUR0.5 2026-11\n\n## 本人所选行程计划引用\n仅复用本人明确选择、已人工确认的计划字段；不把计划当实际出返，不推申请人、财务期间、费用、票据、批准或付款。\n行程来源：f10aa58e-ed13-4fe2-9d13-e2e5b70cb9b8；所核修订 3\n- 计划离营原值：2026-10-12T09:30:00+01:00（本人所选已核计划引用，非实际业务结果）\n- 计划目的地：工程工区A（本人所选已核计划引用，非实际业务结果）\n- 原行程用途：工程T053设备现场核对（本人所选已核计划引用，非实际业务结果）\n- 计划返营原值：2026-10-12T17:00:00+01:00（本人所选已核计划引用，非实际业务结果）",
+  "private_v2_md": "# 所选期间费用汇总准备稿\n\n仅按本次明确选中的已保存明细累计；币种／物品／单位／期间分别计算，项目组织范围及应报清单待核，不判缺报、报销获批、支付、实际收发或库存余额。\n事项原目标：工程T053复用本人行程准备费用；11月纸张两笔USD及EUR一笔，非实际报销付款\n基础明细修订：5\n本次选中 3 行／当前已保存 3 行；范围只含下列选择。\n所选期间（原述，不转换月季口径）：2026-11\n项目／组织及范围补充：工程T053范围：费用归入2026-11；所选10月计划仅作原述参考，未实际报销或支付。\n重复口径：未发现选中行同原处的完全相同明细；未作跨来源或语义去重。\n\n## 程序精确分组汇总\n- USD／2026-11：0.3；2 行\n- EUR／2026-11：0.5；1 行\n\n## 本次选中明细与原处\n- 行 t053r1：工程纸张／0.1 USD／2026-11\n  来源：b8c4ff2f-ba70-44a9-a7d4-9e409077ac2b；原位置：第1–1行\n  原文节选：工程纸张 USD0.1 2026-11\n- 行 t053r2：工程纸张／0.2 USD／2026-11\n  来源：b8c4ff2f-ba70-44a9-a7d4-9e409077ac2b；原位置：第2–2行\n  原文节选：工程纸张 USD0.2 2026-11\n- 行 t053r3：工程材料／0.5 EUR／2026-11\n  来源：b8c4ff2f-ba70-44a9-a7d4-9e409077ac2b；原位置：第3–3行\n  原文节选：工程材料 EUR0.5 2026-11\n\n## 本人所选行程计划引用\n仅复用本人明确选择、已人工确认的计划字段；不把计划当实际出返，不推申请人、财务期间、费用、票据、批准或付款。\n行程来源：f10aa58e-ed13-4fe2-9d13-e2e5b70cb9b8；所核修订 3\n- 计划离营原值：2026-10-12T09:30:00+01:00（本人所选已核计划引用，非实际业务结果）\n- 计划目的地：工程工区A（本人所选已核计划引用，非实际业务结果）\n- 原行程用途：工程T053设备现场核对（本人所选已核计划引用，非实际业务结果）\n- 计划返营原值：2026-10-12T17:00:00+01:00（本人所选已核计划引用，非实际业务结果）\n工程T053本人暂停续办备注：金额与计划出处分别核对，本稿未提交财务。",
+  "fixed_csv": "﻿费用名称,金额,币种,期间,来源ID,来源位置,原文件名,明细修订,状态说明\r\n工程纸张,0.1,USD,2026-11,b8c4ff2f-ba70-44a9-a7d4-9e409077ac2b,第1–1行,,5,本地人工核对；未批准、支付或真实收发\r\n工程纸张,0.2,USD,2026-11,b8c4ff2f-ba70-44a9-a7d4-9e409077ac2b,第2–2行,,5,本地人工核对；未批准、支付或真实收发\r\n工程材料,0.5,EUR,2026-11,b8c4ff2f-ba70-44a9-a7d4-9e409077ac2b,第3–3行,,5,本地人工核对；未批准、支付或真实收发\r\n",
+  "permissions": {
+    "cook_private_matter": 404,
+    "employee_other_context": 404,
+    "employee_other_saved_md": 404
+  },
+  "prior_t052_unchanged": true,
+  "model_calls_this_increment": 0,
+  "verification": "1 combined local/identity Store test 1.223s; affected syntax; actual HTTP and browser",
+  "ui_path": "读所选计划r2并选4字段／填空白事由→行程更正r3使旧保存409且选择保留→重读核对17点原值→暂停人工保存引用与空白事由→11月三笔工程明细保存→重开暂停及引用保留→恢复选期3行另存USD0.3／EUR0.5费用稿并带10月计划出处→暂停保存人工v2→刷新重开保留→恢复。",
+  "runtime_session": 47977,
+  "package": {
+    "path": "dist/assistant-v0.3.0-20261008T170159Z-3c7e3345.zip",
+    "sha256": "48596e190a788554d70d67f39b27ce3986cef26de639ec611b9491a7a7a10f4b",
+    "crc": "passed during package build"
+  },
+  "final_reload_readback": "Browser reopened original private expense report v2 on final session47977, original planned return and private manual note retained; category renames do not rewrite historical artifact titles."
+}

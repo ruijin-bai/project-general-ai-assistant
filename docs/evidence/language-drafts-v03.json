@@ -1,0 +1,88 @@
+{
+  "evidence_class": "engineering_language_not_real_business",
+  "matter_id": "b74478a5-d134-4ece-afdf-4dc69dd558e2",
+  "source_artifact_id": "31c1d404-5bc8-4497-af98-d9debe0730a2",
+  "source_artifact_version": 1,
+  "source_text": "工程语言稿核对：尚未开展检查。拟于2026-10-11核对2份资料；打印费候选为0.3 USD，费用尚未审核或支付。实际时间、责任与适用范围待本人核对。没有批准、派遣、签发或执行。",
+  "original_facts": {
+    "subject": {
+      "status": "unknown",
+      "value": null
+    },
+    "facts_text": {
+      "status": "unknown",
+      "value": null
+    },
+    "requirements_ref": {
+      "status": "unknown",
+      "value": null
+    }
+  },
+  "original_tracks": {},
+  "specialized_check": {
+    "tests": 1,
+    "seconds": 0.559,
+    "scope": "two_modes_preservation_values_idempotency_conflicts_cancel_source_change_stop_recovery_private_404_disclosure_guard"
+  },
+  "affected_hr_regression": "passed_in_prior_combined_run",
+  "ui_status": "passed",
+  "actual_model_status": "first_call_success",
+  "actual_attempts": [
+    {
+      "id": "8c4bc504-8599-4886-91a5-56b96ff26804",
+      "status": "completed",
+      "error": null
+    }
+  ],
+  "actual_usage": {
+    "completion_tokens": 81,
+    "prompt_tokens": 513,
+    "total_tokens": 594
+  },
+  "model_call_count_after_ui": 1,
+  "language_artifact": {
+    "id": "70295ec4-bb57-4cf1-b7ff-5e0c4965a06c",
+    "version": 2,
+    "content": "Engineering language draft verification: Inspection not yet conducted. Planned to verify 2 documents on 2026-10-11; printing fee candidate is 0.3 USD, fee not yet reviewed or paid. Actual time, responsibility and applicable scope to be verified by myself. No approval, dispatch, issuance or execution.\n\nHuman review note: hypothetical engineering text only; applicability remains unverified. This draft has not been sent.",
+    "basis": {
+      "artifact_id": "31c1d404-5bc8-4497-af98-d9debe0730a2",
+      "artifact_version": 1,
+      "input_revision": 1,
+      "target_language": "en",
+      "original_stale": false,
+      "model": "jiaorong-instruct"
+    }
+  },
+  "fixed_md": {
+    "bytes": 421,
+    "sha256": "6be31f4d693917ae8aa56c25e2520efac084e399a09b3c112f8f1df6cadd3bab",
+    "equals_saved_content": true,
+    "internal_basis_not_in_body": true
+  },
+  "fixed_docx": {
+    "bytes": 1911,
+    "crc_pass": true,
+    "text_equals_saved_body": true,
+    "word_client_layout_verified": false
+  },
+  "source_preserved": true,
+  "facts_tracks_preserved": true,
+  "ui_steps": [
+    "explicit_target_language_and_real_call",
+    "read_saved_result_original_still_selected",
+    "select_new_draft",
+    "pause",
+    "edit_and_save_v2",
+    "actual_reload_preserves_v2_and_pause",
+    "resume",
+    "reselect_original_and_language_opens_existing_v2_without_call",
+    "fixed_http_md_docx"
+  ],
+  "remaining": [
+    "semantic_translation_and_real_language_permissions_need_human_review",
+    "other_languages_not_supported",
+    "source_over_4000_chars_not_sent",
+    "actual_business_still_unverified",
+    "full_prd_goal_active"
+  ]
+}

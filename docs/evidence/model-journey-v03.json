@@ -1,0 +1,178 @@
+{
+  "task": "T048",
+  "matter_id": "816a1391-a80b-4fc4-9ec6-5a787518ff03",
+  "source_id": "b6729dc8-dd70-405a-a122-b890c8f8ef92",
+  "old_artifact_id": "53bab2e0-1806-4c8a-bdb4-8015e15ad37f",
+  "before_facts": {
+    "destination": {
+      "status": "unknown",
+      "value": null
+    },
+    "departure_at": {
+      "status": "unknown",
+      "value": null
+    },
+    "return_at": {
+      "status": "unknown",
+      "value": null
+    },
+    "participants": {
+      "status": "unknown",
+      "value": null
+    },
+    "purpose": {
+      "status": "confirmed",
+      "value": "工程资料接送演练"
+    },
+    "meal_request": {
+      "status": "unknown",
+      "value": null
+    }
+  },
+  "before_tracks": {
+    "safety": {
+      "status": "unknown",
+      "label": "真实安全批准待核"
+    },
+    "vehicle": {
+      "status": "unknown",
+      "label": "真实车辆安排待核"
+    },
+    "movement": {
+      "status": "unknown",
+      "label": "实际出返未知"
+    },
+    "meal": {
+      "status": "unknown",
+      "label": "餐次口径与实际供餐待核"
+    }
+  },
+  "engineering_source": "工程假设，非真实安排。\n目的地：工程机场A\n计划离营：2026-11-10T09:00:00+01:00\n计划返营：2026-11-10T16:00:00+01:00\n必要同行引用：本人\n用途：工程资料接送演练\n餐次原述需求：2026-11-10晚餐希望保餐\n航班起飞：2026-11-10T12:00:00+01:00，不能当离营时间。",
+  "targeted_test": {
+    "result": "one combined local/protected pass",
+    "seconds": 0.622,
+    "model": "engineering response stub, not real call"
+  },
+  "preview_session": 73174,
+  "model_call": {
+    "state": "completed",
+    "action_id": "1dd74797-833c-49bf-a428-39488ad04333",
+    "candidate_count": 5,
+    "candidates": [
+      {
+        "confirmation": "candidate",
+        "field": "destination",
+        "id": "mc-1dd74797833c49bfa42839488ad04333-1",
+        "refs": [
+          {
+            "source_id": "b6729dc8-dd70-405a-a122-b890c8f8ef92",
+            "start_line": 2,
+            "end_line": 2,
+            "excerpt": "目的地：工程机场A"
+          }
+        ],
+        "value": "工程机场A"
+      },
+      {
+        "confirmation": "candidate",
+        "field": "departure_at",
+        "id": "mc-1dd74797833c49bfa42839488ad04333-2",
+        "refs": [
+          {
+            "source_id": "b6729dc8-dd70-405a-a122-b890c8f8ef92",
+            "start_line": 3,
+            "end_line": 3,
+            "excerpt": "计划离营：2026-11-10T09:00:00+01:00"
+          }
+        ],
+        "value": "2026-11-10T09:00:00+01:00"
+      },
+      {
+        "confirmation": "candidate",
+        "field": "return_at",
+        "id": "mc-1dd74797833c49bfa42839488ad04333-3",
+        "refs": [
+          {
+            "source_id": "b6729dc8-dd70-405a-a122-b890c8f8ef92",
+            "start_line": 4,
+            "end_line": 4,
+            "excerpt": "计划返营：2026-11-10T16:00:00+01:00"
+          }
+        ],
+        "value": "2026-11-10T16:00:00+01:00"
+      },
+      {
+        "confirmation": "candidate",
+        "field": "participants",
+        "id": "mc-1dd74797833c49bfa42839488ad04333-4",
+        "refs": [
+          {
+            "source_id": "b6729dc8-dd70-405a-a122-b890c8f8ef92",
+            "start_line": 5,
+            "end_line": 5,
+            "excerpt": "必要同行引用：本人"
+          }
+        ],
+        "value": "本人"
+      },
+      {
+        "confirmation": "candidate",
+        "field": "meal_request",
+        "id": "mc-1dd74797833c49bfa42839488ad04333-5",
+        "refs": [
+          {
+            "source_id": "b6729dc8-dd70-405a-a122-b890c8f8ef92",
+            "start_line": 7,
+            "end_line": 7,
+            "excerpt": "餐次原述需求：2026-11-10晚餐希望保餐"
+          }
+        ],
+        "value": "2026-11-10晚餐希望保餐"
+      }
+    ],
+    "facts_and_tracks": "unchanged",
+    "semantic_accuracy": "not proven by literal checks",
+    "actual_usage": {
+      "completion_tokens": 379,
+      "prompt_tokens": 1248,
+      "total_tokens": 1627
+    },
+    "calls_after_read_reopen": 1
+  },
+  "ui": {
+    "result": "actual IAB path passed",
+    "steps": [
+      "type unsaved manual destination before read",
+      "read 5 literal cited candidates, no auto selection",
+      "select5, fill4 empty fields, preserve1 manual destination and confirmed purpose",
+      "explicit times confirmed, remaining selected fields candidate",
+      "pause preserve edits and explicit read current baseline",
+      "save while paused, reload preserved paused and fields",
+      "resume render four-track artifact",
+      "select and edit save v2",
+      "read old model batch stale and append disabled"
+    ],
+    "not_verified": [
+      "model semantic accuracy beyond this hypothetical case",
+      "real travel approval/dispatch/meal rules",
+      "external interfaces or actual participants"
+    ]
+  },
+  "fixed_http": {
+    "v1_v2_md": "exact body equality",
+    "original_source_and_manual_artifact": "unchanged",
+    "tracks_and_actual_movements": "unchanged/unknown",
+    "no_meal_rows_or_deductions": true
+  },
+  "artifact_id": "e0455013-54fc-4a48-82cb-b02575f2e9e1",
+  "artifact_version": 2,
+  "final_version": 11,
+  "final_revision": 4,
+  "static_checks": "affected Python compile and JS module syntax passed",
+  "package": {
+    "path": "dist/assistant-v0.3.0-20261008T150504Z-f9cab80a.zip",
+    "files": 62,
+    "crc": "passed",
+    "sha256": "e62a141816b2c638887c2ff9042f5050a04c8b508ec2700f9bbefee82cfd18da"
+  }
+}

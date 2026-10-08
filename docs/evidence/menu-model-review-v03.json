@@ -1,0 +1,449 @@
+{
+  "task": "T050",
+  "publication_id": "4aa9d408-ccf5-4a68-99dd-9b748668c977",
+  "matter_id": "ad491101-e0c6-481b-9dd3-552d4d332033",
+  "before": {
+    "facts": {
+      "menu_date": {
+        "status": "confirmed",
+        "value": "2026-10-19"
+      },
+      "meal_slot": {
+        "status": "confirmed",
+        "value": "工程午餐"
+      },
+      "dishes": {
+        "status": "confirmed",
+        "value": "工程T049豆腐与米饭"
+      },
+      "cook": {
+        "status": "unknown",
+        "value": null
+      },
+      "dietary_constraints": {
+        "status": "unknown",
+        "value": null
+      },
+      "serving_scope": {
+        "status": "unknown",
+        "value": null
+      },
+      "menu_ref": {
+        "status": "unknown",
+        "value": null
+      }
+    },
+    "tracks": {
+      "publication": {
+        "status": "unknown",
+        "label": "厨师真实发布待核"
+      },
+      "preparation": {
+        "status": "unknown",
+        "label": "实际备餐未知"
+      },
+      "serving": {
+        "status": "unknown",
+        "label": "实际供餐未知"
+      }
+    },
+    "sources": [
+      {
+        "id": "53e2d979-9637-4fe0-8d4f-954811c257e4",
+        "matter_id": "ad491101-e0c6-481b-9dd3-552d4d332033",
+        "kind": "user_text",
+        "text": "工程T049自愿反馈核对，非真实菜单或供餐；保留相反原话、重复账号与明确工程忌口。",
+        "reported_by": null,
+        "recorded_by": "e2c04df3-a5bc-45d7-b1e9-312bc7e3fd49",
+        "recorded_at": "2026-10-08T15:13:19.333+00:00",
+        "source_state": "usable",
+        "replacement_source_id": null,
+        "state_note": "",
+        "preparation_usable": true
+      }
+    ],
+    "artifacts": [
+      {
+        "id": "971050b3-f463-4673-b241-b8de06d3f873",
+        "version": 1,
+        "matter_id": "ad491101-e0c6-481b-9dd3-552d4d332033",
+        "type": "manual_preparation",
+        "title": "菜单准备人工稿",
+        "content": "厨师本人原人工稿保持，菜单与意见均为工程假设。",
+        "status": "human_saved",
+        "input_revision": 2,
+        "created_at": "2026-10-08T15:13:57.634+00:00",
+        "stale": false
+      }
+    ],
+    "publication": {
+      "id": "4aa9d408-ccf5-4a68-99dd-9b748668c977",
+      "publisher_id": "e2c04df3-a5bc-45d7-b1e9-312bc7e3fd49",
+      "menu_date": "2026-10-19",
+      "meal_slot": "工程午餐",
+      "dishes": "工程T049豆腐与米饭",
+      "notes": "仅软件工程验证，非实际供餐，不代表采用任何意见。",
+      "version": 1,
+      "status": "published",
+      "published_at": "2026-10-08T15:13:57.677+00:00",
+      "withdrawn_at": null,
+      "publisher_display_name": "工程夹具厨师",
+      "publisher_name": "工程夹具厨师"
+    },
+    "feedback": {
+      "items": [
+        {
+          "id": "ec529b09-e5f1-4f9b-9fe9-090d68792cb3",
+          "contributor_id": "e6c57c55-cb3a-4c00-8377-c92096327804",
+          "display_name": "工程夹具员工",
+          "submitted_by": "工程夹具员工",
+          "publication_version": 1,
+          "version": 1,
+          "feedback_text": "工程原话：这道豆腐希望清淡一些。",
+          "dish": "工程豆腐",
+          "dietary_constraint": "",
+          "submitted_at": "2026-10-08T15:13:58.118+00:00",
+          "corrected_by_self": false,
+          "correction_count": 0,
+          "corrected_at": null,
+          "responses": []
+        },
+        {
+          "id": "1a75eec6-04f4-4200-a492-9daf67fa523e",
+          "contributor_id": "e6c57c55-cb3a-4c00-8377-c92096327804",
+          "display_name": "工程夹具员工",
+          "submitted_by": "工程夹具员工",
+          "publication_version": 1,
+          "version": 1,
+          "feedback_text": "工程本人更正：只建议另备可选辣味，保留清淡选择，工程忌口声明仍需单独核对。",
+          "dish": "工程豆腐",
+          "dietary_constraint": "工程假设忌口花生，仅验证单独保留，非真实健康资料。",
+          "submitted_at": "2026-10-08T15:14:50.463+00:00",
+          "corrected_by_self": true,
+          "correction_count": 1,
+          "corrected_at": "2026-10-08T15:18:00.913+00:00",
+          "responses": [
+            {
+              "id": "f902c3f7-5438-41b9-b961-0f5f64440a0b",
+              "publication_id": "4aa9d408-ccf5-4a68-99dd-9b748668c977",
+              "publication_version": 1,
+              "feedback_correction_count": 0,
+              "response_text": "工程厨师回应：已看到不同意见及工程忌口记录，实际做法另行核对；本回应不表示采用、备餐或供餐。",
+              "cook_display_name": "工程夹具厨师",
+              "recorded_at": "2026-10-08T15:16:21.550+00:00",
+              "old_feedback_scope": true,
+              "scope": "本菜单厨师对明确意见版本的文字声明；不代表采纳、菜单变更、实际供餐或效果"
+            }
+          ]
+        }
+      ],
+      "feedback_count": 2,
+      "contributor_count": 1,
+      "scope": "本人自愿提交给本菜单厨师的反馈；仅当前菜单版本，不改变菜单或库存"
+    }
+  },
+  "checks": {
+    "targeted_store_smoke": "Final 1 combined test passed in 0.571 s; optional constraints only by opt-in, role revoked during valid provider response discards result with usage audit, disabled model no queue, recovery no replay",
+    "syntax": "changed Python and JS pass",
+    "real_model": "1 actual jiaorong-instruct success; prompt713/completion285/total998; no real business inputs",
+    "before_save_original_preserved": true,
+    "http": "private employee matter404 to cook, candidate403 to employee, same publication/facts/sources/artifacts/tracks, two current replies and one historical reply, reopening did not call again",
+    "ui": "explicit select2/no constraints; pause blocks call and read keeps manual reply; resume, actual call, empty-only fill keeps other human reply; edit/save both replies, employee reads current/history, reload/relogin candidate and replies saved",
+    "model_calls": 1,
+    "full_suite_rerun": false,
+    "remaining": "semantic accuracy and real kitchen/business acceptance not established; PRD final goal active"
+  },
+  "model_read": {
+    "publication_id": "4aa9d408-ccf5-4a68-99dd-9b748668c977",
+    "publication_version": 1,
+    "matter_id": "ad491101-e0c6-481b-9dd3-552d4d332033",
+    "expected_version": 8,
+    "assistant_status": "waiting",
+    "basis_token": "9162c9430d94c6f84166fb5a35f69969c400f94ed9e572680dab9985781a7c8b",
+    "available": true,
+    "inputs": [
+      {
+        "id": "ec529b09-e5f1-4f9b-9fe9-090d68792cb3",
+        "hash": "521ad4c7d8ce3e6e170dae3b5e4c94010211f04d590343a616f228e21cb4675d",
+        "correction_count": 0
+      },
+      {
+        "id": "1a75eec6-04f4-4200-a492-9daf67fa523e",
+        "hash": "d51270b0b71eeaf8f3f5b1e288ba20980be2a9e3b11461383664a00390a098cf",
+        "correction_count": 1
+      }
+    ],
+    "batch": {
+      "id": "eda96a7e-6746-4bdb-bb8b-41db729803c7",
+      "status": "completed",
+      "error": null,
+      "stale": false,
+      "selected_count": 2,
+      "contributor_count": 1,
+      "include_constraints": false
+    },
+    "review": {
+      "content": "本次核对范围：2026-10-19工程午餐，菜品工程T049豆腐与米饭。仅归纳明确选定的两条意见，均为待核候选，未改菜单，未补采购或承诺落实。约束未提供不表示无过敏，实际安全仍由厨师核对。",
+      "model": "jiaorong-instruct",
+      "themes": [
+        {
+          "feedback_indices": [
+            1,
+            2
+          ],
+          "text": "意见1希望豆腐清淡一些；意见2本人更正为另备可选辣味、同时保留清淡选择，并声明忌口仍需单独核对。两条均指向同一菜品口味方向，但具体诉求不同，需分别核对。",
+          "title": "豆腐口味清淡与可选辣味",
+          "refs": [
+            {
+              "id": "ec529b09-e5f1-4f9b-9fe9-090d68792cb3",
+              "correction_count": 0,
+              "hash": "521ad4c7d8ce3e6e170dae3b5e4c94010211f04d590343a616f228e21cb4675d"
+            },
+            {
+              "id": "1a75eec6-04f4-4200-a492-9daf67fa523e",
+              "correction_count": 1,
+              "hash": "d51270b0b71eeaf8f3f5b1e288ba20980be2a9e3b11461383664a00390a098cf"
+            }
+          ]
+        }
+      ],
+      "replies": [
+        {
+          "feedback_index": 1,
+          "text": "待核：收到希望豆腐清淡一些的意见，是否按清淡口味备餐需厨师进一步核对确认，暂未承诺落实。",
+          "ref": {
+            "id": "ec529b09-e5f1-4f9b-9fe9-090d68792cb3",
+            "correction_count": 0,
+            "hash": "521ad4c7d8ce3e6e170dae3b5e4c94010211f04d590343a616f228e21cb4675d"
+          }
+        },
+        {
+          "feedback_index": 2,
+          "text": "待核：收到更正意见，建议另备可选辣味并保留清淡选择，忌口声明仍需单独核对，是否可行由厨师确认，暂未承诺落实。",
+          "ref": {
+            "id": "1a75eec6-04f4-4200-a492-9daf67fa523e",
+            "correction_count": 1,
+            "hash": "d51270b0b71eeaf8f3f5b1e288ba20980be2a9e3b11461383664a00390a098cf"
+          }
+        }
+      ]
+    },
+    "scope": "只发送本次所选意见原话与公开菜品，不发送账号身份、私人事项或来源；饮食约束默认不发，候选不表示厨师已回应。"
+  },
+  "model_usage": [
+    {
+      "action_id": "eda96a7e-6746-4bdb-bb8b-41db729803c7",
+      "discarded": false,
+      "model": "jiaorong-instruct",
+      "replayed": false,
+      "usage": {
+        "completion_tokens": 285,
+        "prompt_tokens": 713,
+        "total_tokens": 998
+      }
+    }
+  ],
+  "after": {
+    "publication": {
+      "id": "4aa9d408-ccf5-4a68-99dd-9b748668c977",
+      "publisher_id": "e2c04df3-a5bc-45d7-b1e9-312bc7e3fd49",
+      "menu_date": "2026-10-19",
+      "meal_slot": "工程午餐",
+      "dishes": "工程T049豆腐与米饭",
+      "notes": "仅软件工程验证，非实际供餐，不代表采用任何意见。",
+      "version": 1,
+      "status": "published",
+      "published_at": "2026-10-08T15:13:57.677+00:00",
+      "withdrawn_at": null,
+      "publisher_display_name": "工程夹具厨师",
+      "publisher_name": "工程夹具厨师"
+    },
+    "feedback": {
+      "items": [
+        {
+          "id": "ec529b09-e5f1-4f9b-9fe9-090d68792cb3",
+          "contributor_id": "e6c57c55-cb3a-4c00-8377-c92096327804",
+          "display_name": "工程夹具员工",
+          "submitted_by": "工程夹具员工",
+          "publication_version": 1,
+          "version": 1,
+          "feedback_text": "工程原话：这道豆腐希望清淡一些。",
+          "dish": "工程豆腐",
+          "dietary_constraint": "",
+          "submitted_at": "2026-10-08T15:13:58.118+00:00",
+          "corrected_by_self": false,
+          "correction_count": 0,
+          "corrected_at": null,
+          "responses": [
+            {
+              "id": "c7abd26e-a0c2-49f7-9ea5-b70a04e9a614",
+              "publication_id": "4aa9d408-ccf5-4a68-99dd-9b748668c977",
+              "publication_version": 1,
+              "feedback_correction_count": 0,
+              "response_text": "工程T050本人未保存回应：清淡意见将另核；原人工文字应保留。",
+              "cook_display_name": "工程夹具厨师",
+              "recorded_at": "2026-10-08T15:41:23.819+00:00",
+              "old_feedback_scope": false,
+              "scope": "本菜单厨师对明确意见版本的文字声明；不代表采纳、菜单变更、实际供餐或效果"
+            }
+          ]
+        },
+        {
+          "id": "1a75eec6-04f4-4200-a492-9daf67fa523e",
+          "contributor_id": "e6c57c55-cb3a-4c00-8377-c92096327804",
+          "display_name": "工程夹具员工",
+          "submitted_by": "工程夹具员工",
+          "publication_version": 1,
+          "version": 1,
+          "feedback_text": "工程本人更正：只建议另备可选辣味，保留清淡选择，工程忌口声明仍需单独核对。",
+          "dish": "工程豆腐",
+          "dietary_constraint": "工程假设忌口花生，仅验证单独保留，非真实健康资料。",
+          "submitted_at": "2026-10-08T15:14:50.463+00:00",
+          "corrected_by_self": true,
+          "correction_count": 1,
+          "corrected_at": "2026-10-08T15:18:00.913+00:00",
+          "responses": [
+            {
+              "id": "f902c3f7-5438-41b9-b961-0f5f64440a0b",
+              "publication_id": "4aa9d408-ccf5-4a68-99dd-9b748668c977",
+              "publication_version": 1,
+              "feedback_correction_count": 0,
+              "response_text": "工程厨师回应：已看到不同意见及工程忌口记录，实际做法另行核对；本回应不表示采用、备餐或供餐。",
+              "cook_display_name": "工程夹具厨师",
+              "recorded_at": "2026-10-08T15:16:21.550+00:00",
+              "old_feedback_scope": true,
+              "scope": "本菜单厨师对明确意见版本的文字声明；不代表采纳、菜单变更、实际供餐或效果"
+            },
+            {
+              "id": "1c17c943-3a51-4bbd-b981-2ef527671e2f",
+              "publication_id": "4aa9d408-ccf5-4a68-99dd-9b748668c977",
+              "publication_version": 1,
+              "feedback_correction_count": 1,
+              "response_text": "工程T050厨师本人核对后的文字回应：收到更正意见；可选辣味和清淡选择的具体做法另核，工程忌口另行核对。本声明不表示采用、备餐或供餐。",
+              "cook_display_name": "工程夹具厨师",
+              "recorded_at": "2026-10-08T15:41:39.190+00:00",
+              "old_feedback_scope": false,
+              "scope": "本菜单厨师对明确意见版本的文字声明；不代表采纳、菜单变更、实际供餐或效果"
+            }
+          ]
+        }
+      ],
+      "feedback_count": 2,
+      "contributor_count": 1,
+      "scope": "本人自愿提交给本菜单厨师的反馈；仅当前菜单版本，不改变菜单或库存"
+    },
+    "employee_responses": [
+      {
+        "id": "f902c3f7-5438-41b9-b961-0f5f64440a0b",
+        "publication_id": "4aa9d408-ccf5-4a68-99dd-9b748668c977",
+        "publication_version": 1,
+        "feedback_correction_count": 0,
+        "response_text": "工程厨师回应：已看到不同意见及工程忌口记录，实际做法另行核对；本回应不表示采用、备餐或供餐。",
+        "cook_display_name": "工程夹具厨师",
+        "recorded_at": "2026-10-08T15:16:21.550+00:00",
+        "old_feedback_scope": true,
+        "scope": "本菜单厨师对明确意见版本的文字声明；不代表采纳、菜单变更、实际供餐或效果"
+      },
+      {
+        "id": "1c17c943-3a51-4bbd-b981-2ef527671e2f",
+        "publication_id": "4aa9d408-ccf5-4a68-99dd-9b748668c977",
+        "publication_version": 1,
+        "feedback_correction_count": 1,
+        "response_text": "工程T050厨师本人核对后的文字回应：收到更正意见；可选辣味和清淡选择的具体做法另核，工程忌口另行核对。本声明不表示采用、备餐或供餐。",
+        "cook_display_name": "工程夹具厨师",
+        "recorded_at": "2026-10-08T15:41:39.190+00:00",
+        "old_feedback_scope": false,
+        "scope": "本菜单厨师对明确意见版本的文字声明；不代表采纳、菜单变更、实际供餐或效果"
+      }
+    ],
+    "model_read": {
+      "publication_id": "4aa9d408-ccf5-4a68-99dd-9b748668c977",
+      "publication_version": 1,
+      "matter_id": "ad491101-e0c6-481b-9dd3-552d4d332033",
+      "expected_version": 8,
+      "assistant_status": "waiting",
+      "basis_token": "9162c9430d94c6f84166fb5a35f69969c400f94ed9e572680dab9985781a7c8b",
+      "available": true,
+      "inputs": [
+        {
+          "id": "ec529b09-e5f1-4f9b-9fe9-090d68792cb3",
+          "hash": "521ad4c7d8ce3e6e170dae3b5e4c94010211f04d590343a616f228e21cb4675d",
+          "correction_count": 0
+        },
+        {
+          "id": "1a75eec6-04f4-4200-a492-9daf67fa523e",
+          "hash": "d51270b0b71eeaf8f3f5b1e288ba20980be2a9e3b11461383664a00390a098cf",
+          "correction_count": 1
+        }
+      ],
+      "batch": {
+        "id": "eda96a7e-6746-4bdb-bb8b-41db729803c7",
+        "status": "completed",
+        "error": null,
+        "stale": false,
+        "selected_count": 2,
+        "contributor_count": 1,
+        "include_constraints": false
+      },
+      "review": {
+        "content": "本次核对范围：2026-10-19工程午餐，菜品工程T049豆腐与米饭。仅归纳明确选定的两条意见，均为待核候选，未改菜单，未补采购或承诺落实。约束未提供不表示无过敏，实际安全仍由厨师核对。",
+        "model": "jiaorong-instruct",
+        "themes": [
+          {
+            "feedback_indices": [
+              1,
+              2
+            ],
+            "text": "意见1希望豆腐清淡一些；意见2本人更正为另备可选辣味、同时保留清淡选择，并声明忌口仍需单独核对。两条均指向同一菜品口味方向，但具体诉求不同，需分别核对。",
+            "title": "豆腐口味清淡与可选辣味",
+            "refs": [
+              {
+                "id": "ec529b09-e5f1-4f9b-9fe9-090d68792cb3",
+                "correction_count": 0,
+                "hash": "521ad4c7d8ce3e6e170dae3b5e4c94010211f04d590343a616f228e21cb4675d"
+              },
+              {
+                "id": "1a75eec6-04f4-4200-a492-9daf67fa523e",
+                "correction_count": 1,
+                "hash": "d51270b0b71eeaf8f3f5b1e288ba20980be2a9e3b11461383664a00390a098cf"
+              }
+            ]
+          }
+        ],
+        "replies": [
+          {
+            "feedback_index": 1,
+            "text": "待核：收到希望豆腐清淡一些的意见，是否按清淡口味备餐需厨师进一步核对确认，暂未承诺落实。",
+            "ref": {
+              "id": "ec529b09-e5f1-4f9b-9fe9-090d68792cb3",
+              "correction_count": 0,
+              "hash": "521ad4c7d8ce3e6e170dae3b5e4c94010211f04d590343a616f228e21cb4675d"
+            }
+          },
+          {
+            "feedback_index": 2,
+            "text": "待核：收到更正意见，建议另备可选辣味并保留清淡选择，忌口声明仍需单独核对，是否可行由厨师确认，暂未承诺落实。",
+            "ref": {
+              "id": "1a75eec6-04f4-4200-a492-9daf67fa523e",
+              "correction_count": 1,
+              "hash": "d51270b0b71eeaf8f3f5b1e288ba20980be2a9e3b11461383664a00390a098cf"
+            }
+          }
+        ]
+      },
+      "scope": "只发送本次所选意见原话与公开菜品，不发送账号身份、私人事项或来源；饮食约束默认不发，候选不表示厨师已回应。"
+    }
+  },
+  "package": {
+    "path": "dist/assistant-v0.3.0-20261008T154708Z-31712720.zip",
+    "files": 65,
+    "crc": "passed by package.py",
+    "sha256": "d3fc563b64a92c2f81bd053750db0b0368bb52b9d8d3688fc4a8b0bf844f940a"
+  },
+  "preview": {
+    "url": "http://127.0.0.1:8767",
+    "exec_session": 75928,
+    "data_directory": "tests/ui-check-v03",
+    "backend": "new menu model action loaded; original database preserved"
+  }
+}

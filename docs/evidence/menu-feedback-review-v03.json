@@ -1,0 +1,199 @@
+{
+  "task": "T049",
+  "publication_id": "4aa9d408-ccf5-4a68-99dd-9b748668c977",
+  "menu_matter_id": "ad491101-e0c6-481b-9dd3-552d4d332033",
+  "old_artifact_id": "971050b3-f463-4673-b241-b8de06d3f873",
+  "menu_before": {
+    "facts": {
+      "menu_date": {
+        "status": "confirmed",
+        "value": "2026-10-19"
+      },
+      "meal_slot": {
+        "status": "confirmed",
+        "value": "工程午餐"
+      },
+      "dishes": {
+        "status": "confirmed",
+        "value": "工程T049豆腐与米饭"
+      },
+      "cook": {
+        "status": "unknown",
+        "value": null
+      },
+      "dietary_constraints": {
+        "status": "unknown",
+        "value": null
+      },
+      "serving_scope": {
+        "status": "unknown",
+        "value": null
+      },
+      "menu_ref": {
+        "status": "unknown",
+        "value": null
+      }
+    },
+    "tracks": {
+      "publication": {
+        "status": "unknown",
+        "label": "厨师真实发布待核"
+      },
+      "preparation": {
+        "status": "unknown",
+        "label": "实际备餐未知"
+      },
+      "serving": {
+        "status": "unknown",
+        "label": "实际供餐未知"
+      }
+    }
+  },
+  "duplicate_feedback_ids": [
+    "f258fa8f-fae1-40f4-afbc-dab7e6f27338",
+    "ec529b09-e5f1-4f9b-9fe9-090d68792cb3"
+  ],
+  "fixture": "isolated engineering statements, no real meal or health data",
+  "new_model_calls": 0,
+  "affected_checks": "JS syntax and bounded count/duplicate/current-response/withdrawn-projection/HTML quoting check passed",
+  "backend_reply_checks": "existing valid tests/test_menu_reply.py evidence reused, not repeated",
+  "preview_session": 73174,
+  "ui": {
+    "result": "actual IAB employee/cook main path passed",
+    "steps": [
+      "employee submit one distinct opinion and isolated engineering constraint",
+      "cook read3 statements from1 account, exact duplicate group2, retain different statement and constraint",
+      "cook respond current opinion; current response count1",
+      "employee read actual cook response, type correction, pause and read baseline, save correction",
+      "reload preserved pause/correction/history, resume",
+      "employee withdraw one duplicate sharing, retains own private record",
+      "cook fresh read2 statements/1account, no duplicate group, current response count0, old response history and constraint retained"
+    ],
+    "not_verified": [
+      "model semantic interpretation of differences not implemented here; exact grouping only",
+      "real participants, real dietary safety, menu adoption or served meals",
+      "automatic detection before a fresh authorized read"
+    ]
+  },
+  "third_feedback_id": "1a75eec6-04f4-4200-a492-9daf67fa523e",
+  "before_review": {
+    "feedback_count": 3,
+    "contributor_count": 1,
+    "items": [
+      {
+        "id": "f258fa8f-fae1-40f4-afbc-dab7e6f27338",
+        "contributor_id": "e6c57c55-cb3a-4c00-8377-c92096327804",
+        "display_name": "工程夹具员工",
+        "submitted_by": "工程夹具员工",
+        "publication_version": 1,
+        "version": 1,
+        "feedback_text": "工程原话：这道豆腐希望清淡一些。",
+        "dish": "工程豆腐",
+        "dietary_constraint": "",
+        "submitted_at": "2026-10-08T15:13:58.042+00:00",
+        "corrected_by_self": false,
+        "correction_count": 0,
+        "corrected_at": null,
+        "responses": []
+      },
+      {
+        "id": "ec529b09-e5f1-4f9b-9fe9-090d68792cb3",
+        "contributor_id": "e6c57c55-cb3a-4c00-8377-c92096327804",
+        "display_name": "工程夹具员工",
+        "submitted_by": "工程夹具员工",
+        "publication_version": 1,
+        "version": 1,
+        "feedback_text": "工程原话：这道豆腐希望清淡一些。",
+        "dish": "工程豆腐",
+        "dietary_constraint": "",
+        "submitted_at": "2026-10-08T15:13:58.118+00:00",
+        "corrected_by_self": false,
+        "correction_count": 0,
+        "corrected_at": null,
+        "responses": []
+      },
+      {
+        "id": "1a75eec6-04f4-4200-a492-9daf67fa523e",
+        "contributor_id": "e6c57c55-cb3a-4c00-8377-c92096327804",
+        "display_name": "工程夹具员工",
+        "submitted_by": "工程夹具员工",
+        "publication_version": 1,
+        "version": 1,
+        "feedback_text": "工程原话：我希望这道豆腐保留辣味，意见与清淡请求不同。",
+        "dish": "工程豆腐",
+        "dietary_constraint": "工程假设忌口花生，仅验证单独保留，非真实健康资料。",
+        "submitted_at": "2026-10-08T15:14:50.463+00:00",
+        "corrected_by_self": false,
+        "correction_count": 0,
+        "corrected_at": null,
+        "responses": []
+      }
+    ]
+  },
+  "http": {
+    "result": "passed",
+    "final_cook_projection": {
+      "items": [
+        {
+          "id": "ec529b09-e5f1-4f9b-9fe9-090d68792cb3",
+          "contributor_id": "e6c57c55-cb3a-4c00-8377-c92096327804",
+          "display_name": "工程夹具员工",
+          "submitted_by": "工程夹具员工",
+          "publication_version": 1,
+          "version": 1,
+          "feedback_text": "工程原话：这道豆腐希望清淡一些。",
+          "dish": "工程豆腐",
+          "dietary_constraint": "",
+          "submitted_at": "2026-10-08T15:13:58.118+00:00",
+          "corrected_by_self": false,
+          "correction_count": 0,
+          "corrected_at": null,
+          "responses": []
+        },
+        {
+          "id": "1a75eec6-04f4-4200-a492-9daf67fa523e",
+          "contributor_id": "e6c57c55-cb3a-4c00-8377-c92096327804",
+          "display_name": "工程夹具员工",
+          "submitted_by": "工程夹具员工",
+          "publication_version": 1,
+          "version": 1,
+          "feedback_text": "工程本人更正：只建议另备可选辣味，保留清淡选择，工程忌口声明仍需单独核对。",
+          "dish": "工程豆腐",
+          "dietary_constraint": "工程假设忌口花生，仅验证单独保留，非真实健康资料。",
+          "submitted_at": "2026-10-08T15:14:50.463+00:00",
+          "corrected_by_self": true,
+          "correction_count": 1,
+          "corrected_at": "2026-10-08T15:18:00.913+00:00",
+          "responses": [
+            {
+              "id": "f902c3f7-5438-41b9-b961-0f5f64440a0b",
+              "publication_id": "4aa9d408-ccf5-4a68-99dd-9b748668c977",
+              "publication_version": 1,
+              "feedback_correction_count": 0,
+              "response_text": "工程厨师回应：已看到不同意见及工程忌口记录，实际做法另行核对；本回应不表示采用、备餐或供餐。",
+              "cook_display_name": "工程夹具厨师",
+              "recorded_at": "2026-10-08T15:16:21.550+00:00",
+              "old_feedback_scope": true,
+              "scope": "本菜单厨师对明确意见版本的文字声明；不代表采纳、菜单变更、实际供餐或效果"
+            }
+          ]
+        }
+      ],
+      "feedback_count": 2,
+      "contributor_count": 1,
+      "scope": "本人自愿提交给本菜单厨师的反馈；仅当前菜单版本，不改变菜单或库存"
+    },
+    "private_employee_matter_for_cook": "404",
+    "withdrawn_feedback_shared": false,
+    "employee_old_response_history_retained": true,
+    "menu_facts_and_real_tracks_and_original_artifact": "unchanged",
+    "menu_publication_version": 1
+  },
+  "final_status": "local menu still published, no adoption or meal effects",
+  "package": {
+    "path": "dist/assistant-v0.3.0-20261008T152042Z-7aea47ef.zip",
+    "files": 63,
+    "crc": "passed",
+    "sha256": "beaa5156e73a38ef59f949a857c0f79b3b19f743dfdc4f690191da10ff023eec"
+  }
+}

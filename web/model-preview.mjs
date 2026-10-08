@@ -1,0 +1,22 @@
+const esc = (value) => String(value ?? '').replace(/[&<>"']/g,(char) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
+export function createModelPreview({getState,getElement,request,render}) {
+  const records = new Map();
+  const current = () => getState().current;
+  const recordFor = (id) => {if (!records.has(id)) records.set(id,{open:false,data:null,error:null,reading:false,attempted:false});return records.get(id);};
+  const own = (id,epoch,selection) => current()?.id === id && getState().identityEpoch === epoch && getState().selection === selection;
+  const keepDom = () => Boolean(current() && getElement('.model-preview') && (records.get(current().id)?.open || globalThis.document?.activeElement?.closest('.model-preview')));
+  function noteVersion() {const matter = current(),record = records.get(matter?.id),label = getElement('#model-preview-stale');if (!record?.data || !label) return;label.hidden = matter.revision_no === record.data.input_revision && matter.version === record.data.version && !matter.model_disclosure_blocked && !record.error;label.textContent = record.error ? '当前输入未能读回，下方保留旧已读预览，不代表当前可发送；请明确刷新核对。' : matter.model_disclosure_blocked ? '本事项当前新准备及模型输入暂缓；下方为旧已读预览，不代表现在可发送，请明确刷新核对。' : `当前事项版本 ${matter.version}／事实修订 ${matter.revision_no}，预览来自版本 ${record.data.version}／修订 ${record.data.input_revision}，已过时需明确刷新；不会自动替换展开预览。`;}
+  async function read(id) {
+    if (current()?.id !== id) return;const record = recordFor(id);if (record.reading) return;
+    const epoch = getState().identityEpoch,selection = getState().selection;record.reading = true;record.attempted = true;render();
+    try {const data = await request(`/api/matters/${encodeURIComponent(id)}/model-input`);if (!own(id,epoch,selection)) return;record.data = data;record.error = null;}
+    catch (error) {if (own(id,epoch,selection)) {record.error = error.message || '本次模型输入暂未读回；没有发送模型请求，人工稿仍保留。';if (current()?.model_disclosure_blocked || [401,403,404,409].includes(error.status)) record.data = null;}}
+    finally {if (own(id,epoch,selection)) {record.reading = false;render();noteVersion();}}
+  }
+  function toggle(element) {if (!element.isConnected || element.id !== 'model-preview-details' || !current()) return;const record = recordFor(current().id);record.open = element.open;if (record.open && !record.attempted) read(current().id);}
+  function markup(matter) {
+    const record = recordFor(matter.id),data = record.data,disabled = getState().busy || record.reading ? 'disabled' : '',status = data?.model_status;
+    return `<details id="model-preview-details" class="model-preview" ${record.open ? 'open' : ''}><summary class="details-toggle">查看本次模型输入（只读，尚未发送）</summary><p class="scope-note">只在本机读取模型整理将用的当前事项输入，不调用外部模型、不扣调用预算、不写模型配置。预览可选，未配置模型也可查看；是否调用仍沿原“模型整理”显式选择与按钮，不增加批准步骤。</p><button class="button quiet" type="button" data-action="model-preview-read" ${disabled}>明确读取／刷新当前模型输入</button><p id="model-preview-stale" class="small dirty-note" role="status" hidden></p>${record.reading ? '<p class="small muted" role="status">正在读取实际本地输入，没有发送模型请求。</p>' : ''}${record.error ? `<p class="small dirty-note">${esc(record.error)}</p>` : ''}${data ? `<p class="scope-note">${esc(data.scope)} · 输入修订 ${esc(data.input_revision)} · 事项版本 ${esc(data.version)} · 后台记录输入大小 ${esc(data.input_bytes)} 字节。</p><p class="small muted">实际配置：${esc(status?.provider || '提供方未配置')}／${esc(status?.model || '模型未配置')} · ${esc(status?.reason || '当前配置状态待核')}。配置或预览不表示模型已调用、已发送或实际验证成功。</p><details class="model-preview-payload" open><summary class="details-toggle">实际本次事项输入（目标、已保存事实与允许来源）</summary><pre>${esc(JSON.stringify(data.input,null,2))}</pre></details><details class="model-preview-payload"><summary class="details-toggle">实际系统准备指令</summary><pre>${esc(typeof data.system_instructions === 'string' ? data.system_instructions : JSON.stringify(data.system_instructions,null,2))}</pre></details><p class="small muted">实际包含来源ID：${(data.included_source_ids || []).map(esc).join('；') || '当前无包含来源'}。未保存人工编辑不自动包含。</p>` : '<p class="small muted">尚无本次输入预览；不会把空预览当已发送或模型成功。</p>'}</details>`;
+  }
+  return {read,toggle,markup,keepDom,noteVersion,action:(name) => {if (name !== 'model-preview-read') return false;if (current()) read(current().id);return true;},noteError:(message) => {const record = records.get(current()?.id);if (record) {record.error = message;noteVersion();}},clear:() => records.clear()};
+}

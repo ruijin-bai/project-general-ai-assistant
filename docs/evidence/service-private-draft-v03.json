@@ -1,0 +1,44 @@
+{
+  "evidence_class": "isolated_engineering_service_draft_not_real_business",
+  "service_id": "d531409d-2400-40cd-8dcb-e7c45eb8f494",
+  "persisted_versions": [
+    {
+      "version": 1,
+      "basis_service_version": 5,
+      "saved_at": "2026-10-08T10:54:33.824+00:00",
+      "human_suffix": "工程经办补充：先核对进入许可，再按发起人仍有问题的反馈核对重新安排；未发送跟进。"
+    },
+    {
+      "version": 2,
+      "basis_service_version": 5,
+      "saved_at": "2026-10-08T10:54:34.173+00:00",
+      "human_suffix": "工程经办补充 v2：发起人仍有问题；验收与关闭口径待核，不记已完结。"
+    }
+  ],
+  "unchanged_service": {
+    "version": 5,
+    "sharing_status": "shared",
+    "assignment_status": "assigned",
+    "acceptance_status": "accepted",
+    "execution_status": "claimed_done",
+    "requester_result": "still_problem",
+    "inspection_status": "unknown",
+    "closure_status": "waiting_rule"
+  },
+  "browser": {
+    "reopen_v2_retained": true,
+    "original_v1_readable": true,
+    "history_read_did_not_replace_current_v2": true
+  },
+  "checks": {
+    "single_targeted_store_test_seconds": 0.289,
+    "domains": [
+      "repair",
+      "cleaning"
+    ],
+    "permissions_conflicts_replay_history_reopen_withdrawal": "passed",
+    "full_suite": "not_run"
+  },
+  "existing_real_model_usage_events": 1,
+  "screenshot": "service-private-draft-v03.jpg"
+}

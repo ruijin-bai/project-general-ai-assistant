@@ -1,0 +1,17 @@
+.env
+.env.*
+!.env.example
+*.db
+*.sqlite*
+*.dump
+*.key
+*.pem
+node_modules/
+.venv/
+__pycache__/
+.runtime/
+dist/
+tests/ui-check*/
+*.pyc
+*.log
+.instance.lock

@@ -1,0 +1,426 @@
+{
+  "evidence_class": "actual_jiaorong_engineering_call_not_real_certificate_law_or_business",
+  "matter_id": "cc09b188-862f-4ec0-8385-6ff51d7b73c5",
+  "source_id": "e0e8773a-1d95-4a63-a72b-396fe1cb961b",
+  "source_text": "工程假设本次要求：核对护照材料日期与拟离返日期。\n工程假设本次要求：提供国内证明原文，正式名称与适用待核。\n工程假设本次要求：核对入境卡回执原文；适用要求和窗口未提供。\n工程假设已有材料：护照材料日期2027-05-30；非真实护照或证件。\n工程假设计划材料：拟离日期2026-11-10、拟返日期2026-11-20；未获准休假或实际出行。\n工程假设缺项：国内证明与入境卡回执未提供，没有实际提交或签发。",
+  "original_artifact": {
+    "id": "a933f7da-7107-4133-9120-8506b386767a",
+    "version": 1,
+    "matter_id": "cc09b188-862f-4ec0-8385-6ff51d7b73c5",
+    "type": "manual_preparation",
+    "title": "签证休假返岗人工稿",
+    "content": "本人原人工稿：所有材料、回执、效力与手续仍未知。只用工程假设核对；没有实际提交、批准、签发或可通行结论。旧稿必须保留。",
+    "status": "human_saved",
+    "input_revision": 2,
+    "created_at": "2026-10-08T13:57:59.759+00:00",
+    "stale": false
+  },
+  "original_tracks": {
+    "leave_decision": {
+      "status": "unknown",
+      "label": "真实休假决定待核"
+    },
+    "passport": {
+      "status": "unknown",
+      "label": "护照材料与回执待核"
+    },
+    "visa": {
+      "status": "unknown",
+      "label": "签证材料与回执待核"
+    },
+    "domestic_proof": {
+      "status": "unknown",
+      "label": "国内真实证明待核"
+    },
+    "nis_entry": {
+      "status": "unknown",
+      "label": "入境卡适用及回执待核"
+    },
+    "nis_exit": {
+      "status": "unknown",
+      "label": "离境卡适用及回执待核"
+    },
+    "movement": {
+      "status": "unknown",
+      "label": "真实离返未知"
+    },
+    "meal": {
+      "status": "unknown",
+      "label": "餐次核对待核"
+    }
+  },
+  "targeted_tests": "HR affected test passed; new leave combined local/protected final passed 0.717s",
+  "static_checks": "affected Python/JS passed",
+  "preview_session": 9174,
+  "checks": [
+    "actual HTTP local preview includes leave check contract; no call during preview",
+    "explicit authorized real model action queued",
+    "fixed HTTP v1 MD equals saved body",
+    "all five actual submission/receipt unknown",
+    "old original artifact and business tracks retained",
+    "one actual completed model action; no repeat on read/reopen",
+    "free model date comparison quarantined, missing2 remain pending",
+    "actual v2 MD equals edited body; v1 fixed body and original manual artifact preserved"
+  ],
+  "model_actions": [
+    {
+      "id": "6044d7cf-201a-477f-8932-9285f5eab9dc",
+      "status": "completed",
+      "kind": "prepare_model",
+      "error": null
+    }
+  ],
+  "candidate_batch": {
+    "id": "cc09b188-862f-4ec0-8385-6ff51d7b73c5",
+    "version": 5,
+    "revision_no": 2,
+    "batch_id": "6044d7cf-201a-477f-8932-9285f5eab9dc",
+    "items": [
+      {
+        "check": "pending",
+        "id": "mc-6044d7cf201a477f89329285f5eab9dc-1",
+        "note": "材料匹配候选，非正式适用、签发、休假批准或可通行决定。护照材料日期2027-05-30早于拟离2026-11-10，存在时序待核，仅供本人本地核对。",
+        "provided_refs": [
+          {
+            "source_id": "e0e8773a-1d95-4a63-a72b-396fe1cb961b",
+            "start_line": 4,
+            "end_line": 4,
+            "excerpt": "工程假设已有材料：护照材料日期2027-05-30；非真实护照或证件。"
+          },
+          {
+            "source_id": "e0e8773a-1d95-4a63-a72b-396fe1cb961b",
+            "start_line": 5,
+            "end_line": 5,
+            "excerpt": "工程假设计划材料：拟离日期2026-11-10、拟返日期2026-11-20；未获准休假或实际出行。"
+          }
+        ],
+        "requirement_refs": [
+          {
+            "source_id": "e0e8773a-1d95-4a63-a72b-396fe1cb961b",
+            "start_line": 1,
+            "end_line": 1,
+            "excerpt": "工程假设本次要求：核对护照材料日期与拟离返日期。"
+          }
+        ],
+        "requirement_text": "核对护照材料日期与拟离返日期。"
+      },
+      {
+        "check": "pending",
+        "id": "mc-6044d7cf201a477f89329285f5eab9dc-2",
+        "note": "材料匹配候选，非正式适用、签发、休假批准或可通行决定。国内证明原文未提供，缺项待补，不编造正式名称或适用结论。",
+        "provided_refs": [],
+        "requirement_refs": [
+          {
+            "source_id": "e0e8773a-1d95-4a63-a72b-396fe1cb961b",
+            "start_line": 2,
+            "end_line": 2,
+            "excerpt": "工程假设本次要求：提供国内证明原文，正式名称与适用待核。"
+          }
+        ],
+        "requirement_text": "提供国内证明原文，正式名称与适用待核。"
+      },
+      {
+        "check": "pending",
+        "id": "mc-6044d7cf201a477f89329285f5eab9dc-3",
+        "note": "材料匹配候选，非正式适用、签发、休假批准或可通行决定。入境卡回执原文未提供，缺项待补，不编造适用要求、申请窗口或签发结论。",
+        "provided_refs": [],
+        "requirement_refs": [
+          {
+            "source_id": "e0e8773a-1d95-4a63-a72b-396fe1cb961b",
+            "start_line": 3,
+            "end_line": 3,
+            "excerpt": "工程假设本次要求：核对入境卡回执原文；适用要求和窗口未提供。"
+          }
+        ],
+        "requirement_text": "核对入境卡回执原文；适用要求和窗口未提供。"
+      }
+    ],
+    "stale": false,
+    "scope": "已保存的签证休假返岗材料匹配候选；读取不调用模型。要求原述与出处逐字核对，适用、原件与匹配含义须本人核对；缺材料／提交／回执各自待核，不判断办妥、签发或可通行。",
+    "model": "jiaorong-instruct",
+    "basis_revision": 2
+  },
+  "final_checks": {
+    "id": "cc09b188-862f-4ec0-8385-6ff51d7b73c5",
+    "version": 9,
+    "revision_no": 3,
+    "input_revision": 3,
+    "structure_version": 1,
+    "stale": false,
+    "items": [
+      {
+        "check": "local_source_checked",
+        "id": "mc-6044d7cf201a477f89329285f5eab9dc-1",
+        "note": "本人只核给定工程原文及所录日期，不采用模型自由备注的日期比较；正式效力、适用和手续仍未知。",
+        "provided_refs": [
+          {
+            "source_id": "e0e8773a-1d95-4a63-a72b-396fe1cb961b",
+            "start_line": 4,
+            "end_line": 4,
+            "excerpt": "工程假设已有材料：护照材料日期2027-05-30；非真实护照或证件。"
+          },
+          {
+            "source_id": "e0e8773a-1d95-4a63-a72b-396fe1cb961b",
+            "start_line": 5,
+            "end_line": 5,
+            "excerpt": "工程假设计划材料：拟离日期2026-11-10、拟返日期2026-11-20；未获准休假或实际出行。"
+          }
+        ],
+        "requirement_refs": [
+          {
+            "source_id": "e0e8773a-1d95-4a63-a72b-396fe1cb961b",
+            "start_line": 1,
+            "end_line": 1,
+            "excerpt": "工程假设本次要求：核对护照材料日期与拟离返日期。"
+          }
+        ],
+        "requirement_text": "核对护照材料日期与拟离返日期。",
+        "requirement_excerpt": "工程假设本次要求：核对护照材料日期与拟离返日期。",
+        "provided_excerpt": "工程假设已有材料：护照材料日期2027-05-30；非真实护照或证件。\n\n工程假设计划材料：拟离日期2026-11-10、拟返日期2026-11-20；未获准休假或实际出行。",
+        "compliance": "unknown"
+      },
+      {
+        "check": "pending",
+        "id": "mc-6044d7cf201a477f89329285f5eab9dc-2",
+        "note": "国内证明原文未提供，正式名称与适用待核；不生成证明或冒称已提交。",
+        "provided_refs": [],
+        "requirement_refs": [
+          {
+            "source_id": "e0e8773a-1d95-4a63-a72b-396fe1cb961b",
+            "start_line": 2,
+            "end_line": 2,
+            "excerpt": "工程假设本次要求：提供国内证明原文，正式名称与适用待核。"
+          }
+        ],
+        "requirement_text": "提供国内证明原文，正式名称与适用待核。",
+        "requirement_excerpt": "工程假设本次要求：提供国内证明原文，正式名称与适用待核。",
+        "provided_excerpt": "",
+        "compliance": "unknown"
+      },
+      {
+        "check": "pending",
+        "id": "mc-6044d7cf201a477f89329285f5eab9dc-3",
+        "note": "入境卡回执原文未提供，要求、窗口与效力待核；不生成卡或冒称办妥。",
+        "provided_refs": [],
+        "requirement_refs": [
+          {
+            "source_id": "e0e8773a-1d95-4a63-a72b-396fe1cb961b",
+            "start_line": 3,
+            "end_line": 3,
+            "excerpt": "工程假设本次要求：核对入境卡回执原文；适用要求和窗口未提供。"
+          }
+        ],
+        "requirement_text": "核对入境卡回执原文；适用要求和窗口未提供。",
+        "requirement_excerpt": "工程假设本次要求：核对入境卡回执原文；适用要求和窗口未提供。",
+        "provided_excerpt": "",
+        "compliance": "unknown"
+      }
+    ],
+    "gaps": [
+      {
+        "id": "mc-6044d7cf201a477f89329285f5eab9dc-2",
+        "requirement_text": "提供国内证明原文，正式名称与适用待核。",
+        "reason": "未提供对应材料"
+      },
+      {
+        "id": "mc-6044d7cf201a477f89329285f5eab9dc-3",
+        "requirement_text": "核对入境卡回执原文；适用要求和窗口未提供。",
+        "reason": "未提供对应材料"
+      }
+    ],
+    "scope": "本人私有要求与材料来源逐项核对；不代表正式适用、签发、休假批准、可通行、合规、资格、录用、处罚、付款、收发或权威记录更新"
+  },
+  "final_candidate_batch": {
+    "id": "cc09b188-862f-4ec0-8385-6ff51d7b73c5",
+    "version": 9,
+    "revision_no": 3,
+    "batch_id": "6044d7cf-201a-477f-8932-9285f5eab9dc",
+    "items": [
+      {
+        "check": "pending",
+        "id": "mc-6044d7cf201a477f89329285f5eab9dc-1",
+        "note": "所给材料原文的匹配候选；日期先后、正式适用和效力待核，未判断签发或可通行。",
+        "provided_refs": [
+          {
+            "source_id": "e0e8773a-1d95-4a63-a72b-396fe1cb961b",
+            "start_line": 4,
+            "end_line": 4,
+            "excerpt": "工程假设已有材料：护照材料日期2027-05-30；非真实护照或证件。"
+          },
+          {
+            "source_id": "e0e8773a-1d95-4a63-a72b-396fe1cb961b",
+            "start_line": 5,
+            "end_line": 5,
+            "excerpt": "工程假设计划材料：拟离日期2026-11-10、拟返日期2026-11-20；未获准休假或实际出行。"
+          }
+        ],
+        "requirement_refs": [
+          {
+            "source_id": "e0e8773a-1d95-4a63-a72b-396fe1cb961b",
+            "start_line": 1,
+            "end_line": 1,
+            "excerpt": "工程假设本次要求：核对护照材料日期与拟离返日期。"
+          }
+        ],
+        "requirement_text": "核对护照材料日期与拟离返日期。",
+        "model_note": "材料匹配候选，非正式适用、签发、休假批准或可通行决定。护照材料日期2027-05-30早于拟离2026-11-10，存在时序待核，仅供本人本地核对。"
+      },
+      {
+        "check": "pending",
+        "id": "mc-6044d7cf201a477f89329285f5eab9dc-2",
+        "note": "未匹配已有材料来源，保持待补；正式适用及办理口径未知，不生成证明或卡。",
+        "provided_refs": [],
+        "requirement_refs": [
+          {
+            "source_id": "e0e8773a-1d95-4a63-a72b-396fe1cb961b",
+            "start_line": 2,
+            "end_line": 2,
+            "excerpt": "工程假设本次要求：提供国内证明原文，正式名称与适用待核。"
+          }
+        ],
+        "requirement_text": "提供国内证明原文，正式名称与适用待核。",
+        "model_note": "材料匹配候选，非正式适用、签发、休假批准或可通行决定。国内证明原文未提供，缺项待补，不编造正式名称或适用结论。"
+      },
+      {
+        "check": "pending",
+        "id": "mc-6044d7cf201a477f89329285f5eab9dc-3",
+        "note": "未匹配已有材料来源，保持待补；正式适用及办理口径未知，不生成证明或卡。",
+        "provided_refs": [],
+        "requirement_refs": [
+          {
+            "source_id": "e0e8773a-1d95-4a63-a72b-396fe1cb961b",
+            "start_line": 3,
+            "end_line": 3,
+            "excerpt": "工程假设本次要求：核对入境卡回执原文；适用要求和窗口未提供。"
+          }
+        ],
+        "requirement_text": "核对入境卡回执原文；适用要求和窗口未提供。",
+        "model_note": "材料匹配候选，非正式适用、签发、休假批准或可通行决定。入境卡回执原文未提供，缺项待补，不编造适用要求、申请窗口或签发结论。"
+      }
+    ],
+    "stale": true,
+    "scope": "已保存的签证休假返岗材料匹配候选；读取不调用模型。要求原述与出处逐字核对，适用、原件与匹配含义须本人核对；缺材料／提交／回执各自待核，不判断办妥、签发或可通行。",
+    "model": "jiaorong-instruct",
+    "basis_revision": 2
+  },
+  "final_material_records": {
+    "id": "cc09b188-862f-4ec0-8385-6ff51d7b73c5",
+    "version": 9,
+    "revision_no": 3,
+    "items": [
+      {
+        "kind": "passport",
+        "label": "护照材料",
+        "submission": "unknown",
+        "receipt": "unknown",
+        "receipt_id": null,
+        "formal_validity": "unknown",
+        "review_note": null
+      },
+      {
+        "kind": "visa",
+        "label": "签证材料",
+        "submission": "unknown",
+        "receipt": "unknown",
+        "receipt_id": null,
+        "formal_validity": "unknown",
+        "review_note": null
+      },
+      {
+        "kind": "domestic_proof",
+        "label": "国内真实证明",
+        "submission": "unknown",
+        "receipt": "unknown",
+        "receipt_id": null,
+        "formal_validity": "unknown",
+        "review_note": null
+      },
+      {
+        "kind": "nis_entry",
+        "label": "入境卡材料",
+        "submission": "unknown",
+        "receipt": "unknown",
+        "receipt_id": null,
+        "formal_validity": "unknown",
+        "review_note": null
+      },
+      {
+        "kind": "nis_exit",
+        "label": "离境卡材料",
+        "submission": "unknown",
+        "receipt": "unknown",
+        "receipt_id": null,
+        "formal_validity": "unknown",
+        "review_note": null
+      }
+    ],
+    "records": [],
+    "scope": "各材料的提交声明、回执来源与本人核对分别保留；仅私有记录，不提交外部申请，不核真签发或判断获准、可通行。"
+  },
+  "final_artifact": {
+    "id": "6d87c050-4fc6-477c-a136-5899469065b5",
+    "version": 2,
+    "matter_id": "cc09b188-862f-4ec0-8385-6ff51d7b73c5",
+    "type": "checklist_preparation",
+    "title": "要求与材料核对准备稿",
+    "content": "# 要求与材料核对准备稿\n\n本人私有要求与材料来源逐项核对；不代表正式适用、签发、休假批准、可通行、合规、资格、录用、处罚、付款、收发或权威记录更新\n事实修订：3\n生成方式：本地确定性模板；正式适用、合规与处理结果未知。\n\n## 核对护照材料日期与拟离返日期。\n本地核对：本人已核所给来源\n正式合规：未知\n备注：本人只核给定工程原文及所录日期，不采用模型自由备注的日期比较；正式效力、适用和手续仍未知。\n要求依据：\n来源 e0e8773a-1d95-4a63-a72b-396fe1cb961b 第1–1行\n工程假设本次要求：核对护照材料日期与拟离返日期。\n材料来源：\n来源 e0e8773a-1d95-4a63-a72b-396fe1cb961b 第4–4行\n工程假设已有材料：护照材料日期2027-05-30；非真实护照或证件。\n来源 e0e8773a-1d95-4a63-a72b-396fe1cb961b 第5–5行\n工程假设计划材料：拟离日期2026-11-10、拟返日期2026-11-20；未获准休假或实际出行。\n\n## 提供国内证明原文，正式名称与适用待核。\n本地核对：来源待核\n正式合规：未知\n备注：国内证明原文未提供，正式名称与适用待核；不生成证明或冒称已提交。\n要求依据：\n来源 e0e8773a-1d95-4a63-a72b-396fe1cb961b 第2–2行\n工程假设本次要求：提供国内证明原文，正式名称与适用待核。\n材料未提供，待补。\n\n## 核对入境卡回执原文；适用要求和窗口未提供。\n本地核对：来源待核\n正式合规：未知\n备注：入境卡回执原文未提供，要求、窗口与效力待核；不生成卡或冒称办妥。\n要求依据：\n来源 e0e8773a-1d95-4a63-a72b-396fe1cb961b 第3–3行\n工程假设本次要求：核对入境卡回执原文；适用要求和窗口未提供。\n材料未提供，待补。\n\n## 缺项与待核\n- 提供国内证明原文，正式名称与适用待核。：未提供对应材料\n- 核对入境卡回执原文；适用要求和窗口未提供。：未提供对应材料\n\n本人续办备注：工程核对稿保存后可继续修改；正式材料、回执、适用和效力仍待核，未提交或发送。",
+    "status": "human_saved",
+    "input_revision": 3,
+    "created_at": "2026-10-08T14:06:34.981+00:00",
+    "stale": false
+  },
+  "model_usage_events": [
+    {
+      "action_id": "6044d7cf-201a-477f-8932-9285f5eab9dc",
+      "model": "jiaorong-instruct",
+      "replayed": false,
+      "usage": {
+        "completion_tokens": 660,
+        "prompt_tokens": 1436,
+        "total_tokens": 2096
+      }
+    }
+  ],
+  "fixed_md_equals_saved_body": true,
+  "model_calls": 1,
+  "semantic_risk": "Actual model free note falsely compared 2027-05-30 as earlier than 2026-11-10; original action and audit note preserved, deterministic neutral match note replaces it for selection; not a trusted date calculation",
+  "ui_steps": [
+    "explicit read no extra call",
+    "select3 append all pending",
+    "human read material quotes",
+    "human local source check first only",
+    "edit3 notes",
+    "pause keep edits",
+    "explicit current baseline read",
+    "save paused",
+    "reload preserves pause and notes",
+    "resume",
+    "read current checks",
+    "render independent editable artifact",
+    "select independent saved artifact",
+    "edit saved draft",
+    "save human v2"
+  ],
+  "final_artifact_v1": {
+    "id": "6d87c050-4fc6-477c-a136-5899469065b5",
+    "version": 1,
+    "matter_id": "cc09b188-862f-4ec0-8385-6ff51d7b73c5",
+    "type": "checklist_preparation",
+    "title": "要求与材料核对准备稿",
+    "content": "# 要求与材料核对准备稿\n\n本人私有要求与材料来源逐项核对；不代表正式适用、签发、休假批准、可通行、合规、资格、录用、处罚、付款、收发或权威记录更新\n事实修订：3\n生成方式：本地确定性模板；正式适用、合规与处理结果未知。\n\n## 核对护照材料日期与拟离返日期。\n本地核对：本人已核所给来源\n正式合规：未知\n备注：本人只核给定工程原文及所录日期，不采用模型自由备注的日期比较；正式效力、适用和手续仍未知。\n要求依据：\n来源 e0e8773a-1d95-4a63-a72b-396fe1cb961b 第1–1行\n工程假设本次要求：核对护照材料日期与拟离返日期。\n材料来源：\n来源 e0e8773a-1d95-4a63-a72b-396fe1cb961b 第4–4行\n工程假设已有材料：护照材料日期2027-05-30；非真实护照或证件。\n来源 e0e8773a-1d95-4a63-a72b-396fe1cb961b 第5–5行\n工程假设计划材料：拟离日期2026-11-10、拟返日期2026-11-20；未获准休假或实际出行。\n\n## 提供国内证明原文，正式名称与适用待核。\n本地核对：来源待核\n正式合规：未知\n备注：国内证明原文未提供，正式名称与适用待核；不生成证明或冒称已提交。\n要求依据：\n来源 e0e8773a-1d95-4a63-a72b-396fe1cb961b 第2–2行\n工程假设本次要求：提供国内证明原文，正式名称与适用待核。\n材料未提供，待补。\n\n## 核对入境卡回执原文；适用要求和窗口未提供。\n本地核对：来源待核\n正式合规：未知\n备注：入境卡回执原文未提供，要求、窗口与效力待核；不生成卡或冒称办妥。\n要求依据：\n来源 e0e8773a-1d95-4a63-a72b-396fe1cb961b 第3–3行\n工程假设本次要求：核对入境卡回执原文；适用要求和窗口未提供。\n材料未提供，待补。\n\n## 缺项与待核\n- 提供国内证明原文，正式名称与适用待核。：未提供对应材料\n- 核对入境卡回执原文；适用要求和窗口未提供。：未提供对应材料",
+    "status": "structured_draft",
+    "input_revision": 3,
+    "created_at": "2026-10-08T14:04:54.179+00:00",
+    "stale": false
+  },
+  "final_version": 10,
+  "final_revision": 3,
+  "final_tests": "new leave combined local/protected final passed 0.541s; HR affected existing passed; static passed",
+  "screenshot": "leave-model-checks-v03.jpg",
+  "package": {
+    "path": "dist/assistant-v0.3.0-20261008T140739Z-712ed8e0.zip",
+    "files": 57,
+    "crc": true,
+    "sha256": "5f0a40fd759c98db1e580df00ccffec974f6f709553ac2d9b301e12a552a25bf"
+  }
+}

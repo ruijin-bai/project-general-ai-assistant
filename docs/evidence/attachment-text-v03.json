@@ -1,0 +1,77 @@
+{
+  "evidence_class": "engineering_original_docx_not_real_meeting",
+  "matter_id": "5b501f54-b096-4742-9969-490c2daef1f9",
+  "attachment_id": "c3b5fde3-67a2-45dd-b239-4346ad4efb54",
+  "original_sha256": "4e4a75acab3b591e20ff82385aa3a6a50d4bdb7be6a8dd54c974bc65d83fdb31",
+  "preview_method": "word_body_paragraphs",
+  "http_preview_text_matches_original": true,
+  "preview_does_not_create_source": true,
+  "paused_before_ui_transfer": true,
+  "ui_status": "read_edit_transfer_refresh_and_model_body_save_passed",
+  "actual_model_status": "completed",
+  "explicit_result_read_preserves_unsaved_body": true,
+  "model_usage": [
+    {
+      "action_id": "6f0ce1e1-a69d-46dc-a156-10fbc800fca8",
+      "model": "jiaorong-instruct",
+      "replayed": false,
+      "usage": {
+        "completion_tokens": 601,
+        "prompt_tokens": 922,
+        "total_tokens": 1523
+      }
+    }
+  ],
+  "source_id": "c561ed5d-b7c0-4b35-bae8-065e40e515df",
+  "saved_origin": {
+    "attachment_id": "c3b5fde3-67a2-45dd-b239-4346ad4efb54",
+    "declared_format": "docx",
+    "filename": "工程会议原文.docx",
+    "human_edited": true,
+    "method": "word_body_paragraphs",
+    "positions": [],
+    "saved_text_sha256": "4505cf710ac8663ca74bda8941b88df89127a1218d7a52c507caf27ce2db8e75",
+    "scope": "本人转存的正文候选；原件不变，未确认事实。正文已人工修改，对原件位置须重新核对。",
+    "sha256": "4e4a75acab3b591e20ff82385aa3a6a50d4bdb7be6a8dd54c974bc65d83fdb31",
+    "truncated": false,
+    "unread": [
+      "分页、版式、表格合并关系、域指令和作者真实性未核"
+    ]
+  },
+  "saved_fragment": "工程验证会议原文，非真实会议。\n会议主题：营地设施检查准备。\n会议日期：2026-10-10。\n参会人：工程经办、工程记录人（均为假设，未实际参会）。\n讨论：核对设备位置、可进入时段。\n后续事项：工程经办拟在2026-10-11核对缺项，属于演练候选，未实际执行。\n人工核对补充：此处仅整理候选，未召开会议、分派或发送。",
+  "original_sha256_unchanged": true,
+  "artifact_versions": [
+    {
+      "id": "c38674a5-0ba5-4e73-a867-2da4b0558ec1",
+      "version": 1,
+      "content": "模型准备草稿；未批准、派遣、报备、扣餐或执行。\n\n【会议纪要准备草稿（工程验证/非真实业务）】\n说明：本草稿仅用于工程验证，人员、日期均为假设，未实际开会、分派、外发或执行。\n\n一、来源陈述（未核渠道/规则：用户提供的工程验证文本，非正式会议记录）\n- 工程验证会议原文，非真实会议。\n- 会议主题：营地设施检查准备。\n- 会议日期：2026-10-10。\n- 参会人：工程经办、工程记录人（均为假设，未实际参会）。\n- 讨论：核对设备位置、可进入时段。\n- 后续事项：工程经办拟在2026-10-11核对缺项，属于演练候选，未实际执行。\n- 人工核对补充：此处仅整理候选，未召开会议、分派或发送。\n\n二、候选字段（待确认，未批准/未执行）\n- 会议主题：营地设施检查准备\n- 会议日期：2026-10-10\n- 参会人：工程经办、工程记录人（假设）\n- 讨论内容：核对设备位置、可进入时段\n- 后续事项：工程经办拟在2026-10-11核对缺项（演练候选，未实际执行）\n\n三、已确认事实\n- 无已确认字段（所有字段状态均为unknown）\n\n四、未核/待确认事项\n- 来源为工程验证文本，非正式渠道，所有内容均需人工核对确认。\n- 不得据此草稿声称外发、送达、已批准或实际已执行。\n\n待核问题：\n- 请确认会议主题是否为“营地设施检查准备”？\n- 请确认会议日期是否为2026-10-10？\n- 请确认参会人是否为工程经办、工程记录人（假设）？\n- 请确认讨论内容是否为“核对设备位置、可进入时段”？\n- 请确认后续事项是否为“工程经办拟在2026-10-11核对缺项（演练候选，未实际执行）”？\n- 是否有会议地点信息需要补充？\n- 是否有会议决议内容需要补充？"
+    },
+    {
+      "id": "c38674a5-0ba5-4e73-a867-2da4b0558ec1",
+      "version": 2,
+      "content": "模型准备草稿；未批准、派遣、报备、扣餐或执行。\n\n【会议纪要准备草稿（工程验证/非真实业务）】\n说明：本草稿仅用于工程验证，人员、日期均为假设，未实际开会、分派、外发或执行。\n\n一、来源陈述（未核渠道/规则：用户提供的工程验证文本，非正式会议记录）\n- 工程验证会议原文，非真实会议。\n- 会议主题：营地设施检查准备。\n- 会议日期：2026-10-10。\n- 参会人：工程经办、工程记录人（均为假设，未实际参会）。\n- 讨论：核对设备位置、可进入时段。\n- 后续事项：工程经办拟在2026-10-11核对缺项，属于演练候选，未实际执行。\n- 人工核对补充：此处仅整理候选，未召开会议、分派或发送。\n\n二、候选字段（待确认，未批准/未执行）\n- 会议主题：营地设施检查准备\n- 会议日期：2026-10-10\n- 参会人：工程经办、工程记录人（假设）\n- 讨论内容：核对设备位置、可进入时段\n- 后续事项：工程经办拟在2026-10-11核对缺项（演练候选，未实际执行）\n\n三、已确认事实\n- 无已确认字段（所有字段状态均为unknown）\n\n四、未核/待确认事项\n- 来源为工程验证文本，非正式渠道，所有内容均需人工核对确认。\n- 不得据此草稿声称外发、送达、已批准或实际已执行。\n\n待核问题：\n- 请确认会议主题是否为“营地设施检查准备”？\n- 请确认会议日期是否为2026-10-10？\n- 请确认参会人是否为工程经办、工程记录人（假设）？\n- 请确认讨论内容是否为“核对设备位置、可进入时段”？\n- 请确认后续事项是否为“工程经办拟在2026-10-11核对缺项（演练候选，未实际执行）”？\n- 是否有会议地点信息需要补充？\n- 是否有会议决议内容需要补充？\n工程人工补充：未召开会议、未分派和外发；此稿仍需核对。"
+    }
+  ],
+  "model_input_source_count": 2,
+  "model_input_source_keys": [
+    [
+      "kind",
+      "text",
+      "recorded_by",
+      "recorded_at"
+    ],
+    [
+      "kind",
+      "text",
+      "recorded_by",
+      "recorded_at"
+    ]
+  ],
+  "specialized_store_test": {
+    "combined_cases": 1,
+    "local_and_protected": true,
+    "seconds": 0.449,
+    "result": "passed"
+  },
+  "preview_session": 28919
+}

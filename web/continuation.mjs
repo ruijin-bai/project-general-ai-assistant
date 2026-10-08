@@ -1,0 +1,10 @@
+const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+export function continuationSummary(m,{busy=false}={}) {
+  const held=['paused','handoff'].includes(m.assistant_status),blocked=m.model_disclosure_blocked;
+  const points=(m.waiting_points||[]).filter(p=>p.active!==false&&p.state==='waiting');
+  const inferred=(m.waiting||[]).filter(p=>!(m.waiting_points||[]).some(x=>x.id===p.id));
+  const automatic=m.workflow?.enabled;
+  const label=held?(m.assistant_status==='handoff'?'由你接手续办':'已暂停未来整理'):m.assistant_status==='processing'?'正在准备，结果会保存到本事项':blocked?'等待核对来源范围':'等待补充或本人核对';
+  return `<div class="continuation-summary"><div class="panel-head"><h2>继续办理</h2><span class="small muted" role="status">${esc(label)}</span></div>${points.length?`<ul class="waiting-custom-list">${points.slice(0,3).map(p=>`<li><strong>${esc(p.who)}</strong> · ${esc(p.reason)}${p.basis_stale?'<span class="dirty-note"> · 依据变化待核</span>':''}${p.due_now===true?'<span class="dirty-note"> · 已到本人设置的提醒时间</span>':''}<small>下一步：${esc(p.next_step)}</small>${p.due_at?`<small>已保存提醒：${esc(p.due_at)}</small>`:''}<button class="button quiet" data-action="waiting-followup" data-point-id="${esc(p.id)}" ${busy||held||blocked||p.basis_stale?'disabled':''}>准备跟进文字</button></li>`).join('')}</ul>${points.length>3?`<p class="small muted">另有 ${points.length-3} 个已保存等待点，可展开查看。</p>`:''}`:`<p class="small muted">${inferred.length?inferred.slice(0,2).map(p=>`${p.who_name||p.who||'责任对象待核'}：${p.reason}`).map(esc).join('<br>'):'当前没有本人已记录的等待点；可把具体问题留作待办，或补充实际答复。'}</p>`}<p class="small muted">${held?'原成果与等待记录保留；恢复后按委托继续。':automatic?'收到新的事实、来源或核对明细后继续本地整理；无新信息时等待。':'持续本地整理未开启；需要时可委托，交融仍须明确选择。'} ${blocked?'来源范围未核前暂缓新准备。':''}</p><div class="artifact-toolbar"><button class="button quiet" data-action="toggle-workflow" ${busy||blocked?'disabled':''}>${automatic?'关闭持续本地整理':'开启持续本地整理'}</button><button class="button quiet" data-action="open-continuation" ${busy?'disabled':''}>查看／编辑等待与跟进</button></div><p class="small muted">只展示本事项已保存范围；提醒按最近读回时间判断。未自动催问或发送，等待解除不表示业务办结。</p></div>`;
+}

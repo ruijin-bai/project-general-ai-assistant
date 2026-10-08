@@ -1,0 +1,203 @@
+{
+  "evidence_class": "engineering_meeting_candidates_not_real_meeting",
+  "matter_id": "5b501f54-b096-4742-9969-490c2daef1f9",
+  "source_ids": [
+    "0b926907-99af-43c1-80eb-2fac32faed13",
+    "c561ed5d-b7c0-4b35-bae8-065e40e515df"
+  ],
+  "original_artifacts_before_call": [
+    {
+      "id": "c38674a5-0ba5-4e73-a867-2da4b0558ec1",
+      "version": 2,
+      "content": "模型准备草稿；未批准、派遣、报备、扣餐或执行。\n\n【会议纪要准备草稿（工程验证/非真实业务）】\n说明：本草稿仅用于工程验证，人员、日期均为假设，未实际开会、分派、外发或执行。\n\n一、来源陈述（未核渠道/规则：用户提供的工程验证文本，非正式会议记录）\n- 工程验证会议原文，非真实会议。\n- 会议主题：营地设施检查准备。\n- 会议日期：2026-10-10。\n- 参会人：工程经办、工程记录人（均为假设，未实际参会）。\n- 讨论：核对设备位置、可进入时段。\n- 后续事项：工程经办拟在2026-10-11核对缺项，属于演练候选，未实际执行。\n- 人工核对补充：此处仅整理候选，未召开会议、分派或发送。\n\n二、候选字段（待确认，未批准/未执行）\n- 会议主题：营地设施检查准备\n- 会议日期：2026-10-10\n- 参会人：工程经办、工程记录人（假设）\n- 讨论内容：核对设备位置、可进入时段\n- 后续事项：工程经办拟在2026-10-11核对缺项（演练候选，未实际执行）\n\n三、已确认事实\n- 无已确认字段（所有字段状态均为unknown）\n\n四、未核/待确认事项\n- 来源为工程验证文本，非正式渠道，所有内容均需人工核对确认。\n- 不得据此草稿声称外发、送达、已批准或实际已执行。\n\n待核问题：\n- 请确认会议主题是否为“营地设施检查准备”？\n- 请确认会议日期是否为2026-10-10？\n- 请确认参会人是否为工程经办、工程记录人（假设）？\n- 请确认讨论内容是否为“核对设备位置、可进入时段”？\n- 请确认后续事项是否为“工程经办拟在2026-10-11核对缺项（演练候选，未实际执行）”？\n- 是否有会议地点信息需要补充？\n- 是否有会议决议内容需要补充？\n工程人工补充：未召开会议、未分派和外发；此稿仍需核对。"
+    }
+  ],
+  "registered_action_ids": [
+    "6f0ce1e1-a69d-46dc-a156-10fbc800fca8",
+    "c95f68ee-f4de-45fc-a9ba-3d0a7fa45c01"
+  ],
+  "specialized_store_smoke_seconds": 0.382,
+  "actual_model_status": "completed",
+  "ui_status": "read_pause_select_edit_deduplicate_save_reload_resume_render_passed",
+  "preview_session": 10985,
+  "actual_model_action": {
+    "id": "c95f68ee-f4de-45fc-a9ba-3d0a7fa45c01",
+    "status": "completed",
+    "response": "{\"input_revision\":5,\"meeting_items\":[{\"confirmation\":\"candidate\",\"deadline\":{\"kind\":\"unknown\",\"value\":null},\"deadline_text\":null,\"id\":\"mc-c95f68eef4de45fca9ba3d0a7fa45c01-1\",\"kind\":\"discussion\",\"refs\":[{\"end_line\":5,\"source_id\":\"c561ed5d-b7c0-4b35-bae8-065e40e515df\",\"start_line\":5}],\"responsible_account_id\":null,\"responsible_text\":null,\"text\":\"核对设备位置、可进入时段\"},{\"confirmation\":\"candidate\",\"deadline\":{\"kind\":\"unknown\",\"value\":null},\"deadline_text\":\"2026-10-11\",\"id\":\"mc-c95f68eef4de45fca9ba3d0a7fa45c01-2\",\"kind\":\"action\",\"refs\":[{\"end_line\":6,\"source_id\":\"c561ed5d-b7c0-4b35-bae8-065e40e515df\",\"start_line\":6}],\"responsible_account_id\":null,\"responsible_text\":\"工程经办\",\"text\":\"工程经办拟在2026-10-11核对缺项，属于演练候选，未实际执行\"}],\"model\":\"jiaorong-instruct\"}",
+    "error": null
+  },
+  "current_matter_model_usage": [
+    {
+      "action_id": "6f0ce1e1-a69d-46dc-a156-10fbc800fca8",
+      "model": "jiaorong-instruct",
+      "replayed": false,
+      "usage": {
+        "completion_tokens": 601,
+        "prompt_tokens": 922,
+        "total_tokens": 1523
+      }
+    },
+    {
+      "action_id": "c95f68ee-f4de-45fc-a9ba-3d0a7fa45c01",
+      "model": "jiaorong-instruct",
+      "replayed": false,
+      "usage": {
+        "completion_tokens": 612,
+        "prompt_tokens": 1213,
+        "total_tokens": 1825
+      }
+    }
+  ],
+  "new_call_usage": {
+    "action_id": "c95f68ee-f4de-45fc-a9ba-3d0a7fa45c01",
+    "model": "jiaorong-instruct",
+    "replayed": false,
+    "usage": {
+      "completion_tokens": 612,
+      "prompt_tokens": 1213,
+      "total_tokens": 1825
+    }
+  },
+  "saved_model_items": {
+    "input_revision": 5,
+    "meeting_items": [
+      {
+        "confirmation": "candidate",
+        "deadline": {
+          "kind": "unknown",
+          "value": null
+        },
+        "deadline_text": null,
+        "id": "mc-c95f68eef4de45fca9ba3d0a7fa45c01-1",
+        "kind": "discussion",
+        "refs": [
+          {
+            "end_line": 5,
+            "source_id": "c561ed5d-b7c0-4b35-bae8-065e40e515df",
+            "start_line": 5
+          }
+        ],
+        "responsible_account_id": null,
+        "responsible_text": null,
+        "text": "核对设备位置、可进入时段"
+      },
+      {
+        "confirmation": "candidate",
+        "deadline": {
+          "kind": "unknown",
+          "value": null
+        },
+        "deadline_text": "2026-10-11",
+        "id": "mc-c95f68eef4de45fca9ba3d0a7fa45c01-2",
+        "kind": "action",
+        "refs": [
+          {
+            "end_line": 6,
+            "source_id": "c561ed5d-b7c0-4b35-bae8-065e40e515df",
+            "start_line": 6
+          }
+        ],
+        "responsible_account_id": null,
+        "responsible_text": "工程经办",
+        "text": "工程经办拟在2026-10-11核对缺项，属于演练候选，未实际执行"
+      }
+    ],
+    "model": "jiaorong-instruct"
+  },
+  "original_artifacts_unchanged": true,
+  "structured_items": [
+    {
+      "confirmation": "candidate",
+      "deadline": {
+        "kind": "unknown",
+        "value": null
+      },
+      "deadline_text": null,
+      "id": "mc-c95f68eef4de45fca9ba3d0a7fa45c01-1",
+      "item_revision": 1,
+      "kind": "discussion",
+      "refs": [
+        {
+          "source_id": "c561ed5d-b7c0-4b35-bae8-065e40e515df",
+          "start_line": 5,
+          "end_line": 5,
+          "excerpt": "讨论：核对设备位置、可进入时段。"
+        }
+      ],
+      "responsible_account_id": null,
+      "responsible_text": null,
+      "text": "核对设备位置、可进入时段",
+      "progress": {
+        "acceptance": "unknown",
+        "execution": "unknown",
+        "events": [],
+        "reported_progress": [],
+        "inspection": "unknown"
+      },
+      "deadline_hint": {
+        "status": "unknown",
+        "overdue": null,
+        "as_of": null,
+        "timezone": null,
+        "reason": "结构或期限原处待重核，不作逾期结论"
+      },
+      "waiting": {
+        "who": "原述责任人待核",
+        "reason": "本人声明不等于实际验收；责任不明或他人原述需沿原渠道核对"
+      }
+    },
+    {
+      "confirmation": "candidate",
+      "deadline": {
+        "kind": "unknown",
+        "value": null
+      },
+      "deadline_text": "2026-10-11",
+      "id": "mc-c95f68eef4de45fca9ba3d0a7fa45c01-2",
+      "item_revision": 1,
+      "kind": "action",
+      "refs": [
+        {
+          "source_id": "c561ed5d-b7c0-4b35-bae8-065e40e515df",
+          "start_line": 6,
+          "end_line": 6,
+          "excerpt": "后续事项：工程经办拟在2026-10-11核对缺项，属于演练候选，未实际执行。"
+        }
+      ],
+      "responsible_account_id": null,
+      "responsible_text": "工程经办",
+      "text": "工程经办拟在2026-10-11核对缺项，属于演练候选，未实际执行；工程人工核对：未实际承接，先保留待核。",
+      "progress": {
+        "acceptance": "unknown",
+        "execution": "unknown",
+        "events": [],
+        "reported_progress": [],
+        "inspection": "unknown"
+      },
+      "deadline_hint": {
+        "status": "unknown",
+        "overdue": null,
+        "as_of": null,
+        "timezone": null,
+        "reason": "结构或期限原处待重核，不作逾期结论"
+      },
+      "waiting": {
+        "who": "工程经办",
+        "reason": "本人声明不等于实际验收；责任不明或他人原述需沿原渠道核对"
+      }
+    }
+  ],
+  "structured_artifact": {
+    "id": "28d2e407-2a29-4c5a-a78d-f85d21b84962",
+    "version": 1,
+    "matter_id": "5b501f54-b096-4742-9969-490c2daef1f9",
+    "type": "meeting_minutes",
+    "title": "会议纪要结构稿",
+    "content": "# 会议纪要结构准备稿\n\n本人私有资料的结构准备与本地原文核对；不代表组织决定、正式签发、派遣、验收或外部送达\n当前为通用准备稿，无正式模板/文号/签发或送达声明。\n\n原记录未提供已核明确决定；提议与讨论不当决定。\n\n## 讨论\n\n核对设备位置、可进入时段\n\n核对范围：候选待核\n来源 c561ed5d-b7c0-4b35-bae8-065e40e515df 第5–5行：\n讨论：核对设备位置、可进入时段。\n\n## 行动与独立进度\n\n工程经办拟在2026-10-11核对缺项，属于演练候选，未实际执行；工程人工核对：未实际承接，先保留待核。\n\n核对范围：候选待核\n原述责任：工程经办\n原述期限：2026-10-11\n承接：未知，待核；处理声明：未知，待核；实际验收未知\n来源 c561ed5d-b7c0-4b35-bae8-065e40e515df 第6–6行：\n后续事项：工程经办拟在2026-10-11核对缺项，属于演练候选，未实际执行。\n",
+    "status": "structured_draft",
+    "input_revision": 6,
+    "created_at": "2026-10-08T11:58:27.483+00:00",
+    "stale": false
+  },
+  "ui_candidate_read_causes_no_extra_model_call": true
+}

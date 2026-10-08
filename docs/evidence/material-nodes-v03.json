@@ -1,0 +1,294 @@
+{
+  "evidence_class": "engineering_only_not_real_certificate_deadline_travel_or_business",
+  "matter_id": "ca281ae6-d97d-4df2-94ff-73ae6d8f7f28",
+  "source_id": "2ad6890d-ebdc-4790-92c4-3f1262b0e3a1",
+  "material": {
+    "id": "d4107b28-ea7a-42ec-8f11-00945365211a",
+    "kind": "passport",
+    "availability": "source_provided",
+    "provider_class": "current_actor_statement",
+    "valid_until": "2026-11-30",
+    "check": "local_source_checked",
+    "source_id": "2ad6890d-ebdc-4790-92c4-3f1262b0e3a1",
+    "source_position": "第1–1行",
+    "label": "工程假设材料日期"
+  },
+  "original_artifact_id": "aa8b6976-286f-4d67-8b93-1daebda32413",
+  "original_tracks": {
+    "leave_decision": {
+      "status": "unknown",
+      "label": "真实休假决定待核"
+    },
+    "passport": {
+      "status": "unknown",
+      "label": "护照材料与回执待核"
+    },
+    "visa": {
+      "status": "unknown",
+      "label": "签证材料与回执待核"
+    },
+    "domestic_proof": {
+      "status": "unknown",
+      "label": "国内真实证明待核"
+    },
+    "nis_entry": {
+      "status": "unknown",
+      "label": "入境卡适用及回执待核"
+    },
+    "nis_exit": {
+      "status": "unknown",
+      "label": "离境卡适用及回执待核"
+    },
+    "movement": {
+      "status": "unknown",
+      "label": "真实离返未知"
+    },
+    "meal": {
+      "status": "unknown",
+      "label": "餐次核对待核"
+    }
+  },
+  "targeted_tests": "2 combined tests, 0.623s; local/protected node and affected waiting",
+  "model_calls_this_slice": 0,
+  "checks": [
+    "UI explicit timestamp create",
+    "UI pause/manual edit save",
+    "UI reload preserved pause and saved edits",
+    "UI resume prepare and save private followup",
+    "flight change: HTTP409 waiting_basis_changed; UI prepare disabled",
+    "UI explicit rebind preserves human reason/note/timestamp; prepare enabled",
+    "HTTP new followup uses current basis; old saved body retained",
+    "actual fixed v1 MD equals saved private body",
+    "Final basis-token UI rebind and actual HTTP readback: v13 r5, current followup allowed, old human fields and artifact preserved"
+  ],
+  "point_before_change": {
+    "due_at": "2026-10-08T09:00:00+01:00",
+    "id": "mn-f88ff2f0dc27f0abd276e8fa092e6cd5",
+    "next_step": "核对当前原处、材料日期、适用要求、缺项与真实回执；不据此判断有效或可通行。",
+    "note": "工程人工修改需保留；提醒只是本人核对提示，未发消息。",
+    "reason": "工程本人核对原因：先读材料原处和航班适用，不按日期自动办手续。",
+    "state": "waiting",
+    "who": "本人",
+    "active": true,
+    "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+    "recorded_by_name": "工程夹具经办",
+    "recorded_at": "2026-10-08T13:43:07.136+00:00",
+    "due_now": true,
+    "material_basis": {
+      "kind": "passport",
+      "date": "2026-11-30",
+      "input_revision": 3
+    },
+    "basis_stale": false
+  },
+  "followup_artifact": {
+    "id": "af92ef57-512c-4fd8-9b3f-36b8cc98e6d1",
+    "version": 1,
+    "matter_id": "ca281ae6-d97d-4df2-94ff-73ae6d8f7f28",
+    "type": "waiting_followup",
+    "title": "等待跟进人工文字",
+    "content": "工程私人材料跟进原稿：本人核对材料日期与航班变化；效力和办理截止未知，未发送。人工原稿必须保留。",
+    "status": "human_saved",
+    "input_revision": 3,
+    "created_at": "2026-10-08T13:44:05.956+00:00",
+    "stale": false
+  },
+  "point_after_change": {
+    "due_at": "2026-10-08T09:00:00+01:00",
+    "id": "mn-f88ff2f0dc27f0abd276e8fa092e6cd5",
+    "next_step": "核对当前原处、材料日期、适用要求、缺项与真实回执；不据此判断有效或可通行。",
+    "note": "工程人工修改需保留；提醒只是本人核对提示，未发消息。",
+    "reason": "工程本人核对原因：先读材料原处和航班适用，不按日期自动办手续。",
+    "state": "waiting",
+    "who": "本人",
+    "active": true,
+    "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+    "recorded_by_name": "工程夹具经办",
+    "recorded_at": "2026-10-08T13:43:07.136+00:00",
+    "due_now": true,
+    "material_basis": {
+      "kind": "passport",
+      "date": "2026-11-30",
+      "input_revision": 3
+    },
+    "basis_stale": true
+  },
+  "stale_followup_rejection": {
+    "status": 409,
+    "response": {
+      "code": "waiting_basis_changed",
+      "message": "材料日期、原处或相关事实已变化，请先核对旧待办文字与提醒，再明确采用当前依据；原人工稿保留。",
+      "retryable": false,
+      "recovery": "检查输入后重试"
+    }
+  },
+  "final_point": {
+    "due_at": "2026-10-08T09:00:00+01:00",
+    "id": "mn-f88ff2f0dc27f0abd276e8fa092e6cd5",
+    "next_step": "核对当前原处、材料日期、适用要求、缺项与真实回执；不据此判断有效或可通行。",
+    "note": "工程人工修改需保留；提醒只是本人核对提示，未发消息。",
+    "reason": "工程本人核对原因：先读材料原处和航班适用，不按日期自动办手续。",
+    "state": "waiting",
+    "who": "本人",
+    "active": true,
+    "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+    "recorded_by_name": "工程夹具经办",
+    "recorded_at": "2026-10-08T13:43:07.136+00:00",
+    "due_now": true,
+    "material_basis": {
+      "kind": "passport",
+      "date": "2026-11-30",
+      "input_revision": 5
+    },
+    "basis_stale": false
+  },
+  "final_candidates": {
+    "id": "ca281ae6-d97d-4df2-94ff-73ae6d8f7f28",
+    "version": 13,
+    "revision_no": 5,
+    "items": [
+      {
+        "kind": "passport",
+        "label": "护照材料",
+        "material_id": "d4107b28-ea7a-42ec-8f11-00945365211a",
+        "date": "2026-11-30",
+        "eligible": true,
+        "source_id": "2ad6890d-ebdc-4790-92c4-3f1262b0e3a1",
+        "source_position": "第1–1行",
+        "excerpt": "工程假设护照材料日期2026-11-30，非真实证件，也不是办理截止。",
+        "point_id": "mn-f88ff2f0dc27f0abd276e8fa092e6cd5",
+        "existing_point": {
+          "due_at": "2026-10-08T09:00:00+01:00",
+          "id": "mn-f88ff2f0dc27f0abd276e8fa092e6cd5",
+          "next_step": "核对当前原处、材料日期、适用要求、缺项与真实回执；不据此判断有效或可通行。",
+          "note": "工程人工修改需保留；提醒只是本人核对提示，未发消息。",
+          "reason": "工程本人核对原因：先读材料原处和航班适用，不按日期自动办手续。",
+          "state": "waiting",
+          "who": "本人",
+          "active": true,
+          "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+          "recorded_by_name": "工程夹具经办",
+          "recorded_at": "2026-10-08T13:43:07.136+00:00"
+        },
+        "basis": {
+          "material": {
+            "id": "d4107b28-ea7a-42ec-8f11-00945365211a",
+            "kind": "passport",
+            "availability": "source_provided",
+            "source_id": "2ad6890d-ebdc-4790-92c4-3f1262b0e3a1",
+            "source_position": "第1–1行",
+            "valid_until": "2026-11-30",
+            "check": "local_source_checked"
+          },
+          "source_state": "usable",
+          "facts": {
+            "person": {
+              "value": null,
+              "status": "unknown"
+            },
+            "flight_info": {
+              "value": "工程假设再次核对航班，非真实航班或办理",
+              "status": "confirmed"
+            },
+            "requirements_ref": {
+              "value": null,
+              "status": "unknown"
+            },
+            "leave_start": {
+              "value": null,
+              "status": "unknown"
+            },
+            "leave_end": {
+              "value": null,
+              "status": "unknown"
+            },
+            "departure_at": {
+              "value": null,
+              "status": "unknown"
+            },
+            "return_at": {
+              "value": null,
+              "status": "unknown"
+            }
+          },
+          "linked_travel": null
+        },
+        "basis_token": "633390d42b71129644b6eba032b046a9efbf2cc4311ca106443000bc71e9c53b",
+        "bound_date": "2026-11-30",
+        "basis_stale": false
+      },
+      {
+        "kind": "visa",
+        "label": "签证材料",
+        "material_id": null,
+        "date": null,
+        "eligible": false,
+        "source_id": null,
+        "source_position": null,
+        "excerpt": null,
+        "point_id": null,
+        "existing_point": null,
+        "basis": null,
+        "basis_token": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+        "bound_date": null,
+        "basis_stale": null
+      },
+      {
+        "kind": "domestic_proof",
+        "label": "国内真实证明",
+        "material_id": null,
+        "date": null,
+        "eligible": false,
+        "source_id": null,
+        "source_position": null,
+        "excerpt": null,
+        "point_id": null,
+        "existing_point": null,
+        "basis": null,
+        "basis_token": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+        "bound_date": null,
+        "basis_stale": null
+      },
+      {
+        "kind": "nis_entry",
+        "label": "入境卡材料",
+        "material_id": null,
+        "date": null,
+        "eligible": false,
+        "source_id": null,
+        "source_position": null,
+        "excerpt": null,
+        "point_id": null,
+        "existing_point": null,
+        "basis": null,
+        "basis_token": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+        "bound_date": null,
+        "basis_stale": null
+      },
+      {
+        "kind": "nis_exit",
+        "label": "离境卡材料",
+        "material_id": null,
+        "date": null,
+        "eligible": false,
+        "source_id": null,
+        "source_position": null,
+        "excerpt": null,
+        "point_id": null,
+        "existing_point": null,
+        "basis": null,
+        "basis_token": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+        "bound_date": null,
+        "basis_stale": null
+      }
+    ],
+    "scope": "从本人已核材料日期建立个人核对待办；提醒时点另由本人明确选择，未判断有效、过期、办理截止或可通行，未发送通知。"
+  },
+  "final_matter_version": 13,
+  "final_revision": 5,
+  "preview_session": 23411,
+  "static_checks": "affected Python/JS checks passed",
+  "fixed_md_equal_saved_body": true,
+  "original_artifact_and_tracks_preserved": true,
+  "final_guard_tests": "node combined local/protected 0.618s; linked travel changes without leave version reject material_basis_changed"
+}

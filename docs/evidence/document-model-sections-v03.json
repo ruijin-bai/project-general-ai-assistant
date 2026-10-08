@@ -1,0 +1,140 @@
+{
+  "evidence_class": "engineering_document_not_real_issuance",
+  "matter_id": "1da967ce-0025-4054-9ef7-9a743bd33257",
+  "attachment_id": "6427c77b-acaf-41b1-96dc-0e3f1c1ec23b",
+  "original_sha256": "c1947c0d5274bfbce5c2b77ea9fe92697c8b9391c2bd964fe32f2f62ed33a3cd",
+  "original_artifacts_before_call": [
+    {
+      "id": "4b2ca200-cb63-4b8f-ac25-203ecf8b5cef",
+      "version": 1,
+      "content": "工程人工原稿：尚未检查，无结果；保留原话，不补文号署名，未签发外发。"
+    }
+  ],
+  "source_ids": [
+    "9dcc00d1-5ed7-4293-afe5-f01c83ed516a",
+    "5735d37b-ed12-4949-8dfa-b20375065d67"
+  ],
+  "specialized_checks": {
+    "combined_tests": 2,
+    "seconds": 0.911,
+    "scope": "document_and_affected_meeting_only",
+    "rejected_usage_recording": true
+  },
+  "actual_model_status": "one_success_after_one_contract_failure",
+  "ui_status": "passed",
+  "actual_attempts": [
+    {
+      "action_id": "ba96436b-3965-4102-9d3d-803cc368535a",
+      "status": "failed_contract",
+      "usage": "unknown_not_recorded_by_old_client"
+    },
+    {
+      "id": "0f6189b6-89b0-4fdb-9b91-e390a8a771ab",
+      "status": "completed",
+      "error": null,
+      "usage": {
+        "completion_tokens": 991,
+        "prompt_tokens": 1137,
+        "total_tokens": 2128
+      },
+      "explicit_retry": true
+    }
+  ],
+  "candidate_count": 3,
+  "selected_count": 2,
+  "rejected_candidate_reason": "模型称Word底稿原文未提供，与已读片段不符；本人未选入，原模型记录保留",
+  "saved_structure": {
+    "id": "1da967ce-0025-4054-9ef7-9a743bd33257",
+    "version": 12,
+    "revision_no": 5,
+    "input_revision": 5,
+    "structure_version": 1,
+    "stale": false,
+    "sections": [
+      {
+        "body": "根据工程来文要求，现整理设施检查准备情况如下。设备位置和可进入时段尚未核对，未实际检查，暂无结果。相关事实待核，不补造数字或结论。本节为候选草稿，未确认事实，不签发不外发。\n工程人工核对补充：尚未开展检查，未签发或外发；本地所读Word片段已提供。",
+        "confirmation": "candidate",
+        "heading": "设施检查准备情况（通用草稿）",
+        "id": "mc-0f6189b689b04fdb9b91e390a8a771ab-1",
+        "refs": [
+          {
+            "source_id": "5735d37b-ed12-4949-8dfa-b20375065d67",
+            "start_line": 2,
+            "end_line": 2,
+            "excerpt": "事实底稿：设备位置和可进入时段尚未核对，未实际检查，暂无结果。"
+          }
+        ]
+      },
+      {
+        "body": "目前待核问题包括：设备位置未核对、可进入时段未核对、未实际检查、暂无结果。正式文号、署名及签发均未知，不补造。回复对象为假设，披露范围仅本人本地准备。本节为候选草稿，未确认事实。",
+        "confirmation": "candidate",
+        "heading": "待核问题（通用草稿）",
+        "id": "mc-0f6189b689b04fdb9b91e390a8a771ab-2",
+        "refs": [
+          {
+            "source_id": "5735d37b-ed12-4949-8dfa-b20375065d67",
+            "start_line": 2,
+            "end_line": 5,
+            "excerpt": "事实底稿：设备位置和可进入时段尚未核对，未实际检查，暂无结果。\n回复对象：工程收件人（假设），不外发。\n披露范围：仅本人本地准备（工程演练）。\n正式文号、署名及签发均未知，不补造。"
+          }
+        ]
+      }
+    ],
+    "scope": "本人私有资料的结构准备与本地原文核对；不代表组织决定、正式签发、派遣、验收或外部送达",
+    "preparation_status": "needs_review"
+  },
+  "artifact_id": "0677ecf6-0eda-4f07-8257-4524b2ceed46",
+  "fixed_docx": {
+    "version": 1,
+    "byte_count": 2430,
+    "sha256": "08032c0cf86c3841bc964605a602a64181bb8f78ce5e94c9a159273617596a7a",
+    "crc": true,
+    "paragraphs_equal_saved_body_except_heading_marks": true,
+    "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+  },
+  "original_attachment_preserved": true,
+  "original_manual_artifacts_preserved": true,
+  "independent_tracks": {
+    "issuance": {
+      "status": "unknown",
+      "label": "正式签发未知"
+    },
+    "submission": {
+      "status": "unknown",
+      "label": "原渠道提交未知"
+    },
+    "delivery": {
+      "status": "unknown",
+      "label": "送达接受未知"
+    },
+    "archive": {
+      "status": "unknown",
+      "label": "权威存档待核"
+    }
+  },
+  "model_call_count_after_ui": 2,
+  "ui_steps": [
+    "pause",
+    "read_without_model_call",
+    "select_two_sections_excluding_bad_interpretation",
+    "append",
+    "edit",
+    "duplicate_append_preserves_edit",
+    "save",
+    "refresh_reopen",
+    "resume",
+    "read_current_structure",
+    "render_separate_artifact",
+    "select_latest"
+  ],
+  "semantic_validation": "exact_source_references_are_program_checked_content_interpretation_remains_human_review",
+  "word_client_and_visual_export": "not_verified",
+  "screenshot": "document-model-sections-v03.jpg",
+  "historical_error_banner_after_success": "absent_verified_in_browser_old_failure_remains_activity",
+  "package": {
+    "path": "dist/assistant-v0.3.0-20261008T121648Z-4cb8f9f0.zip",
+    "files": 48,
+    "crc": true,
+    "sha256": "c975689ecedae0890b21adbe1d9e5035c5a7cff19aa09d91e62ad4620e7035ec"
+  }
+}

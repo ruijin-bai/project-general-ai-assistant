@@ -1,0 +1,171 @@
+{
+  "evidence_class": "engineering_not_real_expense",
+  "matter_id": "0080a94d-4cb8-4cb7-9926-31bfa8893e8f",
+  "original_artifacts": [
+    {
+      "id": "d90a32d6-eaba-4530-aa41-c0caf8b91ea6",
+      "version": 1,
+      "content": "工程旧人工说明：未办理报销，未知金额不补零；保留原稿。"
+    }
+  ],
+  "specialized_check": {
+    "combined_test": 1,
+    "domains": [
+      "expense",
+      "inventory"
+    ],
+    "modes": [
+      "local",
+      "protected"
+    ],
+    "seconds": 0.759
+  },
+  "actual_model_status": "one_success_after_three_rejections_all_usage_recorded",
+  "ui_status": "passed",
+  "source_id": "3330a7bf-d079-4679-903c-28bc96f3f141",
+  "actual_attempts": [
+    {
+      "id": "de2fb228-0c88-495b-93fe-2ca93e7d8e0f",
+      "status": "failed",
+      "error": "模型返回内容被拒绝：响应未完整结束；输入与原稿保留，请核对后人工继续或明确重新整理。",
+      "usage": {
+        "completion_tokens": 2500,
+        "prompt_tokens": 1188,
+        "total_tokens": 3688
+      },
+      "rejected": true
+    },
+    {
+      "id": "c388704b-bbd5-4d7c-9624-ce8306215f9f",
+      "status": "failed",
+      "error": "模型返回内容被拒绝：JSON结构或返回值不符合合同；输入与原稿保留，请核对后人工继续或明确重新整理。",
+      "usage": {
+        "completion_tokens": 299,
+        "prompt_tokens": 1261,
+        "total_tokens": 1560
+      },
+      "rejected": true
+    },
+    {
+      "id": "0e11a9fe-521d-46f2-9f78-88a275ad52c5",
+      "status": "failed",
+      "error": "模型返回内容被拒绝：每行须有且只有一处引用；输入与原稿保留，请核对后人工继续或明确重新整理。",
+      "usage": {
+        "completion_tokens": 276,
+        "prompt_tokens": 1261,
+        "total_tokens": 1537
+      },
+      "rejected": true
+    },
+    {
+      "id": "d8640fa5-eaf6-4894-984d-3c7614ecadbe",
+      "status": "completed",
+      "error": null,
+      "usage": {
+        "completion_tokens": 258,
+        "prompt_tokens": 1284,
+        "total_tokens": 1542
+      },
+      "rejected": false
+    }
+  ],
+  "model_call_count_after_ui": 4,
+  "model_candidate_count": 3,
+  "actual_inventory_model": "not_verified_this_slice",
+  "saved_rows": [
+    {
+      "currency": "USD",
+      "id": "mc-d8640fa5eaf64894984d3c7614ecadbe-1",
+      "label": "打印费用（工程本人核对）",
+      "period": "2026-10",
+      "source_id": "3330a7bf-d079-4679-903c-28bc96f3f141",
+      "source_position": "第2–2行",
+      "value": "0.1"
+    },
+    {
+      "currency": "USD",
+      "id": "mc-d8640fa5eaf64894984d3c7614ecadbe-2",
+      "label": "复印费用",
+      "period": "2026-10",
+      "source_id": "3330a7bf-d079-4679-903c-28bc96f3f141",
+      "source_position": "第3–3行",
+      "value": "0.2"
+    },
+    {
+      "currency": "EUR",
+      "id": "mc-d8640fa5eaf64894984d3c7614ecadbe-3",
+      "label": "邮寄费用",
+      "period": "2026-10",
+      "source_id": "3330a7bf-d079-4679-903c-28bc96f3f141",
+      "source_position": "第4–4行",
+      "value": "0.5"
+    }
+  ],
+  "calculation": {
+    "groups": [
+      {
+        "currency": "USD",
+        "period": "2026-10",
+        "total": "0.3",
+        "row_ids": [
+          "mc-d8640fa5eaf64894984d3c7614ecadbe-1",
+          "mc-d8640fa5eaf64894984d3c7614ecadbe-2"
+        ]
+      },
+      {
+        "currency": "EUR",
+        "period": "2026-10",
+        "total": "0.5",
+        "row_ids": [
+          "mc-d8640fa5eaf64894984d3c7614ecadbe-3"
+        ]
+      }
+    ],
+    "row_count": 3,
+    "scope": "本地人工核对明细；不代表报销批准/付款或真实收发",
+    "input_revision": 3,
+    "stale": false
+  },
+  "independent_tracks": {
+    "submission": {
+      "status": "unknown",
+      "label": "财务提交未知"
+    },
+    "review": {
+      "status": "unknown",
+      "label": "原渠道审核未知"
+    },
+    "payment": {
+      "status": "unknown",
+      "label": "实际支付未知"
+    }
+  },
+  "original_artifacts_preserved": true,
+  "fixed_csv": {
+    "input_revision": 3,
+    "byte_count": 534,
+    "sha256": "c346d925c314843d4cd22b6ea29b0de4994bfe24b482786e2435cb72b6cd9ff5",
+    "literal_values_equal_saved_rows": true
+  },
+  "ui_steps": [
+    "pause",
+    "read_without_call",
+    "select_three",
+    "append_unsaved",
+    "edit_label",
+    "duplicate_append_preserves_edit",
+    "explicit_human_save",
+    "exact_two_currency_groups",
+    "refresh_reopen_keeps_values_and_label",
+    "resume_keeps_saved_rows",
+    "fixed_csv_download"
+  ],
+  "screenshot": "model-rows-v03.jpg",
+  "semantic_validation": "numeric_literal_and_exact_refs_checked_meaning_still_human_review",
+  "package": {
+    "path": "dist/assistant-v0.3.0-20261008T123532Z-e7f7c009.zip",
+    "files": 50,
+    "crc": true,
+    "sha256": "733c2455e5bb97849ec3025fbcd63df1cc5432f5c849b49e4b0efa1deb050795"
+  }
+}

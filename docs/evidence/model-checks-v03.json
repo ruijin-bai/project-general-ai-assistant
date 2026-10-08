@@ -1,0 +1,191 @@
+{
+  "evidence_class": "engineering_not_real_hr_or_eligibility_decision",
+  "matter_id": "73a5e070-e4da-43d1-b687-3bca0e2911dd",
+  "original_artifacts": [
+    {
+      "id": "7253de05-dfea-4dca-b5c2-0144f5ac4697",
+      "content": "工程原人工说明：材料适用与核对待办，未作任何人事决定，保留原稿。",
+      "version": 1
+    }
+  ],
+  "specialized_check": {
+    "tests": 2,
+    "seconds": 0.996,
+    "scope": "new_hr_and_affected_default_ref_read_only"
+  },
+  "actual_model_status": "first_call_success",
+  "ui_status": "passed",
+  "actual_attempts": [
+    {
+      "id": "64c4b088-1219-4338-b082-62f8125a005c",
+      "status": "completed",
+      "error": null
+    }
+  ],
+  "actual_usage": {
+    "completion_tokens": 221,
+    "prompt_tokens": 1273,
+    "total_tokens": 1494
+  },
+  "model_call_count_after_ui": 1,
+  "saved_checks": {
+    "id": "73a5e070-e4da-43d1-b687-3bca0e2911dd",
+    "version": 10,
+    "revision_no": 4,
+    "input_revision": 4,
+    "structure_version": 1,
+    "stale": false,
+    "items": [
+      {
+        "check": "local_source_checked",
+        "id": "mc-64c4b08812194338b08262f8125a005c-1",
+        "note": "工程本人核对：已读假设履历片段，原件真实性和适用范围未核；未作人事决定。",
+        "provided_refs": [
+          {
+            "source_id": "96f543de-462e-475f-a752-55ee8799c41b",
+            "start_line": 1,
+            "end_line": 1,
+            "excerpt": "工程假设履历片段（非真实个人资料）：曾参与工程资料整理演练。"
+          }
+        ],
+        "requirement_refs": [
+          {
+            "source_id": "6b637244-ab4f-4e87-aeaa-b12cf22d0156",
+            "start_line": 2,
+            "end_line": 2,
+            "excerpt": "提供本人履历文字片段。"
+          }
+        ],
+        "requirement_text": "提供本人履历文字片段。",
+        "requirement_excerpt": "提供本人履历文字片段。",
+        "provided_excerpt": "工程假设履历片段（非真实个人资料）：曾参与工程资料整理演练。",
+        "compliance": "unknown"
+      },
+      {
+        "check": "pending",
+        "id": "mc-64c4b08812194338b08262f8125a005c-2",
+        "note": "工程经历说明材料尚未提供，保持待补；不推资格或录用。",
+        "provided_refs": [],
+        "requirement_refs": [
+          {
+            "source_id": "6b637244-ab4f-4e87-aeaa-b12cf22d0156",
+            "start_line": 3,
+            "end_line": 3,
+            "excerpt": "提供工程经历说明材料。"
+          }
+        ],
+        "requirement_text": "提供工程经历说明材料。",
+        "requirement_excerpt": "提供工程经历说明材料。",
+        "provided_excerpt": "",
+        "compliance": "unknown"
+      }
+    ],
+    "gaps": [
+      {
+        "id": "mc-64c4b08812194338b08262f8125a005c-2",
+        "requirement_text": "提供工程经历说明材料。",
+        "reason": "未提供对应材料"
+      }
+    ],
+    "scope": "本人私有要求与材料来源逐项核对；不代表正式合规、资格、录用、处罚、付款、收发或权威记录更新"
+  },
+  "model_check_candidates": {
+    "id": "73a5e070-e4da-43d1-b687-3bca0e2911dd",
+    "version": 10,
+    "revision_no": 4,
+    "batch_id": "64c4b088-1219-4338-b082-62f8125a005c",
+    "items": [
+      {
+        "check": "pending",
+        "id": "mc-64c4b08812194338b08262f8125a005c-1",
+        "note": "材料匹配候选，非合规或聘用决定。",
+        "provided_refs": [
+          {
+            "source_id": "96f543de-462e-475f-a752-55ee8799c41b",
+            "start_line": 1,
+            "end_line": 1,
+            "excerpt": "工程假设履历片段（非真实个人资料）：曾参与工程资料整理演练。"
+          }
+        ],
+        "requirement_refs": [
+          {
+            "source_id": "6b637244-ab4f-4e87-aeaa-b12cf22d0156",
+            "start_line": 2,
+            "end_line": 2,
+            "excerpt": "提供本人履历文字片段。"
+          }
+        ],
+        "requirement_text": "提供本人履历文字片段。"
+      },
+      {
+        "check": "pending",
+        "id": "mc-64c4b08812194338b08262f8125a005c-2",
+        "note": "材料匹配候选，非合规或聘用决定。",
+        "provided_refs": [],
+        "requirement_refs": [
+          {
+            "source_id": "6b637244-ab4f-4e87-aeaa-b12cf22d0156",
+            "start_line": 3,
+            "end_line": 3,
+            "excerpt": "提供工程经历说明材料。"
+          }
+        ],
+        "requirement_text": "提供工程经历说明材料。"
+      }
+    ],
+    "stale": true,
+    "scope": "已保存的人事材料核对候选；读取不调用模型。要求原述与逐字出处已核对，材料匹配及实际适用仍须人工核对；全部待核，不作合规、资格、录用、待遇或处罚决定。",
+    "model": "jiaorong-instruct",
+    "basis_revision": 3
+  },
+  "original_artifacts_preserved": true,
+  "independent_tracks": {
+    "material_review": {
+      "status": "unknown",
+      "label": "实际材料核对待核"
+    },
+    "decision": {
+      "status": "unknown",
+      "label": "真实人事决定未知"
+    },
+    "signature": {
+      "status": "unknown",
+      "label": "真实签署未知"
+    },
+    "external_acceptance": {
+      "status": "unknown",
+      "label": "接收未知"
+    }
+  },
+  "artifact_id": "bf8dc06c-a2b9-4460-b638-7dc369c548b1",
+  "fixed_markdown": {
+    "version": 1,
+    "byte_count": 1148,
+    "sha256": "bfddbef6af9f7dd2c501e60abdcef3fb463e3e4d4b844bbd7bd83d4b532fd853",
+    "equals_saved_body": true
+  },
+  "ui_steps": [
+    "pause",
+    "read_without_call",
+    "select_two",
+    "append_pending",
+    "read_candidate_material_quote",
+    "human_source_check",
+    "edit_notes",
+    "duplicate_append_preserves_notes",
+    "save",
+    "refresh_reopen",
+    "resume",
+    "read_current_checks",
+    "render_separate_artifact",
+    "select_latest"
+  ],
+  "screenshot": "model-checks-v03.jpg",
+  "interpretation_scope": "requirements_and_material_matches_are_candidates_until_human_review_qualification_or_employment_not_assessed",
+  "package": {
+    "path": "dist/assistant-v0.3.0-20261008T124654Z-4290b042.zip",
+    "files": 52,
+    "crc": true,
+    "sha256": "420bbb1927d61303a75deeabf064c63a0af543384ace13713352104dd9948243"
+  }
+}

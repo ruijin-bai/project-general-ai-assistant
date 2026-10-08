@@ -1,0 +1,132 @@
+{
+  "task": "T047",
+  "matter_id": "ee78deb4-2bc6-4bc8-b8d0-bd97b14051f1",
+  "source_id": "cd013b7c-c7a0-4b5e-aae9-2852706514b1",
+  "old_artifact_id": "4be64fe2-a44f-416f-b919-8b96d130800b",
+  "before_tracks": {
+    "submission": {
+      "status": "unknown",
+      "label": "财务提交未知"
+    },
+    "review": {
+      "status": "unknown",
+      "label": "原渠道审核未知"
+    },
+    "payment": {
+      "status": "unknown",
+      "label": "实际支付未知"
+    }
+  },
+  "original_saved_rows": [
+    {
+      "id": "qa-r1",
+      "label": "工程纸张",
+      "value": "0.1",
+      "currency": "USD",
+      "period": "2026-10",
+      "source_id": "cd013b7c-c7a0-4b5e-aae9-2852706514b1",
+      "source_position": "第2–2行"
+    },
+    {
+      "id": "qa-r2",
+      "label": "工程纸张",
+      "value": "0.2",
+      "currency": "USD",
+      "period": "2026-10",
+      "source_id": "cd013b7c-c7a0-4b5e-aae9-2852706514b1",
+      "source_position": "第3–3行"
+    },
+    {
+      "id": "qa-r3",
+      "label": "工程纸张",
+      "value": "0.5",
+      "currency": "EUR",
+      "period": "2026-10",
+      "source_id": "cd013b7c-c7a0-4b5e-aae9-2852706514b1",
+      "source_position": "第4–4行"
+    },
+    {
+      "id": "qa-r4",
+      "label": "工程纸张",
+      "value": "1.0",
+      "currency": "USD",
+      "period": "2026-11",
+      "source_id": "cd013b7c-c7a0-4b5e-aae9-2852706514b1",
+      "source_position": "第5–5行"
+    },
+    {
+      "id": "qa-repeat",
+      "label": "工程纸张",
+      "value": "0.1",
+      "currency": "USD",
+      "period": "2026-10",
+      "source_id": "cd013b7c-c7a0-4b5e-aae9-2852706514b1",
+      "source_position": "第2–2行"
+    }
+  ],
+  "new_model_calls": 0,
+  "data_scope": "isolated engineering hypothetical, no business expense",
+  "targeted_test": {
+    "command": "python -m unittest tests.test_row_reports -v",
+    "result": "passed one combined check local/protected x expense/inventory",
+    "seconds": 0.642
+  },
+  "preview_session": 31068,
+  "ui": {
+    "result": "passed actual IAB main path",
+    "steps": [
+      "explicit period 2026-10 includes4",
+      "duplicate warning shown",
+      "exclude repeated row leaves3",
+      "pause preserved selection and note, new save disabled",
+      "resume and explicit read preserved selection/note",
+      "save selected report",
+      "select new artifact",
+      "pause edit save v2",
+      "reload preserved paused v2",
+      "resume and read fixed report, initiate CSV download"
+    ],
+    "not_verified": [
+      "unsaved selection across browser reload is not persisted; beforeunload warning only",
+      "spreadsheet client display",
+      "real finance or stock rules/operations"
+    ]
+  },
+  "fixed_http": {
+    "result": "passed",
+    "csv_rows": 3,
+    "excluded_period": "2026-11",
+    "excluded_row": "qa-repeat",
+    "fixed_md_v1_v2": "exact body equality",
+    "original_rows_and_manual_v1_and_tracks": "unchanged",
+    "selected_csv_values": [
+      [
+        "0.1",
+        "USD",
+        "2026-10"
+      ],
+      [
+        "0.2",
+        "USD",
+        "2026-10"
+      ],
+      [
+        "0.5",
+        "EUR",
+        "2026-10"
+      ]
+    ]
+  },
+  "artifact_id": "aeef2587-3dd3-4454-9c5e-eab3c28569d6",
+  "artifact_version": 2,
+  "final_version": 10,
+  "final_revision": 3,
+  "final_status": "waiting",
+  "static_checks": "affected Python compile and JS module syntax passed",
+  "package": {
+    "path": "dist/assistant-v0.3.0-20261008T145153Z-a87ec9ec.zip",
+    "files": 60,
+    "crc": "passed",
+    "sha256": "a92236630bdcdeee95014eee94695c79f8c9c305047a1d48407c8fdd8049bbdc"
+  }
+}

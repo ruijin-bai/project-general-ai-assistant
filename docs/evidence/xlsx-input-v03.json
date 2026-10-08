@@ -1,0 +1,145 @@
+{
+  "evidence_class": "engineering_xlsx_not_real_expense",
+  "matter_id": "94af2eeb-825a-4e15-af4e-005f7477de8a",
+  "attachment_id": "498292f9-4b31-423e-ad9b-ccaace43b612",
+  "original_sha256": "15fb325139866bb9e84202749a0acb59fa29458261f4f9c43bc6bece585b6f7c",
+  "http_catalog_no_cells": true,
+  "worksheets": [
+    {
+      "name": "明细",
+      "state": "visible"
+    },
+    {
+      "name": "其他表",
+      "state": "hidden"
+    }
+  ],
+  "ui_status": "directory_select_sheet_switch_draft_transfer_candidates_save_calculate_reload_passed",
+  "model_calls": 0,
+  "specialized_store_smoke_seconds": 0.344,
+  "preview_session": 27633,
+  "unsaved_text_across_sheet_switch": true,
+  "original_unchanged": true,
+  "source_id": "b231c6bd-f147-4d89-b757-faf42fed1593",
+  "source_origin": {
+    "attachment_id": "498292f9-4b31-423e-ad9b-ccaace43b612",
+    "declared_format": "xlsx",
+    "filename": "工程费用表.xlsx",
+    "human_edited": false,
+    "method": "xlsx_literal_worksheet",
+    "positions": [
+      {
+        "end_line": 1,
+        "position": "工作表 明细 · 原行 1",
+        "start_line": 1
+      },
+      {
+        "end_line": 2,
+        "position": "工作表 明细 · 原行 2",
+        "start_line": 2
+      },
+      {
+        "end_line": 3,
+        "position": "工作表 明细 · 原行 3",
+        "start_line": 3
+      },
+      {
+        "end_line": 4,
+        "position": "工作表 明细 · 原行 4",
+        "start_line": 4
+      },
+      {
+        "end_line": 5,
+        "position": "工作表 明细 · 原行 5",
+        "start_line": 5
+      },
+      {
+        "end_line": 6,
+        "position": "工作表 明细 · 原行 6",
+        "start_line": 6
+      }
+    ],
+    "saved_text_sha256": "ad9a94322dce7eb6fa8f0bb18b061eaf8578b0be269d6dc5e290efe47e3c3544",
+    "scope": "本人转存的文字候选；原件不变，未确认事实。位置仅对应已读原件片段，不代表完整文档核验。",
+    "sha256": "15fb325139866bb9e84202749a0acb59fa29458261f4f9c43bc6bece585b6f7c",
+    "sheet_name": "明细",
+    "truncated": false,
+    "unread": [
+      "仅当前明确工作表；其他工作表、图表、批注、外部链接和显示格式未读取。公式不计算，不采用缓存值；带格式数值须人工核对。"
+    ]
+  },
+  "rows": [
+    {
+      "currency": "USD",
+      "id": "import-4e4c08ee8fd2de7dc85037009ece426c",
+      "label": "工程测试",
+      "period": "2026-10",
+      "source_id": "b231c6bd-f147-4d89-b757-faf42fed1593",
+      "source_position": "工作表 明细 · 原行 2 · 第2–2行",
+      "value": "0.1"
+    },
+    {
+      "currency": "USD",
+      "id": "import-c578ee7e542bf9e5019aced3017797fb",
+      "label": "工程测试",
+      "period": "2026-10",
+      "source_id": "b231c6bd-f147-4d89-b757-faf42fed1593",
+      "source_position": "工作表 明细 · 原行 3 · 第3–3行",
+      "value": "0.2"
+    }
+  ],
+  "candidate_issues": [
+    {
+      "kind": "unreviewed_excel_cell",
+      "reason": "此记录含公式、错误或类型／格式待核值，整行不取明细候选；不采用缓存或补数。请先人工核对实际值。",
+      "start_line": 4,
+      "end_line": 4,
+      "excerpt": "公式行\t【公式未计算】SUM(B2:B3)\tUSD\t2026-10"
+    },
+    {
+      "kind": "invalid_record",
+      "reason": "金额或数量须为明确十进制字符串，最多18位整数、6位小数；缺数不能当0。 当前原文保留，未填零或替代未知值。",
+      "start_line": 5,
+      "end_line": 5,
+      "excerpt": "缺数\t\tUSD\t2026-10"
+    },
+    {
+      "kind": "unreviewed_excel_cell",
+      "reason": "此记录含公式、错误或类型／格式待核值，整行不取明细候选；不采用缓存或补数。请先人工核对实际值。",
+      "start_line": 6,
+      "end_line": 6,
+      "excerpt": "格式日期\t1\tUSD\t【类型／格式值待核】46000"
+    }
+  ],
+  "actual_state": {
+    "submission": {
+      "status": "unknown",
+      "label": "财务提交未知"
+    },
+    "review": {
+      "status": "unknown",
+      "label": "原渠道审核未知"
+    },
+    "payment": {
+      "status": "unknown",
+      "label": "实际支付未知"
+    }
+  },
+  "calculation": {
+    "groups": [
+      {
+        "currency": "USD",
+        "period": "2026-10",
+        "total": "0.3",
+        "row_ids": [
+          "import-4e4c08ee8fd2de7dc85037009ece426c",
+          "import-c578ee7e542bf9e5019aced3017797fb"
+        ]
+      }
+    ],
+    "row_count": 2,
+    "scope": "本地人工核对明细；不代表报销批准/付款或真实收发",
+    "input_revision": 4,
+    "stale": false
+  }
+}

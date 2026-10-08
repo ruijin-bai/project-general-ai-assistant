@@ -1,0 +1,1278 @@
+{
+  "kind": "local engineering fixture only; no actual travel, deduction, cooking or model call",
+  "prior_menu_states": [
+    {
+      "id": "6b72eda1-6186-4e29-bbc1-cd03ce8dc16b",
+      "version": 2,
+      "status": "published"
+    },
+    {
+      "id": "2b3d5015-0dd4-4566-99a9-fe0453012c89",
+      "version": 1,
+      "status": "withdrawn"
+    },
+    {
+      "id": "4aa9d408-ccf5-4a68-99dd-9b748668c977",
+      "version": 2,
+      "status": "withdrawn"
+    },
+    {
+      "id": "21920b25-dfb2-43fd-9451-337828cb801f",
+      "version": 2,
+      "status": "published"
+    },
+    {
+      "id": "dee911ab-6795-4bc0-8150-8650fbb2833a",
+      "version": 1,
+      "status": "withdrawn"
+    }
+  ],
+  "setup": [
+    {
+      "id": "164a8e93-97d8-4325-9a7a-b4c2bb2cdf70",
+      "domain": "travel",
+      "original_artifact_id": "f8674c70-ed11-4bdc-ab1c-6ef6c8627763",
+      "before": {
+        "id": "164a8e93-97d8-4325-9a7a-b4c2bb2cdf70",
+        "goal_text": "工程T052餐次私有行程1（非实际出行；私有备注不进入厨师）",
+        "domain": "travel",
+        "version": 3,
+        "revision_no": 2,
+        "control_epoch": 0,
+        "assistant_status": "waiting",
+        "preparation_status": "needs_review",
+        "updated_at": "2026-10-08T16:19:34.636+00:00",
+        "business_status": "unknown",
+        "facts": {
+          "destination": {
+            "status": "unknown",
+            "value": null
+          },
+          "departure_at": {
+            "status": "unknown",
+            "value": null
+          },
+          "return_at": {
+            "status": "unknown",
+            "value": null
+          },
+          "participants": {
+            "status": "unknown",
+            "value": null
+          },
+          "purpose": {
+            "status": "unknown",
+            "value": null
+          },
+          "meal_request": {
+            "status": "unknown",
+            "value": null
+          }
+        },
+        "legacy_facts": {},
+        "field_labels": {
+          "destination": "目的地",
+          "departure_at": "计划离营时间",
+          "return_at": "计划返营时间",
+          "participants": "参与人员",
+          "purpose": "用途",
+          "meal_request": "餐次需求"
+        },
+        "tracks": {
+          "safety": {
+            "status": "unknown",
+            "label": "真实安全批准待核"
+          },
+          "vehicle": {
+            "status": "unknown",
+            "label": "真实车辆安排待核"
+          },
+          "movement": {
+            "status": "unknown",
+            "label": "实际出返未知"
+          },
+          "meal": {
+            "status": "unknown",
+            "label": "餐次口径与实际供餐待核"
+          }
+        },
+        "waiting": [
+          {
+            "reason": "补充或核对：目的地、计划离营时间、计划返营时间、参与人员、用途",
+            "who": "事项发起人"
+          },
+          {
+            "reason": "真实安全批准待核、真实车辆安排待核、实际出返未知、餐次口径与实际供餐待核",
+            "who": "实际责任人或原渠道待核"
+          }
+        ],
+        "next_steps": [
+          "核对缺少的必要事实",
+          "查看并修改出行与餐次准备稿",
+          "按实际要求沿原渠道办理，保留真实凭据"
+        ],
+        "sources": [
+          {
+            "id": "0d68fc2a-5c34-43a6-ad3a-6bcc337fbe7d",
+            "matter_id": "164a8e93-97d8-4325-9a7a-b4c2bb2cdf70",
+            "kind": "user_text",
+            "text": "工程T052餐次私有行程1（非实际出行；私有备注不进入厨师）",
+            "reported_by": null,
+            "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+            "recorded_at": "2026-10-08T16:19:34.577+00:00",
+            "source_state": "usable",
+            "replacement_source_id": null,
+            "state_note": "",
+            "preparation_usable": true
+          }
+        ],
+        "artifacts": [
+          {
+            "id": "f8674c70-ed11-4bdc-ab1c-6ef6c8627763",
+            "version": 1,
+            "matter_id": "164a8e93-97d8-4325-9a7a-b4c2bb2cdf70",
+            "type": "manual_preparation",
+            "title": "出行与餐次人工稿",
+            "content": "工程T052原人工稿1必须保留，非实际业务。",
+            "status": "human_saved",
+            "input_revision": 1,
+            "created_at": "2026-10-08T16:19:34.608+00:00",
+            "stale": true
+          }
+        ],
+        "activities": [
+          {
+            "id": "6c9666ff-a8a3-420a-b803-af752976c32f",
+            "matter_id": "164a8e93-97d8-4325-9a7a-b4c2bb2cdf70",
+            "event_type": "created",
+            "message": "已保存目标。规则模板可用；模型须配置并显式选择，外部业务渠道未接入。",
+            "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+            "recorded_at": "2026-10-08T16:19:34.580+00:00"
+          },
+          {
+            "id": "6b6ccb45-6796-4d7f-822d-dfff49d0783a",
+            "matter_id": "164a8e93-97d8-4325-9a7a-b4c2bb2cdf70",
+            "event_type": "manual_artifact_created",
+            "message": "本人主动保存人工准备稿；未运行模型或自动整理，暂停/接手及真实业务状态保持。",
+            "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+            "recorded_at": "2026-10-08T16:19:34.612+00:00"
+          },
+          {
+            "id": "f222358e-352a-4a13-80a7-c7d6cc17d8aa",
+            "matter_id": "164a8e93-97d8-4325-9a7a-b4c2bb2cdf70",
+            "event_type": "journey_meals_saved",
+            "message": "{\"actor_id\":\"55f14813-4467-49e9-97ac-1aea7f3bad0f\",\"input_revision\":2,\"meal_recheck_required\":false}",
+            "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+            "recorded_at": "2026-10-08T16:19:34.637+00:00"
+          }
+        ],
+        "actions": [],
+        "evidence": [],
+        "model_disclosure_blocked": false,
+        "waiting_points": [],
+        "workflow": {
+          "enabled": false,
+          "mode": "template"
+        },
+        "rows": [],
+        "calculation": null
+      },
+      "journey": {
+        "id": "164a8e93-97d8-4325-9a7a-b4c2bb2cdf70",
+        "version": 3,
+        "revision_no": 2,
+        "journey": {
+          "schema_version": 1,
+          "input_revision": 2,
+          "plan_semantics": {
+            "departure_kind": "camp_departure",
+            "return_kind": "camp_return",
+            "comparison_offset": null
+          },
+          "meal_requests": [
+            {
+              "id": "71216435-8f02-4cd9-ab19-313aa3cfb380",
+              "person_ref": "工程甲引用",
+              "meal_date": "2026-10-09",
+              "meal_slot": "工程午餐",
+              "request": "keep",
+              "note": "工程私人保餐备注，不得自动进入厨师副本。"
+            },
+            {
+              "id": "03ba9230-f9d2-4914-b1f8-bd0dbc1df5aa",
+              "person_ref": "工程乙引用",
+              "meal_date": "2026-10-09",
+              "meal_slot": "工程午餐",
+              "request": "keep",
+              "note": "工程私人保餐备注，不得自动进入厨师副本。"
+            },
+            {
+              "id": "b0ed5a52-51d1-4f23-8038-171e78af43af",
+              "person_ref": "工程丙引用",
+              "meal_date": "2026-10-09",
+              "meal_slot": "工程午餐",
+              "request": "pending",
+              "note": "工程私人保餐备注，不得自动进入厨师副本。"
+            },
+            {
+              "id": "8673bdaa-3530-42f0-ba4e-c6855d8efd7f",
+              "person_ref": "工程另日引用",
+              "meal_date": "2026-10-10",
+              "meal_slot": "工程午餐",
+              "request": "keep",
+              "note": "工程私人保餐备注，不得自动进入厨师副本。"
+            }
+          ],
+          "travel_link": null,
+          "plan_fields": {
+            "destination": {
+              "status": "unknown",
+              "value": null
+            },
+            "departure_at": {
+              "status": "unknown",
+              "value": null
+            },
+            "return_at": {
+              "status": "unknown",
+              "value": null
+            },
+            "participants": {
+              "status": "unknown",
+              "value": null
+            },
+            "purpose": {
+              "status": "unknown",
+              "value": null
+            },
+            "meal_request": {
+              "status": "unknown",
+              "value": null
+            }
+          },
+          "effective_plan_semantics": {
+            "departure_kind": "camp_departure",
+            "return_kind": "camp_return",
+            "comparison_offset": null
+          },
+          "time_assessment": "needs_review",
+          "meal_rule_status": "unconfirmed",
+          "meal_needs_review": false,
+          "link_stale": false,
+          "stale": false,
+          "current_travel_revision": null
+        },
+        "materials": {
+          "schema_version": 1,
+          "input_revision": null,
+          "items": [
+            {
+              "id": null,
+              "kind": "passport",
+              "availability": "missing",
+              "check": "pending",
+              "valid_until": null,
+              "applicability": "unknown",
+              "official_receipt": "unknown"
+            },
+            {
+              "id": null,
+              "kind": "visa",
+              "availability": "missing",
+              "check": "pending",
+              "valid_until": null,
+              "applicability": "unknown",
+              "official_receipt": "unknown"
+            },
+            {
+              "id": null,
+              "kind": "domestic_proof",
+              "availability": "missing",
+              "check": "pending",
+              "valid_until": null,
+              "applicability": "unknown",
+              "official_receipt": "unknown"
+            },
+            {
+              "id": null,
+              "kind": "nis_entry",
+              "availability": "missing",
+              "check": "pending",
+              "valid_until": null,
+              "applicability": "unknown",
+              "official_receipt": "unknown"
+            },
+            {
+              "id": null,
+              "kind": "nis_exit",
+              "availability": "missing",
+              "check": "pending",
+              "valid_until": null,
+              "applicability": "unknown",
+              "official_receipt": "unknown"
+            }
+          ],
+          "missing": [
+            "passport",
+            "visa",
+            "domestic_proof",
+            "nis_entry",
+            "nis_exit"
+          ],
+          "stale": false
+        },
+        "stale": false,
+        "movements": [],
+        "tracks": {
+          "safety": {
+            "status": "unknown",
+            "label": "真实安全批准待核"
+          },
+          "vehicle": {
+            "status": "unknown",
+            "label": "真实车辆安排待核"
+          },
+          "movement": {
+            "status": "unknown",
+            "label": "实际出返未知"
+          },
+          "meal": {
+            "status": "unknown",
+            "label": "餐次口径与实际供餐待核"
+          }
+        },
+        "waiting": [
+          {
+            "who": "本事项操作者",
+            "reason": "计划缺项/口径待核：目的地、计划离营时间、计划返营时间、参与人员、用途、needs_review"
+          },
+          {
+            "who": "实际责任人或原渠道",
+            "reason": "安全批准、车辆、现场出返与餐次正式状态分别待核；无人数基线，不算扣餐人数。"
+          }
+        ],
+        "scope": "本人私有行程与材料准备；声明不代表现场核验、安全批准、派车、扣餐、证明签发或通行许可"
+      }
+    },
+    {
+      "id": "748151e8-7e7b-412c-8317-7c99ed536996",
+      "domain": "leave",
+      "original_artifact_id": "2bc360e8-a8ad-4e88-8775-28bfd63df474",
+      "before": {
+        "id": "748151e8-7e7b-412c-8317-7c99ed536996",
+        "goal_text": "工程T052餐次私有行程2（非实际出行；私有备注不进入厨师）",
+        "domain": "leave",
+        "version": 3,
+        "revision_no": 2,
+        "control_epoch": 0,
+        "assistant_status": "waiting",
+        "preparation_status": "needs_review",
+        "updated_at": "2026-10-08T16:19:34.759+00:00",
+        "business_status": "unknown",
+        "facts": {
+          "person": {
+            "status": "unknown",
+            "value": null
+          },
+          "leave_start": {
+            "status": "unknown",
+            "value": null
+          },
+          "leave_end": {
+            "status": "unknown",
+            "value": null
+          },
+          "departure_at": {
+            "status": "unknown",
+            "value": null
+          },
+          "return_at": {
+            "status": "unknown",
+            "value": null
+          },
+          "flight_info": {
+            "status": "unknown",
+            "value": null
+          },
+          "passport_info": {
+            "status": "unknown",
+            "value": null
+          },
+          "visa_info": {
+            "status": "unknown",
+            "value": null
+          },
+          "domestic_proof": {
+            "status": "unknown",
+            "value": null
+          },
+          "nis_entry_card": {
+            "status": "unknown",
+            "value": null
+          },
+          "nis_exit_card": {
+            "status": "unknown",
+            "value": null
+          },
+          "requirements_ref": {
+            "status": "unknown",
+            "value": null
+          },
+          "travel_ref": {
+            "status": "unknown",
+            "value": null
+          }
+        },
+        "legacy_facts": {},
+        "field_labels": {
+          "person": "授权人员引用",
+          "leave_start": "休假起始日期",
+          "leave_end": "休假结束日期",
+          "departure_at": "计划离营",
+          "return_at": "计划返营",
+          "flight_info": "已知航班",
+          "passport_info": "护照必要字段或引用",
+          "visa_info": "签证必要字段或引用",
+          "domestic_proof": "国内真实证明引用",
+          "nis_entry_card": "真实入境卡引用",
+          "nis_exit_card": "真实离境卡引用",
+          "requirements_ref": "适用要求来源",
+          "travel_ref": "已有旅程引用"
+        },
+        "tracks": {
+          "leave_decision": {
+            "status": "unknown",
+            "label": "真实休假决定待核"
+          },
+          "passport": {
+            "status": "unknown",
+            "label": "护照材料与回执待核"
+          },
+          "visa": {
+            "status": "unknown",
+            "label": "签证材料与回执待核"
+          },
+          "domestic_proof": {
+            "status": "unknown",
+            "label": "国内真实证明待核"
+          },
+          "nis_entry": {
+            "status": "unknown",
+            "label": "入境卡适用及回执待核"
+          },
+          "nis_exit": {
+            "status": "unknown",
+            "label": "离境卡适用及回执待核"
+          },
+          "movement": {
+            "status": "unknown",
+            "label": "真实离返未知"
+          },
+          "meal": {
+            "status": "unknown",
+            "label": "餐次核对待核"
+          }
+        },
+        "waiting": [
+          {
+            "reason": "补充或核对：授权人员引用、休假起始日期、休假结束日期",
+            "who": "事项发起人"
+          },
+          {
+            "reason": "真实休假决定待核、护照材料与回执待核、签证材料与回执待核、国内真实证明待核、入境卡适用及回执待核、离境卡适用及回执待核、真实离返未知、餐次核对待核",
+            "who": "实际责任人或原渠道待核"
+          }
+        ],
+        "next_steps": [
+          "核对缺少的必要事实",
+          "查看并修改签证休假返岗准备稿",
+          "按实际要求沿原渠道办理，保留真实凭据"
+        ],
+        "sources": [
+          {
+            "id": "1d4fa78f-892e-4906-a227-61718c2e8470",
+            "matter_id": "748151e8-7e7b-412c-8317-7c99ed536996",
+            "kind": "user_text",
+            "text": "工程T052餐次私有行程2（非实际出行；私有备注不进入厨师）",
+            "reported_by": null,
+            "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+            "recorded_at": "2026-10-08T16:19:34.712+00:00",
+            "source_state": "usable",
+            "replacement_source_id": null,
+            "state_note": "",
+            "preparation_usable": true
+          }
+        ],
+        "artifacts": [
+          {
+            "id": "2bc360e8-a8ad-4e88-8775-28bfd63df474",
+            "version": 1,
+            "matter_id": "748151e8-7e7b-412c-8317-7c99ed536996",
+            "type": "manual_preparation",
+            "title": "签证休假返岗人工稿",
+            "content": "工程T052原人工稿2必须保留，非实际业务。",
+            "status": "human_saved",
+            "input_revision": 1,
+            "created_at": "2026-10-08T16:19:34.737+00:00",
+            "stale": true
+          }
+        ],
+        "activities": [
+          {
+            "id": "e0b10ac4-b39d-444a-bcd8-85735c656bab",
+            "matter_id": "748151e8-7e7b-412c-8317-7c99ed536996",
+            "event_type": "created",
+            "message": "已保存目标。规则模板可用；模型须配置并显式选择，外部业务渠道未接入。",
+            "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+            "recorded_at": "2026-10-08T16:19:34.714+00:00"
+          },
+          {
+            "id": "f0bd9eb0-3064-42b2-87b4-789d24b67c25",
+            "matter_id": "748151e8-7e7b-412c-8317-7c99ed536996",
+            "event_type": "manual_artifact_created",
+            "message": "本人主动保存人工准备稿；未运行模型或自动整理，暂停/接手及真实业务状态保持。",
+            "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+            "recorded_at": "2026-10-08T16:19:34.739+00:00"
+          },
+          {
+            "id": "67599827-cf49-4260-931c-3ea6ffde17e8",
+            "matter_id": "748151e8-7e7b-412c-8317-7c99ed536996",
+            "event_type": "journey_meals_saved",
+            "message": "{\"actor_id\":\"55f14813-4467-49e9-97ac-1aea7f3bad0f\",\"input_revision\":2,\"meal_recheck_required\":false}",
+            "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+            "recorded_at": "2026-10-08T16:19:34.761+00:00"
+          }
+        ],
+        "actions": [],
+        "evidence": [],
+        "model_disclosure_blocked": false,
+        "waiting_points": [],
+        "workflow": {
+          "enabled": false,
+          "mode": "template"
+        },
+        "rows": [],
+        "calculation": null
+      },
+      "journey": {
+        "id": "748151e8-7e7b-412c-8317-7c99ed536996",
+        "version": 3,
+        "revision_no": 2,
+        "journey": {
+          "schema_version": 1,
+          "input_revision": 2,
+          "plan_semantics": {
+            "departure_kind": "camp_departure",
+            "return_kind": "camp_return",
+            "comparison_offset": null
+          },
+          "meal_requests": [
+            {
+              "id": "e68f2818-f7e1-4a26-99aa-482ca90b80f8",
+              "person_ref": "工程甲引用",
+              "meal_date": "2026-10-09",
+              "meal_slot": "工程午餐",
+              "request": "keep",
+              "note": "工程私人保餐备注，不得自动进入厨师副本。"
+            },
+            {
+              "id": "4a62ac5f-bcbe-4a20-ac63-a15cd5eb13a6",
+              "person_ref": "工程乙引用",
+              "meal_date": "2026-10-09",
+              "meal_slot": "工程午餐",
+              "request": "request_reduce",
+              "note": "工程私人保餐备注，不得自动进入厨师副本。"
+            },
+            {
+              "id": "8b982a2b-77c8-4b1f-8631-0ea09dc21bc7",
+              "person_ref": "工程丁引用",
+              "meal_date": "2026-10-09",
+              "meal_slot": "工程午餐",
+              "request": "request_reduce",
+              "note": "工程私人保餐备注，不得自动进入厨师副本。"
+            }
+          ],
+          "travel_link": null,
+          "plan_fields": {
+            "destination": {
+              "value": null,
+              "status": "unknown"
+            },
+            "departure_at": {
+              "status": "unknown",
+              "value": null
+            },
+            "return_at": {
+              "status": "unknown",
+              "value": null
+            },
+            "participants": {
+              "value": null,
+              "status": "unknown"
+            },
+            "purpose": {
+              "value": null,
+              "status": "unknown"
+            },
+            "meal_request": {
+              "value": null,
+              "status": "unknown"
+            },
+            "person": {
+              "status": "unknown",
+              "value": null
+            },
+            "leave_start": {
+              "status": "unknown",
+              "value": null
+            },
+            "leave_end": {
+              "status": "unknown",
+              "value": null
+            },
+            "flight_info": {
+              "status": "unknown",
+              "value": null
+            }
+          },
+          "effective_plan_semantics": {
+            "departure_kind": "camp_departure",
+            "return_kind": "camp_return",
+            "comparison_offset": null
+          },
+          "time_assessment": "needs_review",
+          "meal_rule_status": "unconfirmed",
+          "meal_needs_review": false,
+          "link_stale": false,
+          "stale": false,
+          "current_travel_revision": null
+        },
+        "materials": {
+          "schema_version": 1,
+          "input_revision": null,
+          "items": [
+            {
+              "id": null,
+              "kind": "passport",
+              "availability": "missing",
+              "check": "pending",
+              "valid_until": null,
+              "applicability": "unknown",
+              "official_receipt": "unknown"
+            },
+            {
+              "id": null,
+              "kind": "visa",
+              "availability": "missing",
+              "check": "pending",
+              "valid_until": null,
+              "applicability": "unknown",
+              "official_receipt": "unknown"
+            },
+            {
+              "id": null,
+              "kind": "domestic_proof",
+              "availability": "missing",
+              "check": "pending",
+              "valid_until": null,
+              "applicability": "unknown",
+              "official_receipt": "unknown"
+            },
+            {
+              "id": null,
+              "kind": "nis_entry",
+              "availability": "missing",
+              "check": "pending",
+              "valid_until": null,
+              "applicability": "unknown",
+              "official_receipt": "unknown"
+            },
+            {
+              "id": null,
+              "kind": "nis_exit",
+              "availability": "missing",
+              "check": "pending",
+              "valid_until": null,
+              "applicability": "unknown",
+              "official_receipt": "unknown"
+            }
+          ],
+          "missing": [
+            "passport",
+            "visa",
+            "domestic_proof",
+            "nis_entry",
+            "nis_exit"
+          ],
+          "stale": false
+        },
+        "stale": false,
+        "movements": [],
+        "tracks": {
+          "leave_decision": {
+            "status": "unknown",
+            "label": "真实休假决定待核"
+          },
+          "passport": {
+            "status": "unknown",
+            "label": "护照材料与回执待核"
+          },
+          "visa": {
+            "status": "unknown",
+            "label": "签证材料与回执待核"
+          },
+          "domestic_proof": {
+            "status": "unknown",
+            "label": "国内真实证明待核"
+          },
+          "nis_entry": {
+            "status": "unknown",
+            "label": "入境卡适用及回执待核"
+          },
+          "nis_exit": {
+            "status": "unknown",
+            "label": "离境卡适用及回执待核"
+          },
+          "movement": {
+            "status": "unknown",
+            "label": "真实离返未知"
+          },
+          "meal": {
+            "status": "unknown",
+            "label": "餐次核对待核"
+          },
+          "safety": {
+            "status": "unknown",
+            "label": "真实安全批准待核"
+          },
+          "vehicle": {
+            "status": "unknown",
+            "label": "真实车辆安排待核"
+          }
+        },
+        "waiting": [
+          {
+            "who": "本事项操作者",
+            "reason": "计划缺项/口径待核：目的地、计划离营时间、计划返营时间、参与人员、用途、needs_review"
+          },
+          {
+            "who": "实际责任人或原渠道",
+            "reason": "安全批准、车辆、现场出返与餐次正式状态分别待核；无人数基线，不算扣餐人数。"
+          },
+          {
+            "who": "本人或实际提供者",
+            "reason": "国内证明与入出境卡名称、适用、签发及真实回执逐项待核。"
+          }
+        ],
+        "scope": "本人私有行程与材料准备；声明不代表现场核验、安全批准、派车、扣餐、证明签发或通行许可"
+      }
+    }
+  ],
+  "root_id": "164a8e93-97d8-4325-9a7a-b4c2bb2cdf70",
+  "selected_ids": [
+    "164a8e93-97d8-4325-9a7a-b4c2bb2cdf70",
+    "748151e8-7e7b-412c-8317-7c99ed536996"
+  ],
+  "inputs": {
+    "expected_version": 3,
+    "items": [
+      {
+        "id": "748151e8-7e7b-412c-8317-7c99ed536996",
+        "goal_text": "工程T052餐次私有行程2（非实际出行；私有备注不进入厨师）",
+        "revision_no": 2
+      },
+      {
+        "id": "164a8e93-97d8-4325-9a7a-b4c2bb2cdf70",
+        "goal_text": "工程T052餐次私有行程1（非实际出行；私有备注不进入厨师）",
+        "revision_no": 2
+      },
+      {
+        "id": "816a1391-a80b-4fc4-9ec6-5a787518ff03",
+        "goal_text": "工程演练，非真实出行：从本人假设计划原话整理营地离返候选，缺项待核，不批准、派车、扣餐或登记实际出返。",
+        "revision_no": 4
+      },
+      {
+        "id": "cc09b188-862f-4ec0-8385-6ff51d7b73c5",
+        "goal_text": "工程演练，非真实人员或签证：从本人给出的假设要求与材料原文整理核对候选；护照日期与拟离返日期核对，国内证明与入境卡回执缺项保持待补。不编适用、窗口、签发或可通行。",
+        "revision_no": 5
+      },
+      {
+        "id": "ca281ae6-d97d-4df2-94ff-73ae6d8f7f28",
+        "goal_text": "工程材料日期跟进：保存本人日期、设置个人提醒，变化后重核续办；非真实人员、证件或办理",
+        "revision_no": 5
+      },
+      {
+        "id": "3385eede-73ee-4de3-824a-19c9e2003c48",
+        "goal_text": "工程材料办理记录演练，非真实人员、提交或回执：五类材料分别核对原文，保留证明与卡缺项；不批准休假、不签发或判断可通行。",
+        "revision_no": 2
+      }
+    ],
+    "reports": [],
+    "cooks": [
+      {
+        "id": "e2c04df3-a5bc-45d7-b1e9-312bc7e3fd49",
+        "display_name": "工程夹具厨师"
+      }
+    ],
+    "scope": "只选择本人权限内已保存行程／休假餐次；不同人员引用不证明实际人数，无应报基线，不推未申报或实供。"
+  },
+  "report": {
+    "artifact_id": "308d1454-7317-4ae0-a7a7-78f24605e223",
+    "basis": [
+      {
+        "id": "164a8e93-97d8-4325-9a7a-b4c2bb2cdf70",
+        "linked_id": null,
+        "linked_revision": null,
+        "revision_no": 2
+      },
+      {
+        "id": "748151e8-7e7b-412c-8317-7c99ed536996",
+        "linked_id": null,
+        "linked_revision": null,
+        "revision_no": 2
+      }
+    ],
+    "cook_content": "# 2026-10-09所选餐次需求准备汇总\n仅明确选择的2份已保存行程／休假原述需求，不代表完整食堂人数、有效扣餐、备餐或实供。\n同一人员原述引用＋日期＋原述餐别只计一次；引用是否对应唯一真实人员由经办核对，不同标签不自动当不同人。\n保餐与调整／待核冲突单列，不自动覆盖手工保餐。饭点、触发、截止、冻结、应报基线仍待核。\n\n| 原述餐别 | 希望保餐引用 | 调整申请引用 | 待核引用 | 冲突引用 | 不同引用数 | 重复原记录数 |\n| --- | ---: | ---: | ---: | ---: | ---: | ---: |\n| 工程午餐 | 1 | 1 | 1 | 1 | 4 | 2 |",
+    "groups": [
+      {
+        "conflict": 1,
+        "duplicates": 2,
+        "keep": 1,
+        "meal_slot": "工程午餐",
+        "pending": 1,
+        "request_reduce": 1,
+        "unique_refs": 4
+      }
+    ],
+    "meal_date": "2026-10-09",
+    "title": "2026-10-09所选餐次需求准备汇总",
+    "stale": false
+  },
+  "received_share": {
+    "id": "10120e16-f2f3-485d-b7fd-5ce354c1dd3d",
+    "version": 1,
+    "title": "2026-10-09所选餐次需求准备汇总",
+    "content": "# 2026-10-09所选餐次需求准备汇总\n仅明确选择的2份已保存行程／休假原述需求，不代表完整食堂人数、有效扣餐、备餐或实供。\n同一人员原述引用＋日期＋原述餐别只计一次；引用是否对应唯一真实人员由经办核对，不同标签不自动当不同人。\n保餐与调整／待核冲突单列，不自动覆盖手工保餐。饭点、触发、截止、冻结、应报基线仍待核。\n\n| 原述餐别 | 希望保餐引用 | 调整申请引用 | 待核引用 | 冲突引用 | 不同引用数 | 重复原记录数 |\n| --- | ---: | ---: | ---: | ---: | ---: | ---: |\n| 工程午餐 | 1 | 1 | 1 | 1 | 4 | 2 |",
+    "owner_display_name": "工程夹具经办",
+    "created_at": "2026-10-08T16:21:01.561+00:00",
+    "input_revision": 2,
+    "stale": false,
+    "scope": "read_preparation",
+    "projection_kind": "meal_summary"
+  },
+  "downloaded_fixed_md": "# 2026-10-09所选餐次需求准备汇总\n仅明确选择的2份已保存行程／休假原述需求，不代表完整食堂人数、有效扣餐、备餐或实供。\n同一人员原述引用＋日期＋原述餐别只计一次；引用是否对应唯一真实人员由经办核对，不同标签不自动当不同人。\n保餐与调整／待核冲突单列，不自动覆盖手工保餐。饭点、触发、截止、冻结、应报基线仍待核。\n\n| 原述餐别 | 希望保餐引用 | 调整申请引用 | 待核引用 | 冲突引用 | 不同引用数 | 重复原记录数 |\n| --- | ---: | ---: | ---: | ---: | ---: | ---: |\n| 工程午餐 | 1 | 1 | 1 | 1 | 4 | 2 |",
+  "private_artifact_v2": "# 2026-10-09所选餐次需求准备汇总\n仅明确选择的2份已保存行程／休假原述需求，不代表完整食堂人数、有效扣餐、备餐或实供。\n同一人员原述引用＋日期＋原述餐别只计一次；引用是否对应唯一真实人员由经办核对，不同标签不自动当不同人。\n保餐与调整／待核冲突单列，不自动覆盖手工保餐。饭点、触发、截止、冻结、应报基线仍待核。\n\n| 原述餐别 | 希望保餐引用 | 调整申请引用 | 待核引用 | 冲突引用 | 不同引用数 | 重复原记录数 |\n| --- | ---: | ---: | ---: | ---: | ---: | ---: |\n| 工程午餐 | 1 | 1 | 1 | 1 | 4 | 2 |\n工程T052本人暂停时的私有核对备注，不进入厨师固定副本。",
+  "after": [
+    {
+      "id": "164a8e93-97d8-4325-9a7a-b4c2bb2cdf70",
+      "goal_text": "工程T052餐次私有行程1（非实际出行；私有备注不进入厨师）",
+      "domain": "travel",
+      "version": 8,
+      "revision_no": 2,
+      "control_epoch": 2,
+      "assistant_status": "waiting",
+      "preparation_status": "needs_review",
+      "updated_at": "2026-10-08T16:21:01.562+00:00",
+      "business_status": "unknown",
+      "facts": {
+        "destination": {
+          "status": "unknown",
+          "value": null
+        },
+        "departure_at": {
+          "status": "unknown",
+          "value": null
+        },
+        "return_at": {
+          "status": "unknown",
+          "value": null
+        },
+        "participants": {
+          "status": "unknown",
+          "value": null
+        },
+        "purpose": {
+          "status": "unknown",
+          "value": null
+        },
+        "meal_request": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      "legacy_facts": {},
+      "field_labels": {
+        "destination": "目的地",
+        "departure_at": "计划离营时间",
+        "return_at": "计划返营时间",
+        "participants": "参与人员",
+        "purpose": "用途",
+        "meal_request": "餐次需求"
+      },
+      "tracks": {
+        "safety": {
+          "status": "unknown",
+          "label": "真实安全批准待核"
+        },
+        "vehicle": {
+          "status": "unknown",
+          "label": "真实车辆安排待核"
+        },
+        "movement": {
+          "status": "unknown",
+          "label": "实际出返未知"
+        },
+        "meal": {
+          "status": "unknown",
+          "label": "餐次口径与实际供餐待核"
+        }
+      },
+      "waiting": [
+        {
+          "reason": "补充或核对：目的地、计划离营时间、计划返营时间、参与人员、用途",
+          "who": "事项发起人"
+        },
+        {
+          "reason": "真实安全批准待核、真实车辆安排待核、实际出返未知、餐次口径与实际供餐待核",
+          "who": "实际责任人或原渠道待核"
+        }
+      ],
+      "next_steps": [
+        "核对缺少的必要事实",
+        "查看并修改出行与餐次准备稿",
+        "按实际要求沿原渠道办理，保留真实凭据"
+      ],
+      "sources": [
+        {
+          "id": "0d68fc2a-5c34-43a6-ad3a-6bcc337fbe7d",
+          "matter_id": "164a8e93-97d8-4325-9a7a-b4c2bb2cdf70",
+          "kind": "user_text",
+          "text": "工程T052餐次私有行程1（非实际出行；私有备注不进入厨师）",
+          "reported_by": null,
+          "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+          "recorded_at": "2026-10-08T16:19:34.577+00:00",
+          "source_state": "usable",
+          "replacement_source_id": null,
+          "state_note": "",
+          "preparation_usable": true
+        }
+      ],
+      "artifacts": [
+        {
+          "id": "308d1454-7317-4ae0-a7a7-78f24605e223",
+          "version": 2,
+          "matter_id": "164a8e93-97d8-4325-9a7a-b4c2bb2cdf70",
+          "type": "meal_summary",
+          "title": "2026-10-09所选餐次需求准备汇总",
+          "content": "# 2026-10-09所选餐次需求准备汇总\n仅明确选择的2份已保存行程／休假原述需求，不代表完整食堂人数、有效扣餐、备餐或实供。\n同一人员原述引用＋日期＋原述餐别只计一次；引用是否对应唯一真实人员由经办核对，不同标签不自动当不同人。\n保餐与调整／待核冲突单列，不自动覆盖手工保餐。饭点、触发、截止、冻结、应报基线仍待核。\n\n| 原述餐别 | 希望保餐引用 | 调整申请引用 | 待核引用 | 冲突引用 | 不同引用数 | 重复原记录数 |\n| --- | ---: | ---: | ---: | ---: | ---: | ---: |\n| 工程午餐 | 1 | 1 | 1 | 1 | 4 | 2 |\n工程T052本人暂停时的私有核对备注，不进入厨师固定副本。",
+          "status": "human_saved",
+          "input_revision": 2,
+          "created_at": "2026-10-08T16:20:40.422+00:00",
+          "stale": false
+        },
+        {
+          "id": "f8674c70-ed11-4bdc-ab1c-6ef6c8627763",
+          "version": 1,
+          "matter_id": "164a8e93-97d8-4325-9a7a-b4c2bb2cdf70",
+          "type": "manual_preparation",
+          "title": "出行与餐次人工稿",
+          "content": "工程T052原人工稿1必须保留，非实际业务。",
+          "status": "human_saved",
+          "input_revision": 1,
+          "created_at": "2026-10-08T16:19:34.608+00:00",
+          "stale": true
+        }
+      ],
+      "activities": [
+        {
+          "id": "6c9666ff-a8a3-420a-b803-af752976c32f",
+          "matter_id": "164a8e93-97d8-4325-9a7a-b4c2bb2cdf70",
+          "event_type": "created",
+          "message": "已保存目标。规则模板可用；模型须配置并显式选择，外部业务渠道未接入。",
+          "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+          "recorded_at": "2026-10-08T16:19:34.580+00:00"
+        },
+        {
+          "id": "6b6ccb45-6796-4d7f-822d-dfff49d0783a",
+          "matter_id": "164a8e93-97d8-4325-9a7a-b4c2bb2cdf70",
+          "event_type": "manual_artifact_created",
+          "message": "本人主动保存人工准备稿；未运行模型或自动整理，暂停/接手及真实业务状态保持。",
+          "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+          "recorded_at": "2026-10-08T16:19:34.612+00:00"
+        },
+        {
+          "id": "f222358e-352a-4a13-80a7-c7d6cc17d8aa",
+          "matter_id": "164a8e93-97d8-4325-9a7a-b4c2bb2cdf70",
+          "event_type": "journey_meals_saved",
+          "message": "{\"actor_id\":\"55f14813-4467-49e9-97ac-1aea7f3bad0f\",\"input_revision\":2,\"meal_recheck_required\":false}",
+          "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+          "recorded_at": "2026-10-08T16:19:34.637+00:00"
+        },
+        {
+          "id": "ba460fd3-cdf0-477c-8503-c72002ad5a96",
+          "matter_id": "164a8e93-97d8-4325-9a7a-b4c2bb2cdf70",
+          "event_type": "meal_summary_saved",
+          "message": "本人所选行程餐次需求已程序去重／冲突单列并另存可编辑稿；仅原述引用计数，无完整人数基线，不减餐或登记实供。",
+          "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+          "recorded_at": "2026-10-08T16:20:13.002+00:00"
+        },
+        {
+          "id": "e2ab3152-8a3a-439c-8063-f71224c14c3d",
+          "matter_id": "164a8e93-97d8-4325-9a7a-b4c2bb2cdf70",
+          "event_type": "pause",
+          "message": "未来代办已暂停，已保存事实与成果保留。",
+          "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+          "recorded_at": "2026-10-08T16:20:22.114+00:00"
+        },
+        {
+          "id": "129e673b-6708-4bfd-b949-009a565abec6",
+          "matter_id": "164a8e93-97d8-4325-9a7a-b4c2bb2cdf70",
+          "event_type": "artifact_saved",
+          "message": "人工修改已保存为成果新版本；不代表外部提交或接受。",
+          "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+          "recorded_at": "2026-10-08T16:20:40.429+00:00"
+        },
+        {
+          "id": "fdaef9ab-8468-41f3-bbf3-a17020b80f52",
+          "matter_id": "164a8e93-97d8-4325-9a7a-b4c2bb2cdf70",
+          "event_type": "resume",
+          "message": "已恢复；请按需重新登记准备，不重放外部动作。",
+          "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+          "recorded_at": "2026-10-08T16:20:51.166+00:00"
+        },
+        {
+          "id": "eeca8580-0a0d-493d-a984-f4f001ecde36",
+          "matter_id": "164a8e93-97d8-4325-9a7a-b4c2bb2cdf70",
+          "event_type": "preparation_shared",
+          "message": "{\"actor_id\":\"55f14813-4467-49e9-97ac-1aea7f3bad0f\",\"actor_name\":\"工程夹具经办\",\"recipient_id\":\"e2c04df3-a5bc-45d7-b1e9-312bc7e3fd49\",\"scope\":\"read_preparation\",\"share_id\":\"10120e16-f2f3-485d-b7fd-5ce354c1dd3d\",\"snapshot_is_separate\":true}",
+          "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+          "recorded_at": "2026-10-08T16:21:01.563+00:00"
+        }
+      ],
+      "actions": [],
+      "evidence": [],
+      "model_disclosure_blocked": false,
+      "waiting_points": [],
+      "workflow": {
+        "enabled": false,
+        "mode": "template"
+      },
+      "rows": [],
+      "calculation": null
+    },
+    {
+      "id": "748151e8-7e7b-412c-8317-7c99ed536996",
+      "goal_text": "工程T052餐次私有行程2（非实际出行；私有备注不进入厨师）",
+      "domain": "leave",
+      "version": 3,
+      "revision_no": 2,
+      "control_epoch": 0,
+      "assistant_status": "waiting",
+      "preparation_status": "needs_review",
+      "updated_at": "2026-10-08T16:19:34.759+00:00",
+      "business_status": "unknown",
+      "facts": {
+        "person": {
+          "status": "unknown",
+          "value": null
+        },
+        "leave_start": {
+          "status": "unknown",
+          "value": null
+        },
+        "leave_end": {
+          "status": "unknown",
+          "value": null
+        },
+        "departure_at": {
+          "status": "unknown",
+          "value": null
+        },
+        "return_at": {
+          "status": "unknown",
+          "value": null
+        },
+        "flight_info": {
+          "status": "unknown",
+          "value": null
+        },
+        "passport_info": {
+          "status": "unknown",
+          "value": null
+        },
+        "visa_info": {
+          "status": "unknown",
+          "value": null
+        },
+        "domestic_proof": {
+          "status": "unknown",
+          "value": null
+        },
+        "nis_entry_card": {
+          "status": "unknown",
+          "value": null
+        },
+        "nis_exit_card": {
+          "status": "unknown",
+          "value": null
+        },
+        "requirements_ref": {
+          "status": "unknown",
+          "value": null
+        },
+        "travel_ref": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      "legacy_facts": {},
+      "field_labels": {
+        "person": "授权人员引用",
+        "leave_start": "休假起始日期",
+        "leave_end": "休假结束日期",
+        "departure_at": "计划离营",
+        "return_at": "计划返营",
+        "flight_info": "已知航班",
+        "passport_info": "护照必要字段或引用",
+        "visa_info": "签证必要字段或引用",
+        "domestic_proof": "国内真实证明引用",
+        "nis_entry_card": "真实入境卡引用",
+        "nis_exit_card": "真实离境卡引用",
+        "requirements_ref": "适用要求来源",
+        "travel_ref": "已有旅程引用"
+      },
+      "tracks": {
+        "leave_decision": {
+          "status": "unknown",
+          "label": "真实休假决定待核"
+        },
+        "passport": {
+          "status": "unknown",
+          "label": "护照材料与回执待核"
+        },
+        "visa": {
+          "status": "unknown",
+          "label": "签证材料与回执待核"
+        },
+        "domestic_proof": {
+          "status": "unknown",
+          "label": "国内真实证明待核"
+        },
+        "nis_entry": {
+          "status": "unknown",
+          "label": "入境卡适用及回执待核"
+        },
+        "nis_exit": {
+          "status": "unknown",
+          "label": "离境卡适用及回执待核"
+        },
+        "movement": {
+          "status": "unknown",
+          "label": "真实离返未知"
+        },
+        "meal": {
+          "status": "unknown",
+          "label": "餐次核对待核"
+        }
+      },
+      "waiting": [
+        {
+          "reason": "补充或核对：授权人员引用、休假起始日期、休假结束日期",
+          "who": "事项发起人"
+        },
+        {
+          "reason": "真实休假决定待核、护照材料与回执待核、签证材料与回执待核、国内真实证明待核、入境卡适用及回执待核、离境卡适用及回执待核、真实离返未知、餐次核对待核",
+          "who": "实际责任人或原渠道待核"
+        }
+      ],
+      "next_steps": [
+        "核对缺少的必要事实",
+        "查看并修改签证休假返岗准备稿",
+        "按实际要求沿原渠道办理，保留真实凭据"
+      ],
+      "sources": [
+        {
+          "id": "1d4fa78f-892e-4906-a227-61718c2e8470",
+          "matter_id": "748151e8-7e7b-412c-8317-7c99ed536996",
+          "kind": "user_text",
+          "text": "工程T052餐次私有行程2（非实际出行；私有备注不进入厨师）",
+          "reported_by": null,
+          "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+          "recorded_at": "2026-10-08T16:19:34.712+00:00",
+          "source_state": "usable",
+          "replacement_source_id": null,
+          "state_note": "",
+          "preparation_usable": true
+        }
+      ],
+      "artifacts": [
+        {
+          "id": "2bc360e8-a8ad-4e88-8775-28bfd63df474",
+          "version": 1,
+          "matter_id": "748151e8-7e7b-412c-8317-7c99ed536996",
+          "type": "manual_preparation",
+          "title": "签证休假返岗人工稿",
+          "content": "工程T052原人工稿2必须保留，非实际业务。",
+          "status": "human_saved",
+          "input_revision": 1,
+          "created_at": "2026-10-08T16:19:34.737+00:00",
+          "stale": true
+        }
+      ],
+      "activities": [
+        {
+          "id": "e0b10ac4-b39d-444a-bcd8-85735c656bab",
+          "matter_id": "748151e8-7e7b-412c-8317-7c99ed536996",
+          "event_type": "created",
+          "message": "已保存目标。规则模板可用；模型须配置并显式选择，外部业务渠道未接入。",
+          "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+          "recorded_at": "2026-10-08T16:19:34.714+00:00"
+        },
+        {
+          "id": "f0bd9eb0-3064-42b2-87b4-789d24b67c25",
+          "matter_id": "748151e8-7e7b-412c-8317-7c99ed536996",
+          "event_type": "manual_artifact_created",
+          "message": "本人主动保存人工准备稿；未运行模型或自动整理，暂停/接手及真实业务状态保持。",
+          "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+          "recorded_at": "2026-10-08T16:19:34.739+00:00"
+        },
+        {
+          "id": "67599827-cf49-4260-931c-3ea6ffde17e8",
+          "matter_id": "748151e8-7e7b-412c-8317-7c99ed536996",
+          "event_type": "journey_meals_saved",
+          "message": "{\"actor_id\":\"55f14813-4467-49e9-97ac-1aea7f3bad0f\",\"input_revision\":2,\"meal_recheck_required\":false}",
+          "recorded_by": "55f14813-4467-49e9-97ac-1aea7f3bad0f",
+          "recorded_at": "2026-10-08T16:19:34.761+00:00"
+        }
+      ],
+      "actions": [],
+      "evidence": [],
+      "model_disclosure_blocked": false,
+      "waiting_points": [],
+      "workflow": {
+        "enabled": false,
+        "mode": "template"
+      },
+      "rows": [],
+      "calculation": null
+    }
+  ],
+  "permissions": {
+    "cook_private_matter": 404,
+    "cook_private_summary": 404,
+    "employee_other_grant": 404
+  },
+  "menus_unchanged": true,
+  "model_calls_this_increment": 0,
+  "ui_path": "经办选2份／同日核对1保餐1调整1待核1冲突4引用2额外记录→另存原稿保留→暂停人工v2保存→刷新重开→恢复→明确固定副本给厨师→厨师只读；UI现场未调用模型。",
+  "verification": "1 combined Store test (both local and identity), final 0.559s; affected Python/JS syntax; actual HTTP and browser",
+  "runtime_session": 31563,
+  "package": {
+    "path": "dist\\assistant-v0.3.0-20261008T162620Z-f7f62cdf.zip",
+    "application_files": 68,
+    "zip_entries": 69,
+    "crc": "passed",
+    "sha256": "fee971d24944114371dae6bacca8fc36fa216e62774b508da0adafd75c64c7dc"
+  },
+  "browser_final": "最终31563后端重载后，工程厨师重新登录并从收到的准备材料读回固定原稿，截图保存。"
+}
