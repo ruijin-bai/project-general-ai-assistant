@@ -4,7 +4,7 @@
 
 本地工作区 v0.3 已可运行：一句话委托、补充后持续本地整理、业务准备、可编辑成果及人工稿保护、保存续办与暂停接手。报销和物资明细由程序精确核算；声明/凭据候选单独追源，不冒称真实批准或执行。交融客户端已接通，已有真实工程调用记录；独立账号已有本地工程验证，外部业务渠道仍未接入。完整目标持续推进，不以优先里程碑或模板数量判完成。先读 [工作规则](AGENTS.md)、[当前状态](docs/CURRENT.md) 和 [任务清单](docs/product/任务清单.md)。
 
-代码仓库：[ruijin-bai/project-general-ai-assistant](https://github.com/ruijin-bai/project-general-ai-assistant)（私有）。仓库保存源码、测试及项目文档；真实模型配置、运行数据库、账号数据和本地历史应用包留在本机，不随代码上传。新克隆默认没有模型凭据或已有运行数据，按下文配置并启动。
+代码仓库：[ruijin-bai/project-general-ai-assistant](https://github.com/ruijin-bai/project-general-ai-assistant)（公开）。仓库保存源码、测试及项目文档；真实模型配置、运行数据库、账号数据和本地历史应用包留在本机，不随代码上传。新克隆默认没有模型凭据或已有运行数据，按下文配置并启动。
 
 设计依据见 [PRD](docs/product/PRD.md)、[UX 方案](docs/design/UX方案.md) 和 [架构方案](docs/architecture/架构方案.md)。竞赛阶段优先轻量数据和简单启动。
 
